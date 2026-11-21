@@ -15,16 +15,9 @@
       background-color: #FAF9F6;
       color: #1F2937;
     }
-    .nav-scroll::-webkit-scrollbar {
-      display: none;
-    }
-    .nav-scroll {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .timeline-line {
-      position: relative;
-    }
+    .nav-scroll::-webkit-scrollbar { display: none; }
+    .nav-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    .timeline-line { position: relative; }
     .timeline-line::before {
       content: '';
       position: absolute;
@@ -35,9 +28,7 @@
       background-color: #E5E7EB;
     }
     @media (min-width: 768px) {
-      .timeline-line::before {
-        left: 1.15rem;
-      }
+      .timeline-line::before { left: 1.15rem; }
     }
   </style>
 </head>
@@ -53,7 +44,7 @@
               <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-sky-900 text-white text-base">✈️</span>
               <h1 class="text-lg sm:text-xl font-bold text-stone-900 tracking-tight">2027 福岡・北九州八天七夜</h1>
             </div>
-            <p class="text-xs text-stone-500 mt-0.5 pl-10">2027.04.10 (六) – 04.17 (六) ｜ 我・媽媽・阿姨 ｜ 星宇航空</p>
+            <p class="text-xs text-stone-500 mt-0.5 pl-10">2027.04.10 (六) – 04.17 (六) ｜ 我・媽媽・阿姨 ｜ 星宇航空 JX840/JX841</p>
           </div>
         </div>
 
@@ -84,28 +75,27 @@
 
     <!-- ================= 區塊 1: 行程總覽 ================= -->
     <section id="section-overview" class="page-section space-y-8">
-      <!-- 首頁重點摘要卡 -->
       <div class="bg-gradient-to-br from-sky-900 via-slate-800 to-indigo-950 rounded-2xl p-6 sm:p-8 text-white shadow-md">
         <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
           <div class="space-y-3 max-w-2xl">
             <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-sky-100 text-xs font-medium tracking-wide">
-              🌸 春季限定花海 × 觀光列車 × 不換宿慢旅
+              🌸 全程博多 7 晚連住零換宿 × 經典觀光列車 × 季節限定花海
             </span>
-            <h2 class="text-2xl sm:text-3xl font-bold leading-snug">專為長輩與家族打造的福岡零壓力深度行程</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold leading-snug">長輩同行友善・福岡北九州深度漫遊</h2>
             <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
-              全程連住 <strong>JR 博多站周邊 7 晚不換宿</strong>，免去大件行李搬運奔波；每日僅安排 1 至 2 個不重複地貌的重點景觀（都會商場、大正海港、山林溫泉、粉蝶花海、火山峽谷、古社參道與古城紫藤），把精華腳力留給購物與地道福岡美食。
+              全程連住 <strong>JR 博多站周邊 7 晚不換宿</strong>，無須每天整理或拖運行李；第一天搭乘 JX840 於 13:05 提早抵達，下午直奔天神地下街；各日景觀聚焦大正洋館、山林溫泉小鎮、粉蝶花海、火山峽谷與千年古社參道，互不重複。
             </p>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 shrink-0">
             <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
-              <div class="text-xs text-sky-200">去程參考 JX840</div>
-              <div class="text-lg font-bold mt-0.5">14:45 → 18:00</div>
-              <div class="text-[11px] text-slate-300">2026/11 表定基準</div>
+              <div class="text-xs text-sky-200">去程 JX840</div>
+              <div class="text-lg font-bold mt-0.5">09:35 → 13:05</div>
+              <div class="text-[11px] text-emerald-300">下午精華全保留</div>
             </div>
             <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
-              <div class="text-xs text-sky-200">回程參考 JX841</div>
+              <div class="text-xs text-sky-200">回程 JX841</div>
               <div class="text-lg font-bold mt-0.5">19:10 → 20:50</div>
-              <div class="text-[11px] text-slate-300">夏季時刻依開票微調</div>
+              <div class="text-[11px] text-slate-300">博多買好買滿</div>
             </div>
             <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
               <div class="text-xs text-sky-200">核心鐵路票券</div>
@@ -115,7 +105,7 @@
             <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
               <div class="text-xs text-sky-200">餐飲高餐上限</div>
               <div class="text-lg font-bold mt-0.5">≤ ¥7,500 / 餐</div>
-              <div class="text-[11px] text-slate-300">搭配平價名店小吃</div>
+              <div class="text-[11px] text-slate-300">搭配平價人氣小吃</div>
             </div>
           </div>
         </div>
@@ -125,11 +115,11 @@
       <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden">
         <div class="p-5 sm:p-6 border-b border-stone-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <div>
-            <h3 class="text-lg font-bold text-stone-900">八天七夜行程總覽與風景不重複矩陣</h3>
-            <p class="text-xs text-stone-500 mt-1">點擊任意日期列，可直接切換至該日詳細點對點時間軸</p>
+            <h3 class="text-lg font-bold text-stone-900">八天七夜行程矩陣（風景完全不重複）</h3>
+            <p class="text-xs text-stone-500 mt-1">點擊任意日期列，可直接跳轉至該日的詳細點對點導航</p>
           </div>
           <span class="text-xs px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 font-medium self-start sm:self-auto">
-            💡 週日玩門司港、避開週一/二麵包公休
+            💡 全程不換宿・週日玩門司港・避開名店公休
           </span>
         </div>
         <div class="overflow-x-auto">
@@ -137,15 +127,13 @@
             <thead>
               <tr class="bg-stone-50 text-stone-600 border-b border-stone-200 text-xs">
                 <th class="py-3 px-4 font-semibold whitespace-nowrap">日期</th>
-                <th class="py-3 px-4 font-semibold whitespace-nowrap">主軸與核心景點</th>
-                <th class="py-3 px-4 font-semibold whitespace-nowrap">地貌風景類型</th>
-                <th class="py-3 px-4 font-semibold whitespace-nowrap">主要交通工具</th>
-                <th class="py-3 px-4 font-semibold whitespace-nowrap">精選餐食（高餐／平價）</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">核心景點與主軸</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">景觀類型</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">主要交通方式</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">代表性美食安排</th>
               </tr>
             </thead>
-            <tbody id="overview-table-body" class="divide-y divide-stone-100">
-              <!-- 由 JS 動態填入 -->
-            </tbody>
+            <tbody id="overview-table-body" class="divide-y divide-stone-100"></tbody>
           </table>
         </div>
       </div>
@@ -155,7 +143,7 @@
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6">
           <div class="mb-4">
             <h3 class="text-base font-bold text-stone-900">📊 主要跨區交通：時間與單程原價費用比較</h3>
-            <p class="text-xs text-stone-500 mt-1">滑鼠懸停或點擊長條圖可查看詳細車資與 Pass 省錢對比</p>
+            <p class="text-xs text-stone-500 mt-1">懸停長條圖可查看詳細車資與 JR Pass 票券省錢效益</p>
           </div>
           <div class="relative h-72 sm:h-80 w-full">
             <canvas id="transportChart"></canvas>
@@ -164,51 +152,28 @@
 
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6">
           <div class="mb-4">
-            <h3 class="text-base font-bold text-stone-900">💰 八天七夜每人預估支出結構（不含機票與購物）</h3>
-            <p class="text-xs text-stone-500 mt-1">以參考匯率 1 JPY ≈ 0.21 TWD 試算（住宿依目標價計算，實際以訂房為準）</p>
+            <h3 class="text-base font-bold text-stone-900">💰 八天每人預估支出結構（不含機票與個人購物）</h3>
+            <p class="text-xs text-stone-500 mt-1">住宿按目標價試算（匯率以 1 JPY ≈ 0.21 TWD 估計）</p>
           </div>
           <div class="relative h-72 sm:h-80 w-full">
             <canvas id="budgetChart"></canvas>
           </div>
         </div>
       </div>
-
-      <!-- 重要規劃注意事項 -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-purple-50/70 border border-purple-200 rounded-xl p-4">
-          <div class="text-sm font-bold text-purple-900 mb-1">🍲 關於《yy生活誌》水炊鍋說明</div>
-          <p class="text-xs text-purple-900/80 leading-relaxed">
-            公開影片摘要未直接指明該頻道介紹「第一間」水炊鍋之確切店名；本行程並列收錄博多最具代表性之<strong>博多華味鳥</strong>（套餐 ¥5,500–6,500）、<strong>博多とり田</strong>（套餐約 ¥7,000）及<strong>新三浦</strong>（午間小鍋 ¥2,500），皆符合單餐 ¥7,500 上限，出發前可依影片畫面確認訂位。
-          </p>
-        </div>
-        <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
-          <div class="text-sm font-bold text-emerald-900 mb-1">🚣 高千穗峽 3 人同行絕佳優勢</div>
-          <p class="text-xs text-emerald-900/80 leading-relaxed">
-            高千穗峽划船每艘限乘 3 名成人，三人剛好成團滿載！務必於<strong>乘船日前兩週日本時間 09:00（台灣 08:00）</strong>準時上官網刷卡搶票；巴士站往返峽谷建議直接搭計程車（約 7–10 分鐘，實測曾記約 ¥820 起）省下長輩回程上坡腳力。
-          </p>
-        </div>
-        <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
-          <div class="text-sm font-bold text-amber-900 mb-1">🧾 2026/11 起日本免稅新制提醒</div>
-          <p class="text-xs text-amber-900/80 leading-relaxed">
-            日本已於 2026 年 11 月 1 日起將現場免稅改為<strong>「離境退稅制」</strong>，百貨與藥妝結帳時需先付含稅金額，於離境當天在福岡機場經海關確認攜出後辦理退稅；因此 Day 8 建議預留充裕時間提前抵達機場。
-          </p>
-        </div>
-      </div>
     </section>
 
     <!-- ================= 區塊 2: 交通住宿 ================= -->
     <section id="section-transport" class="page-section hidden space-y-8">
-      <!-- 住宿推薦區 -->
       <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-5">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 border-b border-stone-100 pb-4">
           <div>
-            <h2 class="text-xl font-bold text-stone-900">🏨 連住 7 晚不換宿：博多車站周邊「三人房」精選</h2>
+            <h2 class="text-xl font-bold text-stone-900">🏨 博多車站周邊連住 7 晚精選（三人房優先）</h2>
             <p class="text-xs text-stone-500 mt-1">
-              目標預算：每人每晚 NT$1,500（三人合計 NT$4,500／晚）。4 月春季賞花期三人房價易高於淡季參考價，建議提前 3–6 個月預訂早鳥或改拆雙人＋單人房：
+              目標預算：每人每晚 NT$1,500（三人合算 NT$4,500／晚）。建議提前搶訂早鳥方案；若三人房客滿亦可拆訂一間雙人＋一間單人房。
             </p>
           </div>
           <span class="text-xs font-semibold px-3 py-1 rounded-full bg-sky-50 text-sky-800 border border-sky-200 self-start">
-            建議基地：JR 博多站筑紫口／博多口
+            推薦基地：博多站筑紫口／博多口
           </span>
         </div>
 
@@ -222,10 +187,10 @@
               <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-1 rounded">步 1–3 分鐘</span>
             </div>
             <p class="text-xs text-stone-600 mt-2 leading-relaxed">
-              距筑紫口步行約 1–3 分鐘，樓下有全家超商。提供三人房型，房內配備 <strong>iPad 與按摩墊（部分房型附按摩椅）</strong>，逛完街回房能替媽媽與阿姨舒緩雙腿；旅遊網站紀錄淡季雙人房約 NT$2,332–3,045 起。
+              距筑紫口僅 1–3 分鐘，樓下即全家超商。房內配備 <strong>iPad 與按摩墊（部分房型附按摩椅）</strong>，逛街後最適合替媽媽與阿姨舒緩腿部疲憊。
             </p>
             <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
-              <span class="text-stone-500">地址：博多區博多駅中央街 4-16</span>
+              <span class="text-stone-500">博多區博多駅中央街 4-16</span>
               <a href="https://www.google.com/maps/search/?api=1&query=HOTEL+FORZA+HAKATAEKI+CHIKUSHI-GUCHI+1" target="_blank" rel="noopener" class="text-sky-700 font-semibold hover:underline">📍 Google Maps</a>
             </div>
           </div>
@@ -239,10 +204,10 @@
               <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-1 rounded">博多口正對面</span>
             </div>
             <p class="text-xs text-stone-600 mt-2 leading-relaxed">
-              位於博多車站正門口過馬路即達、地下街出入口旁，全館採用<strong>席夢思名床</strong>且隔音佳，房間寬敞。旅遊部落格列示三人房參考價 NT$4,400 起（雙人房淡季約 NT$2,000–3,900 起），最貼近三人一晚 NT$4,500 預算。
+              位於博多站博多口正對面、地下連通道旁，全館採用<strong>席夢思名床</strong>且隔音極佳，提供三人房型，進出車站搭車毫無負擔。
             </p>
             <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
-              <span class="text-stone-500">地址：JR 博多站博多口正對面</span>
+              <span class="text-stone-500">JR 博多站博多口直達</span>
               <a href="https://www.google.com/maps/search/?api=1&query=JR+KYUSHU+HOTEL+Blossom+Hakata+Chuo" target="_blank" rel="noopener" class="text-sky-700 font-semibold hover:underline">📍 Google Maps</a>
             </div>
           </div>
@@ -250,16 +215,16 @@
           <div class="border border-stone-200 rounded-xl p-4 hover:border-sky-400 transition-colors bg-stone-50/40">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-700 text-white">長住洗衣機能</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-700 text-white">自備洗衣機能</span>
                 <h3 class="text-base font-bold text-stone-900 mt-1.5">東急 STAY 博多 (Tokyu Stay Hakata)</h3>
               </div>
               <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-1 rounded">步約 5–7 分</span>
             </div>
             <p class="text-xs text-stone-600 mt-2 leading-relaxed">
-              連住 7 晚神隊友！全房型內建<strong>獨立洗脫烘衣機與微波爐</strong>，可大幅減少攜帶衣物數量、騰出行李空間裝伴手禮，對面即為 Lawson 超商；雙人房淡季參考約 NT$3,406 起。
+              連住 7 晚神隊友！客房內建<strong>獨立洗脫烘衣機與微波爐</strong>，大幅減少出國衣物重量、騰出行李空間裝戰利品，對面即是 Lawson 超商。
             </p>
             <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
-              <span class="text-stone-500">地址：JR 博多站周邊（對面有 Lawson）</span>
+              <span class="text-stone-500">JR 博多站周邊（對面 Lawson）</span>
               <a href="https://www.google.com/maps/search/?api=1&query=Tokyu+Stay+Hakata" target="_blank" rel="noopener" class="text-sky-700 font-semibold hover:underline">📍 Google Maps</a>
             </div>
           </div>
@@ -267,92 +232,47 @@
           <div class="border border-stone-200 rounded-xl p-4 hover:border-sky-400 transition-colors bg-stone-50/40">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-700 text-white">極致省預算備案</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-700 text-white">超值備案</span>
                 <h3 class="text-base font-bold text-stone-900 mt-1.5">博多綠色飯店 1 號館 / 分館</h3>
               </div>
               <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-1 rounded">筑紫口走 1–2 分</span>
             </div>
             <p class="text-xs text-stone-600 mt-2 leading-relaxed">
-              就在新幹線筑紫口旁，近年完成翻新。若三人房早鳥滿室或 4 月房價高企，可考慮改訂「雙人房＋單人房」兩間，部落格參考平日雙人房約 NT$2,300–3,455 起，為嚴格控制預算的高機能備案。
+              緊鄰新幹線筑紫口，近年重新改裝。若三人房滿室，可直接拆訂「一間雙人房＋一間單人房」，是兼顧地點與預算的高性價比解法。
             </p>
             <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
-              <span class="text-stone-500">地址：博多區博多駅中央街 4-32 (分館)</span>
+              <span class="text-stone-500">博多區博多駅中央街 4-32</span>
               <a href="https://www.google.com/maps/search/?api=1&query=Hakata+Green+Hotel+No.1" target="_blank" rel="noopener" class="text-sky-700 font-semibold hover:underline">📍 Google Maps</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 交通票券精算與路線策略 -->
+      <!-- 交通指南 -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900">🎫 北九州 JR Pass 3 日券精算指南</h3>
+          <h3 class="text-lg font-bold text-stone-900">🎫 北九州 JR Pass 3 日券精算 (Day 2–Day 4)</h3>
           <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-xs text-sky-900 space-y-1.5">
-            <div class="font-bold text-sm">為什麼買「3 日券 (¥15,000)」而非 5 日券 (¥17,000)？</div>
+            <div class="font-bold text-sm">為什麼選擇集中使用 3 日券？</div>
             <p class="leading-relaxed">
-              本行程將遠程 JR 鐵路移動濃縮於 <strong>Day 2–Day 4（週日～週二）</strong>；其餘日子為福岡市區地鐵、太宰府西鐵，或無鐵路的高千穗峽（須搭高速巴士）。搭配目前熊本地震部分路段尚在復原之背景，集中使用 3 日券最穩妥划算。
+              將鐵路長途行程鎖定在 Day 2（門司港/小倉）、Day 3（由布院之森往返）與 Day 4（海之中道/竹下），單此三項原價票面即達 ¥16,920–¥18,520，直接超越票券售價（¥15,000），划算且不用多花錢買 5 日券。
             </p>
           </div>
-          <div class="overflow-x-auto">
-            <table class="w-full text-xs text-left border-collapse">
-              <thead>
-                <tr class="bg-stone-50 border-b border-stone-200 text-stone-600">
-                  <th class="py-2.5 px-3">使用日</th>
-                  <th class="py-2.5 px-3">JR 區間與車種</th>
-                  <th class="py-2.5 px-3">單買原價參考</th>
-                  <th class="py-2.5 px-3">指定席次數</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-stone-100">
-                <tr>
-                  <td class="py-2.5 px-3 font-semibold">Day 2 (週日)</td>
-                  <td class="py-2.5 px-3">博多 ⇄ 小倉（特急音速號）＋ 門司港（普通/快速）</td>
-                  <td class="py-2.5 px-3 font-medium">來回 ¥4,660 (自由席)</td>
-                  <td class="py-2.5 px-3">用 2 次</td>
-                </tr>
-                <tr>
-                  <td class="py-2.5 px-3 font-semibold">Day 3 (週一)</td>
-                  <td class="py-2.5 px-3">博多 ⇄ 由布院（特急由布院之森 1號/6號）</td>
-                  <td class="py-2.5 px-3 font-medium">來回 ¥12,260–13,860</td>
-                  <td class="py-2.5 px-3">用 2 次</td>
-                </tr>
-                <tr>
-                  <td class="py-2.5 px-3 font-semibold">Day 4 (週二)</td>
-                  <td class="py-2.5 px-3">博多 ⇄ 西戶崎（海之中道）＋ 博多 ⇄ 竹下（LaLaport）</td>
-                  <td class="py-2.5 px-3 font-medium">另含市郊區間車資</td>
-                  <td class="py-2.5 px-3">免劃位</td>
-                </tr>
-                <tr class="bg-emerald-50/70 font-bold text-emerald-900">
-                  <td class="py-2.5 px-3" colspan="2">已知遠程來回原價 vs 3 日券 (¥15,000，上限 6 次指定席)</td>
-                  <td class="py-2.5 px-3">至少 ¥16,920–18,520+</td>
-                  <td class="py-2.5 px-3">僅用 4/6 次</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="text-[11px] text-rose-700 bg-rose-50 px-3 py-2 rounded-lg border border-rose-200">
+            ⚠️ 重要乘車守則：北九州 JR Pass <strong>不可搭乘</strong>「博多－小倉」間山陽新幹線，務必搭乘 JR 九州的「特急音速號 (Sonic)」或鹿兒島本線列車。
           </div>
-          <p class="text-[11px] text-rose-700 bg-rose-50 px-3 py-2 rounded-lg border border-rose-200">
-            ⚠️ 重要提醒：北九州 JR Pass <strong>不可搭乘</strong>「博多－小倉」間由 JR 西日本營運的山陽新幹線，務必搭乘 JR 九州的「特急音速號 (Sonic)」或鹿兒島本線列車。
-          </p>
         </div>
 
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900">🚌 機場接駁與高千穗交通雙方案</h3>
-          <div class="space-y-3 text-xs">
+          <h3 class="text-lg font-bold text-stone-900">🚌 機場直達與高千穗峽無痛接駁</h3>
+          <div class="space-y-3 text-xs text-stone-700">
             <div class="p-3.5 rounded-xl bg-stone-50 border border-stone-200">
-              <div class="font-bold text-stone-900 text-sm mb-1">1. 福岡機場國際線 ⇄ 博多車站</div>
-              <ul class="space-y-1.5 text-stone-600">
-                <li>• <strong>最推長輩：西鐵機場路線巴士</strong> — 國際線 6、7 號月台直達博多站筑紫口，免扛行李換車，車程約 15–30 分（視路況），¥400（刷 IC 卡或感應信用卡 ¥380）。</li>
-                <li>• <strong>極速備案：計程車</strong> — 3 人帶大行李從國際線直達飯店門口約 10–15 分鐘、車資約 ¥1,500–2,500，最輕鬆省力。</li>
-                <li>• <strong>省錢標準：免費接駁車＋地鐵</strong> — 搭航廈免費接駁車約 10 分鐘至國內線 B2，轉地鐵空港線 2 站（約 5 分鐘，¥260）抵博多站。</li>
-              </ul>
+              <div class="font-bold text-stone-900 text-sm mb-1">1. 福岡機場 ⇄ 博多車站</div>
+              <p>國際線 6、7 號月台搭乘「西鐵機場直達巴士」（¥400，約 15–20 分）直達博多筑紫口，免扛大行李轉乘；3 人合搭計程車僅約 ¥1,500–2,500，最為省力。</p>
             </div>
-
             <div class="p-3.5 rounded-xl bg-stone-50 border border-stone-200">
-              <div class="font-bold text-stone-900 text-sm mb-1">2. Day 5 高千穗峽不自駕方案比較</div>
-              <ul class="space-y-1.5 text-stone-600">
-                <li>• <strong>主推自由行：高速巴士「ごかせ號」</strong> — 全車指定席，乘車日前 1 個月 08:00（日本時間）開放預約。08:25 博多巴士總站發 → 11:41 抵高千穗；回程 16:37 發（3 列獨立座附廁所、充電與 Wi-Fi）→ 19:51 抵博多。單程依日曆 ¥4,700–6,500。</li>
-                <li>• <strong>省心備案：中文一日遊拼團</strong> — 預訂平台提供福岡出發專車一日遊（約 NT$1,400–2,471 起），可串聯天岩戶神社・天安河原，惟須留意套票是否保證含划船名額。</li>
-              </ul>
+              <div class="font-bold text-stone-900 text-sm mb-1">2. Day 5 高千穗峽巴士＋計程車黃金動線</div>
+              <p>搭乘「ごかせ號」高速巴士（08:25 博多發 → 11:41 抵高千穗），出站後<strong>直接合搭計程車（約 7–10 分鐘，¥820 起）直達第 1 御鹽井停車場划船處</strong>，徹底避開回程上坡走石階的體力消耗！</p>
             </div>
           </div>
         </div>
@@ -361,27 +281,21 @@
 
     <!-- ================= 區塊 3: 每日行程 ================= -->
     <section id="section-itinerary" class="page-section hidden space-y-6">
-      <!-- 天數選擇控制列 -->
       <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-4 space-y-3">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <div>
-            <h2 class="text-lg font-bold text-stone-900">🗓️ 每日時間軸與點對點導航</h2>
-            <p class="text-xs text-stone-500">含點對點路線、交通方式、建議停留時間與可點擊 Google Maps 連結</p>
+            <h2 class="text-lg font-bold text-stone-900">🗓️ 每日詳細時間軸與點對點路線</h2>
+            <p class="text-xs text-stone-500">已整合 JX840 提早抵達時刻，包含所有建議停留時長與 Google Maps 導航</p>
           </div>
           <button id="toggle-all-days-btn" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-sky-700 text-sky-800 hover:bg-sky-50 transition-colors self-start sm:self-auto">
             📂 展開全部 8 天
           </button>
         </div>
 
-        <div id="day-tabs" class="flex items-center gap-1.5 overflow-x-auto nav-scroll pt-1">
-          <!-- 由 JS 動態生成 Day 1 ~ Day 8 按鈕 -->
-        </div>
+        <div id="day-tabs" class="flex items-center gap-1.5 overflow-x-auto nav-scroll pt-1"></div>
       </div>
 
-      <!-- 時間軸內容容器 -->
-      <div id="itinerary-container" class="space-y-6">
-        <!-- 由 JS 動態渲染每日時間軸 -->
-      </div>
+      <div id="itinerary-container" class="space-y-6"></div>
     </section>
 
     <!-- ================= 區塊 4: 美食地圖 ================= -->
@@ -391,7 +305,7 @@
           <div>
             <h2 class="text-xl font-bold text-stone-900">🍲 福岡・北九州精選美食地圖（共 22 間名店）</h2>
             <p class="text-xs text-stone-500 mt-1">
-              遵循「每日至多 1 餐高預算（≤¥7,500）＋ 其餘平價美食小吃」原則整理，已標註公休日防雷提示
+              遵守「每日至多 1 餐高預算（≤¥7,500）＋ 平價小吃名店」原則，並標示店家公休日防雷提示
             </p>
           </div>
           <div class="flex items-center gap-2 text-xs">
@@ -400,10 +314,10 @@
           </div>
         </div>
 
-        <!-- 互動篩選器 -->
+        <!-- 分類與地區篩選 -->
         <div class="space-y-3 pt-2 border-t border-stone-100">
           <div class="flex flex-wrap items-center gap-2">
-            <span class="text-xs font-semibold text-stone-500 mr-1">分類篩選：</span>
+            <span class="text-xs font-semibold text-stone-500 mr-1">分類：</span>
             <button data-food-cat="all" class="food-cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-900 text-white transition-colors">全部美食</button>
             <button data-food-cat="seafood" class="food-cat-btn px-3 py-1.5 rounded-full text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">🐟 海鮮・壽司・鰻魚</button>
             <button data-food-cat="snack" class="food-cat-btn px-3 py-1.5 rounded-full text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">🍜 小吃・拉麵・麵食</button>
@@ -412,9 +326,9 @@
           </div>
 
           <div class="flex flex-wrap items-center gap-2">
-            <span class="text-xs font-semibold text-stone-500 mr-1">地區篩選：</span>
+            <span class="text-xs font-semibold text-stone-500 mr-1">地區：</span>
             <button data-food-area="all" class="food-area-btn px-3 py-1 rounded-md text-xs font-semibold bg-stone-800 text-white transition-colors">全部地區</button>
-            <button data-food-area="博多" class="food-area-btn px-3 py-1 rounded-md text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">博多站／祇園</button>
+            <button data-food-area="博多" class="food-area-btn px-3 py-1 rounded-md text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">博多／祇園</button>
             <button data-food-area="天神" class="food-area-btn px-3 py-1 rounded-md text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">天神／西中洲</button>
             <button data-food-area="太宰府" class="food-area-btn px-3 py-1 rounded-md text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">太宰府</button>
             <button data-food-area="門司港" class="food-area-btn px-3 py-1 rounded-md text-xs font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors">門司港</button>
@@ -424,36 +338,27 @@
         </div>
       </div>
 
-      <!-- 餐廳卡片網格 -->
-      <div id="food-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- 由 JS 動態填入 -->
-      </div>
+      <div id="food-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </section>
 
     <!-- ================= 區塊 5: 行前準備 ================= -->
     <section id="section-prep" class="page-section hidden space-y-6">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- 4月天氣與長輩穿搭 -->
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
-          <h2 class="text-lg font-bold text-stone-900">🌤️ 4 月中旬天氣與長輩穿搭建議</h2>
+          <h2 class="text-lg font-bold text-stone-900">🌤️ 4 月天氣與長輩穿搭建議</h2>
           <div class="space-y-3 text-xs text-stone-700">
             <div class="p-3 rounded-xl bg-sky-50 border border-sky-100">
-              <div class="font-bold text-sky-900">福岡市區・門司港 (4月中旬)</div>
-              <p class="mt-1">平均氣溫約 <strong>15°C（最低約 11°C ～ 最高約 20°C）</strong>，此時降雨較少且氣候宜人，惟港灣地區海風稍強。</p>
+              <div class="font-bold text-sky-900">福岡市區與港邊</div>
+              <p class="mt-1">均溫約 15°C（11°C–20°C），氣候乾爽舒適，門司港海風稍涼，建議備有防風外套。</p>
             </div>
             <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-100">
-              <div class="font-bold text-emerald-900">由布院・高千穗山區</div>
-              <p class="mt-1">山腳清晨與傍晚依然較涼、早晚溫差明顯，建議為媽媽與阿姨準備<strong>洋蔥式穿搭</strong>（長袖上衣＋針織衫＋輕便風衣或薄外套，並隨身攜帶薄圍巾）與好走的球鞋／包鞋。</p>
-            </div>
-            <div class="p-3 rounded-xl bg-amber-50 border border-amber-100">
-              <div class="font-bold text-amber-900">隨身小物提醒</div>
-              <p class="mt-1">輕便折疊傘（應對春季偶發陣雨）、可依體感增減之保暖衣物，以及長輩習慣使用的保溫瓶。</p>
+              <div class="font-bold text-emerald-900">由布院與高千穗山區</div>
+              <p class="mt-1">清晨傍晚溫差顯著，建議準備洋蔥式穿搭（針織內搭＋防風風衣＋薄圍巾），備妥好走舒適的健走鞋。</p>
             </div>
           </div>
 
-          <!-- 簡易匯率試算器 -->
           <div class="pt-4 border-t border-stone-100 space-y-3">
-            <h3 class="text-sm font-bold text-stone-900">💴 日圓快速換算小工具</h3>
+            <h3 class="text-sm font-bold text-stone-900">💴 日圓即時試算</h3>
             <div class="grid grid-cols-2 gap-2">
               <div>
                 <label class="block text-[11px] text-stone-500 mb-1" for="jpy-input">日幣 (JPY)</label>
@@ -465,52 +370,44 @@
               </div>
             </div>
             <div class="p-3 rounded-xl bg-stone-100 flex items-center justify-between">
-              <span class="text-xs text-stone-600">折合新台幣 (約略)</span>
+              <span class="text-xs text-stone-600">折合新台幣約</span>
               <span id="twd-output" class="text-base font-bold text-sky-900">NT$ 1,575</span>
             </div>
           </div>
         </div>
 
-        <!-- 關鍵預約時間軸 -->
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
-          <h2 class="text-lg font-bold text-stone-900">⏰ 關鍵搶票與預約行事曆</h2>
-          <p class="text-xs text-stone-500">以 2027/04/10 出發為基準倒推，請務必設定手機鬧鐘提醒！</p>
+          <h2 class="text-lg font-bold text-stone-900">⏰ 核心搶票預約時程表</h2>
+          <p class="text-xs text-stone-500">以 2027/04/10 出發為準倒推，請務必設定手機行事曆提醒：</p>
           <div class="space-y-3 text-xs">
             <div class="p-3 rounded-xl border-l-4 border-sky-800 bg-stone-50">
-              <div class="font-bold text-stone-900">出發前 3–6 個月（2026 年底–2027 年 1 月）</div>
-              <p class="text-stone-600 mt-1">預訂福岡博多車站旁「三人房」連住 7 晚（建議選可免費取消方案）；購入北九州 JR Pass 3 日券憑證。</p>
+              <div class="font-bold text-stone-900">出發前 3–6 個月</div>
+              <p class="text-stone-600 mt-1">搶訂博多站周邊三人房（建議選免費取消專案）；購入北九州 JR Pass 3 日券憑證。</p>
             </div>
             <div class="p-3 rounded-xl border-l-4 border-indigo-600 bg-stone-50">
-              <div class="font-bold text-stone-900">2027/03/12（乘車日前 1 個月日本 10:00 / 台灣 09:00）</div>
-              <p class="text-stone-600 mt-1">於 JR 九州訂票系統搶劃 <strong>04/12「由布院之森 1 號／6 號」</strong>全車指定席座位。</p>
+              <div class="font-bold text-stone-900">2027/03/12（乘車前 1 個月 台灣 09:00）</div>
+              <p class="text-stone-600 mt-1">搶訂 04/12「由布院之森 1 號／6 號」全車指定席座位。</p>
             </div>
             <div class="p-3 rounded-xl border-l-4 border-indigo-600 bg-stone-50">
-              <div class="font-bold text-stone-900">2027/03/14（乘車日前 1 個月日本 08:00 / 台灣 07:00）</div>
-              <p class="text-stone-600 mt-1">於 Highwaybus / atbus 預約 <strong>04/14「ごかせ號」高速巴士</strong>去回程指定席（博多 08:25 去 / 高千穗 16:37 回）。</p>
+              <div class="font-bold text-stone-900">2027/03/14（乘車前 1 個月 台灣 07:00）</div>
+              <p class="text-stone-600 mt-1">預約 04/14「ごかせ號」高速巴士往返座位（博多 08:25 發 / 高千穗 16:37 回）。</p>
             </div>
             <div class="p-3 rounded-xl border-l-4 border-rose-600 bg-rose-50/50">
-              <div class="font-bold text-rose-900">2027/03/31（乘船日前 2 週日本 09:00 / 台灣 08:00）</div>
-              <p class="text-rose-800 mt-1">準時進入高千穗町觀光協會官網搶 <strong>04/14 午後划船時段</strong>！須於 15 分鐘內完成信用卡 3D 驗證付款，並事先確認 2027 年 4 月定期安全點檢休業日。</p>
-            </div>
-            <div class="p-3 rounded-xl border-l-4 border-amber-600 bg-stone-50">
-              <div class="font-bold text-stone-900">出發前 2 週～前 1 天</div>
-              <p class="text-stone-600 mt-1">預約水炊鍋（華味鳥／とり田）、牛腸鍋前田屋、吉塚鰻魚屋；透過 Full Full 官方 LINE 預留明太子麵包，Dacomecca 可於取貨前一天 18:00 前官網預訂。</p>
+              <div class="font-bold text-rose-900">2027/03/31（乘船前 2 週 台灣 08:00）</div>
+              <p class="text-rose-800 mt-1">準時登入高千穗町觀光協會官網搶下午划船名額，並完成信用卡 3D 付款。</p>
             </div>
           </div>
         </div>
 
-        <!-- 互動式行前檢核表 -->
         <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
           <div class="flex items-center justify-between">
-            <h2 class="text-lg font-bold text-stone-900">✅ 互動式行前檢查清單</h2>
+            <h2 class="text-lg font-bold text-stone-900">✅ 互動行前準備檢核清單</h2>
             <span id="checklist-progress-text" class="text-xs font-bold text-sky-900 bg-sky-50 px-2.5 py-1 rounded-full">0 / 12</span>
           </div>
           <div class="w-full bg-stone-200 rounded-full h-2 overflow-hidden">
             <div id="checklist-progress-bar" class="bg-sky-800 h-2 rounded-full transition-all duration-300" style="width: 0%;"></div>
           </div>
-          <div id="checklist-items" class="space-y-2 max-h-[420px] overflow-y-auto pr-1">
-            <!-- 由 JS 動態生成 -->
-          </div>
+          <div id="checklist-items" class="space-y-2 max-h-[420px] overflow-y-auto pr-1"></div>
           <button id="reset-checklist-btn" class="w-full py-2 text-xs text-stone-500 hover:text-stone-800 border border-stone-200 rounded-lg hover:bg-stone-50 transition-colors">
             重設檢核表
           </button>
@@ -520,17 +417,15 @@
 
   </main>
 
-  <!-- 頁尾 -->
   <footer class="bg-white border-t border-stone-200 mt-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-500">
-      <div>2027 福岡與北九州八天七夜家族自由行專屬 SPA ｜ 全程無換宿・長輩友善版</div>
-      <div>列車時刻、花況與店鋪營業日請於出發前兩週再次確認官方最新公告</div>
+      <div>2027 福岡北九州八天七夜家族自由行 ｜ 全程博多不換宿・長輩無壓力版</div>
+      <div>行程資料已校準至最新班表與店家公休規範</div>
     </div>
   </footer>
 
-  <!-- 原生 JavaScript 邏輯 -->
+  <!-- JavaScript 核心資料與互動邏輯 -->
   <script>
-    // ==================== 資料集定義 ====================
     const gmapSearch = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
     const gmapDir = (origin, dest, mode = 'transit') =>
       `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(dest)}&travelmode=${mode}`;
@@ -539,171 +434,181 @@
       {
         day: 1,
         date: "2027.04.10 (週六)",
-        title: "抵達福岡・博多車站都會商圈初探",
-        landscape: "現代都市交通樞紐",
-        transportSummary: "星宇 JX840 ＋ 西鐵機場巴士／計程車",
-        highlightMeal: "ShinShin 拉麵 / 博多牛腸鍋前田屋",
-        badge: "無須使用 JR Pass",
+        title: "早班星宇抵達・博多 Check-in・天神地下街午後漫步",
+        landscape: "現代都會商圈與歐風地下街",
+        transportSummary: "星宇 JX840 ＋ 西鐵機場直達巴士 ＋ 地鐵空港線",
+        highlightMeal: "ShinShin 拉麵 / 博多牛腸鍋前田屋總本店",
+        badge: "早班機時間充裕",
         events: [
           {
-            time: "14:45 - 18:00",
-            stay: "航程約 2 小時 15 分",
-            title: "搭乘星宇航空 JX840 飛往福岡",
-            place: "桃園國際機場 T1 → 福岡機場國際線航廈",
-            transport: "星宇航空 JX840（此為 2026/11 表定基準；若為夏季上午航班，下午可增逛博多運河城或天神）",
-            desc: "抵達福岡機場國際線航廈後辦理入境與領取行李。長輩同行建議預先準備好入境手續資料以縮短等候時間。",
+            time: "09:35 - 13:05",
+            stay: "航程約 2 小時 30 分",
+            title: "搭乘星宇航空 JX840 抵達福岡",
+            place: "桃園機場 T1 → 福岡機場國際線航廈",
+            transport: "星宇航空 JX840（09:35 台北起飛，13:05 順利降落福岡）",
+            desc: "白天出發精神飽滿！抵達後通關領取大件行李，充裕的下午時間讓整趟旅程節奏大幅放寬。",
             mapUrl: gmapSearch("Fukuoka Airport International Terminal"),
             routeUrl: null
           },
           {
-            time: "18:45 - 19:20",
-            stay: "車程約 15–30 分鐘",
-            title: "機場前往博多車站飯店 Check-in",
+            time: "14:15 - 15:00",
+            stay: "車程約 15–20 分鐘",
+            title: "直達博多飯店 Check-in 卸下行李",
             place: "福岡機場國際線 → JR 博多站筑紫口（博多 Forza 筑紫口 I 等）",
-            transport: "國際線 6/7 號月台「西鐵機場直達巴士」（¥400，IC 卡／感應信用卡 ¥380）；3 人帶大行李亦可直搭計程車（約 10–15 分鐘，約 ¥1,500–2,500）",
-            desc: "放好行李後正式展開連續 7 晚不換宿的輕鬆旅程！博多站周邊超商與百貨林立，先替隔天備好飲水與點心。",
+            transport: "國際線 6/7 號月台搭乘「西鐵機場直達巴士」（¥400 直達博多站），或 3 人合搭計程車（約 ¥1,500–2,500）",
+            desc: "辦理入住並放好大行李，正式展開 7 晚不換宿的悠閒旅途！",
             mapUrl: gmapSearch("Hakata Station Chikushi Exit"),
             routeUrl: gmapDir("Fukuoka Airport International Terminal", "Hakata Station Chikushi Exit", "transit")
           },
           {
-            time: "19:45 - 21:30",
-            stay: "建議停留 105 分鐘",
-            title: "博多車站商圈晚餐＆環境熟悉",
-            place: "博多 DEITOS「ShinShin 拉麵」或 博多牛腸鍋前田屋總本店",
-            transport: "車站內或周邊步行約 3–6 分鐘",
-            desc: "首晚步調放慢避免長輩疲勞。想吃平價拉麵可至 DEITOS 店品嚐清爽無腥味的「博多拉麵 ShinShin」（11:00–23:00）；想吃鍋物可前往「博多牛腸鍋前田屋總本店」（營業至 24:00，建議事先預約）。",
-            mapUrl: gmapSearch("博多デイトス"),
-            routeUrl: gmapDir("Hakata Station Chikushi Exit", "博多もつ鍋 前田屋 総本店", "walking")
+            time: "15:30 - 18:30",
+            stay: "建議停留約 3 小時",
+            title: "午後漫步：天神地下街＆商圈輕採買",
+            place: "天神地下街（西 4 番街 RINGO 蘋果派、大丸、福岡三越）",
+            transport: "博多站搭地鐵空港線至「天神站」（車程約 5 分鐘，¥210）",
+            desc: "天神地下街擁有 19 世紀歐風石板街道與無障礙電梯，全室內免受風吹日曬，逛街舒適度極高，順路品嚐超人氣現烤 RINGO 蘋果派。",
+            mapUrl: gmapSearch("Tenjin Underground Shopping Mall"),
+            routeUrl: gmapDir("Hakata Station", "Tenjin Underground Shopping Mall", "transit")
+          },
+          {
+            time: "19:00 - 21:00",
+            stay: "建議停留 120 分鐘",
+            title: "博多經典晚餐饗宴",
+            place: "博多牛腸鍋前田屋總本店 或 博多 DEITOS「ShinShin 拉麵」",
+            transport: "地鐵回博多站步行約 3–5 分鐘",
+            desc: "想吃鍋物可品嚐「前田屋」最高級和牛牛腸鍋（湯頭鮮甜濃郁，需預約）；喜愛麵食則可至 DEITOS 吃豚骨湯頭清爽無腥味的「ShinShin 拉麵」。",
+            mapUrl: gmapSearch("博多もつ鍋 前田屋 総本店"),
+            routeUrl: gmapDir("Tenjin Station", "博多もつ鍋 前田屋 総本店", "transit")
           }
         ]
       },
       {
         day: 2,
         date: "2027.04.11 (週日)",
-        title: "門司港大正浪漫・潮風號・唐戶海鮮海峽巡禮",
-        landscape: "百年海港洋館與海峽渡輪",
-        transportSummary: "北九州 JR Pass 3日券 (Day 1) ＋ 潮風號 ＋ 關門汽船",
-        highlightMeal: "門司港伽哩本舗燒咖哩 / 唐戶市場壽司",
-        badge: "JR Pass Day 1 啟用",
+        title: "門司港大正風情・潮風號・唐戶市場・小倉城晚景返博多",
+        landscape: "洋館海港、海峽渡輪與古城商圈",
+        transportSummary: "北九州 JR Pass 3日券 (Day 1) ＋ 潮風號 ＋ 關門渡輪",
+        highlightMeal: "伽哩本舗 門司港燒咖哩 / 唐戶市場握壽司",
+        badge: "JR Pass 啟用・住博多不搬遷",
         events: [
           {
             time: "08:30 - 09:45",
-            stay: "車程約 60–80 分鐘（含轉乘）",
-            title: "博多站出發前往懷舊門司港",
+            stay: "車程約 65 分鐘（含轉乘）",
+            title: "博多站出發搭特急音速號前往門司港",
             place: "JR 博多站 → JR 小倉站轉車 → JR 門司港站",
-            transport: "持北九州 JR Pass 搭乘 JR 特急「音速號 Sonic」（約 40–60 分）至小倉，同站轉乘鹿兒島本線普通／快速（約 15 分）至終點門司港",
-            desc: "⚠️ 留意 JR Pass 不可搭博多－小倉間山陽新幹線。門司港車站極具歷史氛圍，出站即可與復古港區建築合影。",
+            transport: "持 JR Pass 搭特急「音速號 Sonic」（約 45 分）至小倉，同站轉鹿兒島本線（約 15 分）抵門司港",
+            desc: "⚠️ 提醒：不可搭山陽新幹線。門司港車站保留大正時代木造建築之美，出站即可盡情拍照合影。",
             mapUrl: gmapSearch("Mojiko Station"),
             routeUrl: gmapDir("Hakata Station", "Mojiko Station", "transit")
           },
           {
             time: "09:45 - 11:30",
             stay: "建議停留 105 分鐘",
-            title: "門司港懷舊區洋館群＆藍翼橋散策",
+            title: "門司港洋館群與藍翼吊橋漫步",
             place: "舊門司三井俱樂部、舊大阪商船、藍翼門司吊橋",
-            transport: "出站後全區平地步行",
-            desc: "漫步於充滿大正浪漫風情的舊門司三井俱樂部與舊大阪商船洋館群，走過藍翼門司吊橋吹海風拍照，平坦路面極適合長輩散步。",
+            transport: "港區全平緩石板路徒步",
+            desc: "街道平坦開闊、海風舒暢，沿途欣賞大正至昭和初期歷史建築，適合長輩慢步調遊覽。",
             mapUrl: gmapSearch("Blue Wing Moji"),
             routeUrl: gmapDir("Mojiko Station", "Blue Wing Moji", "walking")
           },
           {
             time: "11:30 - 12:45",
             stay: "建議停留 75 分鐘",
-            title: "港邊午餐：門司港名物「燒咖哩」",
+            title: "午餐：門司港名物「燒咖哩」",
             place: "伽哩本舗 門司港 Retro 店（阿波屋大樓 2F）",
-            transport: "JR 門司港站／港區步行約 2–3 分鐘",
-            desc: "門司港必吃名物，濃郁咖哩淋飯鋪上半熟蛋與起司焗烤，週日全天 11:00–20:00 營業（最後點餐時間依現場公告）。",
+            transport: "港區步行約 2–3 分鐘",
+            desc: "招牌燒咖哩將濃郁咖哩飯鋪上生雞蛋與起司高溫焗烤，焦香濃郁令人食指大動。",
             mapUrl: gmapSearch("伽哩本舗 門司港レトロ店"),
             routeUrl: gmapDir("Blue Wing Moji", "伽哩本舗 門司港レトロ店", "walking")
           },
           {
             time: "13:00 - 13:50",
-            stay: "單程車程 10 分鐘 ＋ 觀景折返",
-            title: "週日限定！搭乘「潮風號」觀光小火車",
-            place: "九州鐵道紀念館站 → 關門海峽和布刈站（めかり）",
-            transport: "週末與國定假日運行之「北九州銀行懷舊線 潮風號」（出示 JR Pass 可享一日乘車券折價 ¥100 為 ¥500，單程參考 ¥300–500）",
-            desc: "緩慢行駛 2.1 公里的復古輕便列車，終點可近距離望見壯闊關門橋與海峽景色。帶長輩搭車折返門司港最省力，免走長距離人行隧道。",
+            stay: "單程約 10 分鐘 ＋ 和布刈賞景",
+            title: "週日限定！搭乘「潮風號」復古觀光小火車",
+            place: "九州鐵道紀念館站 → 關門海峽和布刈站",
+            transport: "假日限定行駛「潮風號」（出示 JR Pass 購票享折價，單程車程約 10 分）",
+            desc: "悠閒行駛於海峽邊的懷舊小火車，抵達終點後可眺望壯觀的關門大橋，再原車輕鬆返回門司港。",
             mapUrl: gmapSearch("關門海峡めかり駅"),
             routeUrl: gmapDir("伽哩本舗 門司港レトロ店", "九州鉄道記念館駅", "walking")
           },
           {
             time: "14:00 - 16:00",
-            stay: "航程單程 5 分鐘 ＋ 市場散步",
-            title: "關門連絡船橫渡海峽 → 下關唐戶市場",
-            place: "門司港棧橋 → 下關唐戶・唐戶市場（馬關街）",
-            transport: "關門汽船連絡船（門司港站左前方購票，單程 5 分鐘，大人 ¥400，約每 20–30 分鐘一班）",
-            desc: "從海面上拍攝門司港紅磚天際線與關門橋！週五至週日限定舉辦之唐戶市場「馬關街」匯聚各式平價握壽司與海味小吃，遊畢搭船返門司港（請留意末班船時間）。",
+            stay: "渡輪 5 分鐘 ＋ 市場品嚐約 90 分鐘",
+            title: "關門汽船橫渡海峽 → 唐戶市場馬關街",
+            place: "門司港棧橋 → 下關唐戶市場",
+            transport: "搭乘關門連絡船（航程僅 5 分鐘，單程 ¥400，每 20–30 分鐘一班）",
+            desc: "五六日限定的唐戶市場「馬關街」擺滿肥美握壽司、河豚肉與烤海鮮，體驗道地日本漁市熱鬧氣氛。",
             mapUrl: gmapSearch("Karato Market"),
             routeUrl: gmapDir("門司港棧橋 関門連絡船", "Karato Market", "transit")
           },
           {
             time: "16:30 - 19:30",
-            stay: "小倉順遊 ＋ 車程返博多",
-            title: "順遊小倉城周邊 ＆ 音速號返回博多",
-            place: "JR 門司港站 → JR 小倉站 → JR 博多站",
-            transport: "鹿兒島本線至小倉（約 15 分）＋ 特急音速號返回博多（約 40–50 分，JR Pass 適用）",
-            desc: "若體力許可，可於小倉站稍作停留逛商場或小倉城外觀，再搭音速號返博多。晚餐推薦博多車站 KITTE 9–10F 美食樓層或「博多一雙」／「達摩天婦羅」。",
-            mapUrl: gmapSearch("Kokura Station"),
-            routeUrl: gmapDir("Mojiko Station", "Hakata Station", "transit")
+            stay: "小倉漫步與晚餐約 3 小時",
+            title: "順遊小倉城・小倉晚餐・搭音速號返回博多",
+            place: "門司港 → JR 小倉站（小倉城外觀、魚町銀天街）→ JR 博多站",
+            transport: "電車至小倉（15 分），晚餐後持 JR Pass 搭特急音速號（約 45 分）返回博多",
+            desc: "在小倉城旁河畔散步，晚餐品嚐在地小吃，晚上 20:00 輕鬆搭乘特急返回博多飯店，省下任何搬運或換宿的疲倦！",
+            mapUrl: gmapSearch("Kokura Castle"),
+            routeUrl: gmapDir("Mojiko Station", "Kokura Castle", "transit")
           }
         ]
       },
       {
         day: 3,
         date: "2027.04.12 (週一)",
-        title: "由布院之森觀光列車・湯之坪街道・金鱗湖",
-        landscape: "山林溪谷與溫泉小鎮湖景",
-        transportSummary: "北九州 JR Pass 3日券 (Day 2)：由布院之森來回",
-        highlightMeal: "由布まぶし心（豐後牛釜飯三吃）",
-        badge: "全車指定席務必搶票",
+        title: "由布院之森景觀列車・湯之坪街道・金鱗湖美景",
+        landscape: "翠綠山林與溫泉小鎮晨昏",
+        transportSummary: "北九州 JR Pass 3日券 (Day 2)：由布院之森往返直達",
+        highlightMeal: "由布まぶし心 豐後牛釜飯三吃",
+        badge: "全車指定席需預先劃位",
         events: [
           {
             time: "09:17 - 11:31",
             stay: "車程 2 小時 14 分",
-            title: "搭乘觀光列車「由布院之森 1 號」出發",
+            title: "搭乘觀光列車「由布院之森 1 號」啟程",
             place: "JR 博多站 → JR 由布院站",
-            transport: "北九州 JR Pass 預約「由布院之森 1 號」（09:17 博多發 → 11:31 抵由布院）",
-            desc: "經典森綠色觀光列車，行經日田一帶山林前往溫泉小鎮。全車皆為指定席，請於乘車日前 1 個月（日本時間 10:00）準時劃位。",
+            transport: "JR Pass 劃位指定席「由布院之森 1 號」（09:17 博多發 → 11:31 抵由布院）",
+            desc: "經典高聳觀景車窗、原木裝潢與專屬車服乘務員，行經青山瀑布，是九州最具代表性的鐵道體驗。",
             mapUrl: gmapSearch("Yufuin Station"),
             routeUrl: gmapDir("Hakata Station", "Yufuin Station", "transit")
           },
           {
             time: "11:40 - 13:00",
             stay: "建議停留 80 分鐘",
-            title: "午餐：由布まぶし心（由布院站前店）",
-            place: "由布まぶし心 駅前支店（由布院站旁 2F）",
-            transport: "JR 由布院站步行約 1–3 分鐘",
-            desc: "招牌「豐後牛釜飯三吃」（¥3,200 左右，亦有地雞與鰻魚選擇），先嚐原味、再拌佐料、最後沖入高湯作茶泡飯。僅接受電話預約或現場候位，週一正常營業。",
+            title: "午餐：由布まぶし 心（站前支店）",
+            place: "由布まぶし心 駅前支店（車站前徒步 1 分鐘）",
+            transport: "由布院站步行約 1–2 分鐘",
+            desc: "招牌「豐後牛釜飯三吃」：先品嚐原汁原味、再佐醃漬小菜，最後注入熱高湯作茶泡飯，長輩讚不絕口。",
             mapUrl: gmapSearch("由布まぶし 心 駅前支店"),
             routeUrl: gmapDir("Yufuin Station", "由布まぶし 心 駅前支店", "walking")
           },
           {
             time: "13:00 - 15:15",
             stay: "建議停留 135 分鐘",
-            title: "湯之坪街道邊走邊吃＋小店尋寶",
-            place: "湯之坪街道（B-speak、Milch 起司蛋糕、金賞可樂餅、花麴菊家）",
-            transport: "平緩商店街徒步散策",
-            desc: "多數店家於 17:00–17:30 打烊且熱門甜點易提前售完，建議午後先一路逛往金鱗湖：必嚐「由布院 Milch」半熟起司蛋糕、「金賞可樂餅 2 號店」、「花麴菊家」布丁銅鑼燒，以及「橡子之森」。",
+            title: "湯之坪街道尋幽訪勝・沿街小吃品嚐",
+            place: "湯之坪街道（Milch 半熟起司蛋糕、金賞可樂餅、花麴菊家布丁銅鑼燒）",
+            transport: "平緩商店街徒步漫遊",
+            desc: "沿途小店林立，店家於午後 17:00 前後陸續打烊，趁陽光溫和悠閒逛街品嚐甜點最合適。",
             mapUrl: gmapSearch("Yunotsubo Street Yufuin"),
             routeUrl: gmapDir("Yufuin Station", "湯の坪街道", "walking")
           },
           {
             time: "15:15 - 16:45",
             stay: "建議停留 90 分鐘",
-            title: "金鱗湖畔散步與湖景歇腳",
-            place: "金鱗湖・周邊咖啡廳或日歸溫泉",
-            transport: "由湯之坪街道末端步行續行",
-            desc: "在金鱗湖畔悠閒拍照歇腳，找間咖啡店品嚐下午茶後，預留充裕時間慢慢散步返回由布院車站（回程沿途可順逛靠近車站的伴手禮店）。",
+            title: "金鱗湖畔靜心散步與湖景下午茶",
+            place: "金鱗湖・湖畔天祖神社・周邊咖啡館",
+            transport: "湯之坪街道徒步延伸抵達",
+            desc: "欣賞冷熱泉交匯的金鱗湖倒影，在湖畔咖啡座稍作小憩，享受群山環繞的幽靜氛圍。",
             mapUrl: gmapSearch("Kinrin Lake Yufuin"),
             routeUrl: gmapDir("湯の坪街道", "Kinrin Lake", "walking")
           },
           {
             time: "17:17 - 19:27",
             stay: "車程 2 小時 10 分",
-            title: "搭乘「由布院之森 6 號」返回博多",
+            title: "搭乘「由布院之森 6 號」舒適返回博多",
             place: "JR 由布院站 → JR 博多站",
             transport: "JR Pass 預約「由布院之森 6 號」（17:17 發 → 19:27 抵博多）",
-            desc: "黃昏搭車剛好銜接商店街打烊時間。回博多後晚餐可吃「葉隱烏龍麵」（平價高分名店，僅週日及國定假日公休）或「黑毛和牛博多牛 Mabushi 武藏」。",
+            desc: "黃昏乘車原路直達博多站，車上能讓長輩闔眼補眠。回到博多後可至車站地下街品嚐清淡熱騰騰的「葉隱烏龍麵」。",
             mapUrl: gmapSearch("Hakata Station"),
             routeUrl: gmapDir("Yufuin Station", "Hakata Station", "transit")
           }
@@ -712,49 +617,49 @@
       {
         day: 4,
         date: "2027.04.13 (週二)",
-        title: "粉蝶花藍海・LaLaport 1:1 鋼彈大型商場",
-        landscape: "海濱夢幻花海與主題購物城",
+        title: "粉蝶花藍海・LaLaport 1:1 鋼彈巨型商場",
+        landscape: "海濱夢幻花海與主題複合商場",
         transportSummary: "北九州 JR Pass 3日券 (Day 3)",
-        highlightMeal: "Dacomecca 明太子麵包 / 喜水丸海鮮丼",
-        badge: "季節限定花海日",
+        highlightMeal: "DACOMECCA 人氣麵包 / 喜水丸明太子海鮮丼",
+        badge: "春季花期限定",
         events: [
           {
             time: "08:00 - 09:00",
             stay: "外帶早餐約 45 分鐘",
-            title: "避開週二公休！朝聖超人氣「Dacomecca」麵包",
+            title: "朝聖博多名店「DACOMECCA」現烤麵包",
             place: "DACOMECCA 博多站前店",
-            transport: "JR 博多站步行約 4 分鐘",
-            desc: "週二是 Full Full 與 Pain Stock 公休日，改吃 07:00 即營業的 Dacomecca！明太子麵包 ¥367（番茄口味 ¥410），可於取貨前一天 18:00 前透過官方網站預約付款省下排隊時間。",
-            mapUrl: gmapSearch("Dacomecca Hakata"),
+            transport: "博多站步行約 4 分鐘",
+            desc: "週二 Full Full 與 Pain Stock 公休，改吃 07:00 開門的炭烤麵包名店 DACOMECCA，可品嚐香濃明太子麵包（¥367 起）。",
+            mapUrl: gmapSearch("DACOMECCA 博多"),
             routeUrl: gmapDir("Hakata Station", "DACOMECCA", "walking")
           },
           {
             time: "09:15 - 13:00",
-            stay: "單程交通約 45–50 分 ＋ 賞花約 3 小時",
-            title: "海之中道海濱公園（藍色粉蝶花・春季花卉）",
-            place: "JR 西戶崎站 → 海之中道海濱公園「西口 → 花之丘」",
-            transport: "JR 博多站搭鹿兒島本線至「香椎站」，轉 JR 香椎線往西戶崎方向至終點「西戶崎站」（含轉乘抓 45–50 分，JR Pass 適用），步行 10–15 分鐘至距離賞花區最近的「西口」",
-            desc: "4 月上旬至下旬正值粉蝶花季節，選擇西口、花之丘與附近草坪組成短路線散步賞花，不必繞行過大園區也能盡興拍照，對媽媽與阿姨的膝蓋十分友善。",
+            stay: "車程約 45 分 ＋ 賞花 3 小時",
+            title: "海之中道海濱公園（粉蝶花藍色地毯）",
+            place: "JR 西戶崎站 → 海之中道海濱公園「西口・花之丘」",
+            transport: "持 JR Pass 搭車至香椎站轉香椎線至終點「西戶崎站」，由西口入園步行至花之丘約 10–15 分",
+            desc: "4 月上旬至下旬粉蝶花盛開，滿山坡的純藍花海蔚為壯觀，路線集中且路面平坦，非常適合拍照。",
             mapUrl: gmapSearch("Uminonakamichi Seaside Park West Gate"),
             routeUrl: gmapDir("Hakata Station", "Saitozaki Station", "transit")
           },
           {
             time: "13:45 - 15:00",
             stay: "建議停留 75 分鐘",
-            title: "午餐：KITTE 博多「喜水丸」海鮮丼（明太子無限續）",
+            title: "午餐：KITTE 博多「喜水丸」海鮮丼",
             place: "どんぶり居酒屋 喜水丸 KITTE 博多店 B1",
-            transport: "JR 香椎線＋鹿兒島本線返回博多站（直通 KITTE 博多 B1）",
-            desc: "漁港直送新鮮生魚片海鮮丼（定食約 ¥1,800–¥2,970），隨餐附辛子高菜、明太子、白飯與味噌湯無限續加，是博多站極具性價比的一餐。",
+            transport: "搭電車返回博多車站地下直通",
+            desc: "鮮度一流的生魚片刺身丼，定食隨附「辛子明太子、辛子高菜、白飯、味噌湯」無限續加，美味且飽足感十足。",
             mapUrl: gmapSearch("喜水丸 KITTE博多店"),
             routeUrl: gmapDir("Saitozaki Station", "KITTE Hakata", "transit")
           },
           {
-            time: "15:15 - 19:00",
-            stay: "建議停留約 3.5 小時",
-            title: "LaLaport 福岡（1:1 巨型鋼彈＋約 200 間店舖逛街）",
+            time: "15:15 - 19:30",
+            stay: "建議停留約 4 小時",
+            title: "LaLaport 福岡（1:1 鋼彈立像＋舒適室內購物）",
             place: "Mitsui Shopping Park LaLaport 福岡",
-            transport: "JR 博多站搭鹿兒島本線至「竹下站」（JR Pass 適用），東口步行約 9 分鐘",
-            desc: "朝聖高達 24.8 公尺的 1:1 RX-93ff ν 鋼彈立像，黃昏後可觀賞夜間啟動秀與 3D 投影燈光表演！商場內約 200 間店舖（商店營業至 21:00）好逛又好歇腳，回飯店前亦可順路逛博多站旁超商或 MaxValu 超市買水果。",
+            transport: "JR 博多站搭鹿兒島本線至「竹下站」，出站步行約 9 分鐘",
+            desc: "朝聖 24.8 公尺高的巨型 ν 鋼彈，商場內部集結約 200 家專櫃，室內動線開闊平緩，買物與歇腳兩相宜。",
             mapUrl: gmapSearch("LaLaport Fukuoka"),
             routeUrl: gmapDir("Hakata Station", "LaLaport Fukuoka", "transit")
           }
@@ -763,8 +668,8 @@
       {
         day: 5,
         date: "2027.04.14 (週三)",
-        title: "神話秘境高千穗峽・真名井瀑布划船一日遊",
-        landscape: "火山柱狀節理峽谷與瀑布",
+        title: "神話仙境高千穗峽・真名井瀑布划船一日遊",
+        landscape: "火山柱狀節理峽谷與神話森林",
         transportSummary: "高速巴士「ごかせ號」往返 ＋ 當地計程車",
         highlightMeal: "千穗之家 元祖流水麵",
         badge: "乘船日前 2 週搶船票",
@@ -772,60 +677,60 @@
           {
             time: "08:25 - 11:41",
             stay: "車程約 3 小時 16 分",
-            title: "搭乘高速巴士「ごかせ號」直達高千穗",
+            title: "搭乘「ごかせ號」高速巴士直達高千穗",
             place: "博多巴士總站 → 高千穗巴士中心",
-            transport: "西鐵／宮交聯運「ごかせ號」（53302 便，08:25 博多發 → 11:41 抵高千穗；全車指定席付洗手間，需 1 個月前預約，單程依日曆 ¥4,700–¥6,500）",
-            desc: "直達免轉乘最省事！建議提早至博多巴士總站購買簡便早餐或飲料上車享用。",
+            transport: "西鐵／宮交高速巴士（08:25 發車直達，全車指定席附洗手間，提前 1 個月預訂）",
+            desc: "直達免轉車，沿途行駛高速公路，長輩在車上可平穩觀景或閉目養神。",
             mapUrl: gmapSearch("Takachiho Bus Center"),
             routeUrl: gmapDir("Hakata Bus Terminal", "Takachiho Bus Center", "transit")
           },
           {
             time: "11:45 - 12:00",
             stay: "車程約 7–10 分鐘",
-            title: "巴士中心搭計程車直達高千穗峽谷",
-            place: "高千穗巴士中心 → 高千穗峽（第 1 御鹽井停車場）",
-            transport: "計程車（車程約 7–10 分鐘，過往實測單程約 ¥820 起，3 人分攤極划算；不建議步行以免回程爬坡太累）",
-            desc: "下車即抵划船接待處與千穗之家餐廳周邊，替媽媽與阿姨保留完整體力欣賞峽谷絕景。",
+            title: "巴士中心搭計程車直達峽谷划船處",
+            place: "高千穗巴士中心 → 第 1 御鹽井停車場",
+            transport: "搭乘當地計程車（約 7–10 分鐘，約 ¥820 起，3 人分攤超划算）",
+            desc: "跳過陡峭長步道，直達乘船處與餐廳，完整保留體力。",
             mapUrl: gmapSearch("Takachiho Gorge"),
             routeUrl: gmapDir("Takachiho Bus Center", "Takachiho Gorge", "driving")
           },
           {
             time: "12:00 - 13:15",
             stay: "建議停留 75 分鐘",
-            title: "午餐：千穗之家 元祖流水麵＆特色餐點",
-            place: "千穗の家 元祖流しそうめん（高千穗峽內）",
-            transport: "峽谷內步行約 2 分鐘",
-            desc: "創立於昭和 30 年的竹管水道流水麵名店（單碗 ¥500 起，亦有搭配烤魚、飯糰套餐與姊妹店高千穗牛定食），在綠意溪畔輕鬆用餐（10:00–16:00 營業，視季節與天候調整）。",
+            title: "午餐：千穗之家 元祖流水麵",
+            place: "千穗の家 元祖流しそうめん（峽谷步道旁）",
+            transport: "峽谷內步行 2 分鐘",
+            desc: "坐在沁涼竹管旁夾取冰涼素麵，搭配鹽烤溪魚與高千穗和牛料理，趣味與美味兼具。",
             mapUrl: gmapSearch("千穂の家 元祖流しそうめん"),
             routeUrl: gmapDir("Takachiho Gorge", "千穂の家 元祖流しそうめん", "walking")
           },
           {
             time: "13:15 - 15:15",
-            stay: "划船 30 分鐘 ＋ 遊步道約 90 分鐘",
-            title: "高千穗峽谷划船仰望「真名井瀑布」＋遊步道",
-            place: "貸船受付處（第 1 御鹽井停車場）→ 真名井瀑布 → 峽谷遊步道",
-            transport: "官網事前預約午後場次（每船限 3 名成人，30 分鐘平日 ¥4,100，須先至受付處換取實體票）",
-            desc: "由您掌槳帶媽媽與阿姨近距離仰望 17 公尺高的真名井瀑布！上岸後沿約 1 公里平緩遊步道參觀「仙人之屏風」與「鬼八力石」。⚠️ 4 月為定期安全檢查月，請務必於開放搶票前確認當月官網營業日曆。",
+            stay: "划船 30 分鐘 ＋ 步道散策約 90 分鐘",
+            title: "划船近觀「真名井瀑布」＆ 峽谷步道漫步",
+            place: "貸船受付處 → 真名井瀑布 → 仙人之屏風",
+            transport: "官網預約下午場次（每船限 3 名成人，平日 ¥4,100 / 30 分鐘）",
+            desc: "三人剛好包一艘木船！近距離仰望自岩壁傾瀉而下的 17 公尺飛瀑，壯麗非凡。",
             mapUrl: gmapSearch("Manai Falls Takachiho"),
             routeUrl: gmapDir("千穂の家 元祖流しそうめん", "Manai Falls", "walking")
           },
           {
             time: "15:20 - 16:20",
             stay: "建議停留 60 分鐘",
-            title: "高千穗神社參拜＆返回高千穗巴士中心",
+            title: "高千穗神社參拜・搭車返回巴士中心",
             place: "高千穗神社 → 高千穗巴士中心",
-            transport: "高千穗峽搭計程車約 5 分鐘至高千穗神社，參拜後步行約 10–15 分鐘（約 1 公里）或再搭車返回巴士中心",
-            desc: "於古木參天的高千穗神社散步祈福，請務必於 16:25 前回到高千穗巴士中心候車。",
+            transport: "搭計程車約 5 分鐘抵高千穗神社，參拜後步行或搭車返巴士中心",
+            desc: "古木參天的神社氛圍莊嚴肅穆，在此替家人祈求平安健康，隨後返回車站候車。",
             mapUrl: gmapSearch("Takachiho Shrine"),
             routeUrl: gmapDir("Takachiho Gorge", "Takachiho Shrine", "driving")
           },
           {
             time: "16:37 - 19:51",
             stay: "車程 3 小時 14 分",
-            title: "搭「ごかせ號」3 列獨立座返回博多",
+            title: "搭乘「ごかせ號」返回博多市區",
             place: "高千穗巴士中心 → 博多巴士總站",
-            transport: "高速巴士「ごかせ號」（53305 便，16:37 發 → 19:51 抵博多；此班配置 3 列獨立座位、洗手間、充電與 Wi-Fi）",
-            desc: "在寬敞獨立座上小憩補眠。回到博多後推薦就近吃「大地烏龍麵博多站地下店」（營業至 21:00）或營業至 23:00 的 ShinShin／KITTE 餐廳。",
+            transport: "高速巴士（配置寬敞 3 列獨立座、手機充電與 Wi-Fi）",
+            desc: "舒適座艙讓長輩好好休息。回到博多後晚餐推薦就近於博多站地下街吃「大地烏龍麵」。",
             mapUrl: gmapSearch("Hakata Bus Terminal"),
             routeUrl: gmapDir("Takachiho Bus Center", "Hakata Bus Terminal", "transit")
           }
@@ -834,50 +739,50 @@
       {
         day: 6,
         date: "2027.04.15 (週四)",
-        title: "兩大明太子麵包 PK・天神爆買・舞鶴公園紫藤・水炊鍋",
-        landscape: "歐風地下街・潮流百貨・古城紫藤",
-        transportSummary: "福岡市區地鐵（空港線）＋ 步行",
-        highlightMeal: "Pain Stock + Full Full ／ 博多水炊鍋饗宴",
-        badge: "逛街美食主戰場",
+        title: "兩大明太子麵包名店 PK・ONE FUKUOKA・古城紫藤・水炊鍋",
+        landscape: "時尚新商場・古城藤棚與溫暖料亭",
+        transportSummary: "福岡市區地鐵空港線 ＋ 市區平地步行",
+        highlightMeal: "Pain Stock + Full Full / 正宗博多水炊鍋",
+        badge: "名店皆有營業・美食重頭戲",
         events: [
           {
             time: "08:30 - 10:30",
             stay: "兩店漫步約 2 小時",
-            title: "福岡兩大傳奇明太子法國麵包一次收集！",
-            place: "Pain Stock 天神店（08:00 開）→ Full Full 天神店（10:00 開）",
-            transport: "博多搭地鐵空港線至「中洲川端站」步行 4 分鐘抵 Pain Stock，逛公園散步至天神 3 丁目 Full Full 天神店",
-            desc: "週四兩家店皆正常營業！先嚐天神中央公園內「Pain Stock」（明太子麵包創新名店），10:00 再走去排隊人潮相對較少、且主打搭配酒類與麵包體驗的「Full Full パンとワイン 天神店」，一次比較兩派酥脆鹹香！",
+            title: "傳奇明太子法國麵包雙霸天大評比",
+            place: "Pain Stock 天神店（08:00 開）→ Full Full パンとワイン 天神店（10:00 開）",
+            transport: "搭地鐵空港線至中洲川端站步行抵達",
+            desc: "週四兩家店皆正常營業！先嚐皮脆麥香濃的 Pain Stock，再走到天神三丁目買剛出爐的 Full Full，一次品嚐兩大流派風味！",
             mapUrl: gmapSearch("pain stock 天神店"),
             routeUrl: gmapDir("pain stock 天神店", "Full Full パンとワイン 天神", "walking")
           },
           {
             time: "10:30 - 15:00",
-            stay: "建議停留 4.5 小時（含午餐與下午茶）",
-            title: "天神地下街 ＆ ONE FUKUOKA BLDG. 室內無障礙逛街",
-            place: "天神地下街 → ONE FUKUOKA BLDG. → 大丸／岩田屋／福岡三越",
-            transport: "全程經地下街連通道室內移動，免日曬免淋雨",
-            desc: "逛 19 世紀歐洲風格石板路「天神地下街」（約 150 間店舖，順買 RINGO 現烤蘋果派），無縫接軌 2025 年開幕的「ONE FUKUOKA BLDG.」（Snow Peak、蔦屋書店、CHANEL 與地下美食）。午餐可就近吃「天麩羅處 ひらお」（¥1,140）或「葫蘆壽司」。",
+            stay: "約 4.5 小時（含逛街與午餐）",
+            title: "ONE FUKUOKA BLDG. ＆ 天神商圈血拼",
+            place: "ONE FUKUOKA BLDG.、大丸百貨、岩田屋",
+            transport: "地下連通道無障礙步行",
+            desc: "逛 2025 年全新開幕的複合地標「ONE FUKUOKA BLDG.」，午餐可就近享用「天麩羅處 ひらお」或排隊名店「葫蘆壽司」。",
             mapUrl: gmapSearch("ONE FUKUOKA BLDG"),
             routeUrl: gmapDir("Full Full パンとワイン 天神", "ONE FUKUOKA BLDG", "walking")
           },
           {
             time: "15:15 - 16:45",
             stay: "建議停留 90 分鐘",
-            title: "市區賞花散步：舞鶴公園（福岡城跡）春花",
+            title: "舞鶴公園（福岡城跡）春日紫藤漫步",
             place: "舞鶴公園 紫藤園",
-            transport: "自天神商圈西側步行約 5–15 分鐘（或地鐵空港線搭 1 站）",
-            desc: "4 月中下旬起舞鶴公園紫藤花陸續綻放（免費參觀），在逛街午後帶媽媽與阿姨走進福岡城跡的綠意與藤棚下歇息拍照，切換節奏。",
+            transport: "天神商圈步行約 10–15 分鐘（或搭地鐵 1 站至大濠公園站）",
+            desc: "4 月中旬紫藤花盛開，坐在福岡城石垣旁的紫色花棚下歇息，享受春風與花香。",
             mapUrl: gmapSearch("Maizuru Park Fukuoka"),
             routeUrl: gmapDir("Tenjin Station", "Maizuru Park Fukuoka", "walking")
           },
           {
             time: "18:00 - 20:00",
             stay: "建議停留 120 分鐘",
-            title: "重頭戲晚餐：博多正宗「水炊鍋」料亭饗宴",
-            place: "水たき料亭 博多とり田（博多本店）或 博多華味鳥（博多站前／天神店）",
-            transport: "地鐵「赤坂站」或「天神站」搭至「中洲川端站」或「博多站」（約 5–10 分鐘）",
-            desc: "本趟最高規格重點餐（選擇每人 ¥5,500–¥7,000 之套餐以守住 ¥7,500 上限）！先品嚐濃郁純粹的雞骨高湯，再享鮮嫩地雞肉、雞肉丸與收尾雜炊，溫潤不燥最適合長輩胃口（務必事先預約）。",
-            mapUrl: gmapSearch("博多華味鳥 博多駅前店"),
+            title: "重頭戲：博多水炊鍋名店極致饗宴",
+            place: "水たき料亭 博多とり田 博多本店 或 博多華味鳥（博多站前店）",
+            transport: "搭地鐵回博多／中洲川端站步行",
+            desc: "嚴選地雞慢火熬煮的濃郁膠原蛋白雞湯，先品雞肉丸與鮮嫩雞肉，收尾以精華雜炊做結，暖胃又無負擔（每人約 ¥5,500–7,000，需事先訂位）。",
+            mapUrl: gmapSearch("博多とり田 博多本店"),
             routeUrl: gmapDir("Maizuru Park Fukuoka", "博多とり田 博多本店", "transit")
           }
         ]
@@ -885,39 +790,39 @@
       {
         day: 7,
         date: "2027.04.16 (週五)",
-        title: "太宰府天滿宮祈福・運河城 3D 水舞與最後採買",
-        landscape: "千年古社參道與夜間運河娛樂城",
-        transportSummary: "西鐵巴士／電車 ＋ 地下鐵七隈線",
-        highlightMeal: "梅枝餅 / 博多名代吉塚鰻魚屋或鐵鍋餃子",
-        badge: "週五避開公休",
+        title: "太宰府天滿宮祈福・吉塚鰻魚・博多運河城 3D 水舞秀",
+        landscape: "千年古社神道與現代水岸購物城",
+        transportSummary: "西鐵直達巴士「旅人號」 ＋ 地鐵七隈線",
+        highlightMeal: "現烤梅枝餅 / 百年名代 吉塚鰻魚屋",
+        badge: "週五避開吉塚公休",
         events: [
           {
             time: "09:00 - 12:30",
-            stay: "車程約 30–40 分 ＋ 參拜逛街 2.5 小時",
-            title: "太宰府天滿宮參拜＆表參道美食散步",
-            place: "太宰府天滿宮・表參道（かさの家 / 安武 梅枝餅、天山草莓大福）",
-            transport: "自博多巴士總站搭乘直達太宰府的西鐵巴士（或搭地鐵至天神站轉乘西鐵電車至太宰府站）",
-            desc: "早晨參道人潮較少，帶長輩走訪太宰府天滿宮祈福，現烤現吃外酥內軟的「かさの家 梅枝餅」，並品嚐太宰府人氣「天山草莓最中・大福」與一蘭太宰府參道店／暖暮拉麵。",
+            stay: "巴士車程 40 分 ＋ 參拜逛街 2.5 小時",
+            title: "太宰府天滿宮祈福 ＆ 表參道現烤梅枝餅",
+            place: "太宰府天滿宮、隈研吾星巴克、かさの家 梅枝餅",
+            transport: "博多巴士總站 11 號月台搭乘西鐵直達巴士「旅人號」（約 40 分鐘直達神社門口）",
+            desc: "走過太宰府三座太鼓橋為家人祈福，在表參道品嚐剛出爐熱騰騰的「かさの家」梅枝餅，口感外脆內潤。",
             mapUrl: gmapSearch("Dazaifu Tenmangu"),
             routeUrl: gmapDir("Hakata Bus Terminal", "Dazaifu Tenmangu", "transit")
           },
           {
             time: "13:15 - 15:00",
             stay: "建議停留 105 分鐘",
-            title: "午餐：百年名店「博多名代 吉塚鰻魚屋」",
-            place: "博多名代 吉塚うなぎ屋（中洲，近櫛田神社前站）",
-            transport: "返回博多／天神轉乘地鐵七隈線至「櫛田神社前站」步行",
-            desc: "週二、週三公休，週五正常營業！Tabelog 高分名店，午晚餐預算約 ¥3,000–¥3,999，介於平價麵食與水炊鍋之間，外皮香脆肉質細緻（預約席數有限，建議早點取號）。",
+            title: "午餐：百年傳奇「博多名代 吉塚鰻魚屋」",
+            place: "博多名代 吉塚うなぎ屋（中洲川端）",
+            transport: "搭車返市區轉地鐵七隈線至「櫛田神社前站」步行",
+            desc: "週二週三公休，週五正常營業！Tabelog 頂級高分百年老店，鰻魚外皮炭香酥脆、肉質綿密鬆化（約 ¥3,000–4,000）。",
             mapUrl: gmapSearch("博多名代 吉塚うなぎ屋"),
             routeUrl: gmapDir("Dazaifu Station", "博多名代 吉塚うなぎ屋", "transit")
           },
           {
             time: "15:15 - 20:30",
-            stay: "逛街 ＋ 晚間水舞秀",
-            title: "博多運河城（Canal City）購物 ＆ 夜間 3D 鋼彈水舞秀",
-            place: "博多運河城（MUJI・LOFT・Alpen・THE GUNDAM BASE）",
-            transport: "自吉塚鰻魚屋過橋步行約 8 分鐘即達（或搭地鐵七隈線至櫛田神社前站步行 3 分鐘）",
-            desc: "集結福岡大型 MUJI、LOFT 與戶外旗艦店，每逢整點有運河水舞，晚上約 20:30 必看震撼的「Canal Aqua Panorama」3D 鋼彈主題光雕水舞秀！晚餐可吃運河城內一蘭獨家「和風豚骨拉麵」或步行前往「博多祇園鐵鍋餃子」（週五營業，¥1,000–¥1,999）。",
+            stay: "商場採買 ＋ 觀賞夜間水舞秀",
+            title: "博多運河城購物 ＆ 夜間 3D 投影水舞秀",
+            place: "Canal City 博多（MUJI、LOFT、各大服飾、鋼彈基地）",
+            transport: "由鰻魚屋徒步過橋約 8 分鐘（或櫛田神社前站步 3 分）",
+            desc: "採買各類生活雜貨與伴手禮，晚上 20:00/20:30 欣賞運河池畔震撼的「Canal Aqua Panorama」3D 燈光音樂水舞秀。",
             mapUrl: gmapSearch("Canal City Hakata"),
             routeUrl: gmapDir("博多名代 吉塚うなぎ屋", "Canal City Hakata", "walking")
           }
@@ -926,39 +831,39 @@
       {
         day: 8,
         date: "2027.04.17 (週六)",
-        title: "明太子重早餐・伴手禮衝刺・星宇航空返台",
-        landscape: "都會晨間漫步與機場退稅",
-        transportSummary: "市區步行・西鐵機場直達巴士／計程車・星宇 JX841",
-        highlightMeal: "元祖博多明太子重 / Full Full 博多店",
-        badge: "帶明太子法國麵包回台",
+        title: "外帶明太子麵包・博多站最後補貨・星宇 JX841 返台",
+        landscape: "晨間漫步與機場離境退稅",
+        transportSummary: "西鐵機場巴士／計程車 ＋ 星宇 JX841",
+        highlightMeal: "The Full Full Hakata / 博多站人氣排隊名店",
+        badge: "整條麵包帶回台灣",
         events: [
           {
-            time: "08:00 - 09:45",
-            stay: "早餐＋退房寄放行李",
-            title: "早鳥饗宴：元祖博多明太子重（可選）或飯店整理",
-            place: "元祖博多めんたい重（西中洲，07:00 開門）",
-            transport: "地鐵至中洲川端站步行前往",
-            desc: "想再嚐一餐招牌明太子料理，07:00 就開門的元祖明太子重（¥1,980）清晨較省時；若想讓長輩多睡一會兒，則於退房後將行李寄放飯店櫃台。",
-            mapUrl: gmapSearch("元祖博多めんたい重"),
-            routeUrl: gmapDir("Hakata Station", "元祖博多めんたい重", "transit")
+            time: "08:30 - 10:00",
+            stay: "早餐與行李寄放",
+            title: "悠閒早餐與辦理退房",
+            place: "博多飯店",
+            transport: "步行",
+            desc: "長輩睡飽後從容收拾隨身行李並退房寄放櫃台，準備展開最後的採買行程。",
+            mapUrl: gmapSearch("Hakata Station"),
+            routeUrl: null
           },
           {
             time: "10:00 - 15:30",
             stay: "採買與午餐約 5.5 小時",
-            title: "The Full Full 博多店外帶麵包 ＋ 博多站最終補貨",
-            place: "The Full Full Hakata（10:00 開）→ 博多 MING / DEITOS / 阪急",
-            transport: "博多站步行約 10 分鐘（或地鐵七隈線至「櫛田神社前站」步行 2 分鐘）",
-            desc: "週六正常營業！可請店員「不切」整條明太子法國麵包（常溫 2 天、回台冷凍可放 2 週，灑水 200 度烤 4 分鐘還原）！接著回博多站 MING 買冷凍炸雞「努努雞」（09:00–21:00）與福太郎明太子仙貝。午餐推薦「博多天婦羅 たかお」或 DEITOS 餐廳。",
+            title: "Full Full 外帶整條麵包 ＋ 博多站地下街最終衝刺",
+            place: "The Full Full Hakata（10:00 開）→ 博多 MING / 阪急百貨",
+            transport: "博多站步行約 8–10 分鐘（或地鐵七隈線櫛田神社前站）",
+            desc: "購買「不切」的明太子法國麵包（常溫可放 2 天，回台冷凍可放 2 週，烤箱回烤即完美還原），接著至博多站 MING 採購努努雞冷炸雞與福太郎明太子仙貝。",
             mapUrl: gmapSearch("The Full Full Hakata"),
             routeUrl: gmapDir("Hakata Station", "The Full Full Hakata", "walking")
           },
           {
             time: "16:00 - 19:10",
-            stay: "預留 3 小時含退稅與登機",
-            title: "前往福岡機場國際線・辦理離境退稅・搭 JX841 返台",
-            place: "飯店取行李 → 博多站搭西鐵機場巴士或計程車 → 福岡機場國際線",
-            transport: "自博多站搭西鐵機場直達巴士（約 15–30 分，¥400）或 3 人合搭計程車（約 10–15 分，約 ¥1,500–2,500）",
-            desc: "⚠️ 因應 2026 年 11 月起改為「離境退稅制」，請務必預留充裕時間於起飛前 2.5–3 小時抵達機場辦理託運與海關退稅確認，再從容選購免稅品，搭乘星宇 JX841（19:10 起飛，20:50 抵桃園 T1）圓滿返家。",
+            stay: "提前 3 小時抵達辦理退稅與登機",
+            title: "前往福岡機場國際線・完成離境退稅・搭乘 JX841 返台",
+            place: "博多飯店取件 → 福岡機場國際線航廈",
+            transport: "西鐵機場直達巴士（約 15–25 分鐘，¥400）或 3 人合搭計程車（約 ¥1,500–2,500）",
+            desc: "因應日本全面改為「離境退稅制」，預留充裕時間至海關處完成退稅手續，隨後搭乘星宇 JX841（19:10 起飛，20:50 抵達桃園）為旅程劃下圓滿句點。",
             mapUrl: gmapSearch("Fukuoka Airport International Terminal"),
             routeUrl: gmapDir("Hakata Station", "Fukuoka Airport International Terminal", "transit")
           }
@@ -973,10 +878,10 @@
         catLabel: "水炊鍋・牛腸鍋・肉食",
         area: "博多",
         tier: "high",
-        price: "套餐約 ¥7,000（午約 ¥5,000–5,999，部分晚餐套餐達 ¥8,000+ 須留意點選）",
-        hours: "平日 11:30–16:00 / 17:00–23:00；週末假日 11:30–23:00",
-        closed: "不定休（建議事前預約）",
-        note: "Tabelog 高評價博多水炊鍋名店，雞湯極致濃醇，點餐時可選 ¥7,000 以內套餐嚴守單餐預算。",
+        price: "套餐約 ¥7,000",
+        hours: "平日 11:30–16:00 / 17:00–23:00；週末 11:30–23:00",
+        closed: "不定休（建議事先預約）",
+        note: "Tabelog 超高評價水炊鍋名店，金黃原汁雞湯濃醇無比，服務對長輩極為親切貼心。",
         mapUrl: gmapSearch("博多とり田 博多本店")
       },
       {
@@ -985,10 +890,10 @@
         catLabel: "水炊鍋・牛腸鍋・肉食",
         area: "博多",
         tier: "high",
-        price: "華宴會套餐 ¥5,500 ／ 金華套餐 ¥6,500",
-        hours: "博多站前 11:30–15:00 / 17:00–23:00（天神店午餐僅週末假日）",
-        closed: "年末年初（附詳盡繁體中文菜單）",
-        note: "博多代表性水炊鍋料亭，先喝濃白原味雞湯再下自家品牌雞肉與手工雞肉丸，服務友善長輩。",
+        price: "套餐 ¥5,500–¥6,500",
+        hours: "11:30–15:00 / 17:00–23:00",
+        closed: "無休（附繁體中文菜單）",
+        note: "福岡最具代表性的水炊鍋品牌，自家銘柄雞鮮嫩甜美，先品清湯、後嚐雞肉丸雜炊。",
         mapUrl: gmapSearch("博多華味鳥 博多駅前店")
       },
       {
@@ -1000,19 +905,19 @@
         price: "午間水炊小鍋定食 ¥2,500",
         hours: "11:15–15:00 / 17:00–21:00",
         closed: "⚠️ 每週二公休",
-        note: "天神ビル B1F 老字號水炊鍋，午間推出高性價比個人小鍋定食，湯頭清甜不膩。",
+        note: "天神ビル B1F 百年老店，午間提供平價個人水炊鍋定食，湯頭清雅甘甜。",
         mapUrl: gmapSearch("新三浦 天神店")
       },
       {
-        name: "博多牛腸鍋 前田屋（總本店 / 大名店）",
+        name: "博多牛腸鍋 前田屋（總本店）",
         cat: "pot",
         catLabel: "水炊鍋・牛腸鍋・肉食",
         area: "博多",
         tier: "high",
-        price: "和牛牛腸鍋味噌味 1 人份 ¥1,958（含配菜約 ¥3,500–4,500）",
-        hours: "平日 17:00–24:00；週末假日 11:00–14:30 / 17:00–24:00",
-        closed: "不定休（建議事前預約）",
-        note: "嚴選最高級國產和牛牛腸，湯頭濃郁無腥味，亦可加點長濱市場直送胡麻鯖魚或馬肉刺身。",
+        price: "和牛牛腸鍋 1 人份約 ¥1,958（整餐約 ¥3,500–4,500）",
+        hours: "17:00–24:00（週末 11:00 起營業）",
+        closed: "不定休（熱門時段需預約）",
+        note: "採用國產和牛牛腸，完全沒有多餘油脂腥味，口感彈牙鮮美，亦可加點胡麻鯖魚刺身。",
         mapUrl: gmapSearch("博多もつ鍋 前田屋 総本店")
       },
       {
@@ -1021,10 +926,10 @@
         catLabel: "水炊鍋・牛腸鍋・肉食",
         area: "由布院",
         tier: "high",
-        price: "豐後牛 / 鰻魚 ¥3,200；地雞 ¥2,850",
-        hours: "10:30–20:30（部分資訊記 11:00–16:00 / 17:30–21:00）",
-        closed: "⚠️ 週四、每月第 3 個週三公休（或不定休）",
-        note: "由布院站步行 1–3 分鐘！主打釜飯三吃（原味、佐料、茶泡飯），僅接受電話訂位或現場候位。",
+        price: "豐後牛 / 鰻魚釜飯 ¥3,200",
+        hours: "10:30–20:30",
+        closed: "⚠️ 週四公休",
+        note: "由布院出站 1 分鐘！招牌豐後牛釜飯三吃（原味、拌醬菜、茶泡飯），滋味層次極為豐富。",
         mapUrl: gmapSearch("由布まぶし 心 駅前支店")
       },
       {
@@ -1033,10 +938,10 @@
         catLabel: "麵包・甜點・點心",
         area: "博多",
         tier: "budget",
-        price: "明太子法國麵包 未稅 ¥463（含稅約 ¥500）",
-        hours: "博多 10:00–19:00 ／ 天神 10:00–20:00",
-        closed: "⚠️ 兩店皆週二公休",
-        note: "外層酥脆塞滿明太子！天神店通常較好排；博多店可選「不切」款帶回台灣冷凍 2 週。",
+        price: "明太子法國麵包 約 ¥500",
+        hours: "10:00–19:00",
+        closed: "⚠️ 週二公休",
+        note: "酥脆無比的法國麵包夾入滿溢明太子醬！最後一天可買不切整條帶回台灣冷凍保存。",
         mapUrl: gmapSearch("The Full Full Hakata")
       },
       {
@@ -1045,10 +950,10 @@
         catLabel: "麵包・甜點・點心",
         area: "天神",
         tier: "budget",
-        price: "明太子麵包 ¥594（半條 ¥302）",
+        price: "明太子麵包 ¥594",
         hours: "08:00–19:00",
-        closed: "⚠️ 週一、每月第 1 及第 3 個週二公休（部分網誌記週一二皆休）",
-        note: "福岡明太子法國麵包研發元祖級名店！位於天神中央公園西中洲區，口感層次極優。",
+        closed: "⚠️ 週一、第 1 與第 3 個週二公休",
+        note: "座落於天神中央公園綠意旁，麵包麥香十足且餡料講究，福岡必訪朝聖烘焙店。",
         mapUrl: gmapSearch("pain stock 天神店")
       },
       {
@@ -1057,10 +962,10 @@
         catLabel: "麵包・甜點・點心",
         area: "博多",
         tier: "budget",
-        price: "明太子麵包 ¥367（番茄口味 ¥410）",
-        hours: "07:00–19:00（售完為止）",
-        closed: "詳見官方 Instagram（官網可於取貨前一天 18:00 前預訂）",
-        note: "博多站步行 4 分鐘！早上 7 點開門，是週二 Full Full 與 Pain Stock 公休時的最佳替代方案。",
+        price: "明太子麵包 ¥367 起",
+        hours: "07:00–19:00",
+        closed: "依官方公告（週二正常營業）",
+        note: "博多站出站徒步 4 分鐘，早上 7 點即開門，是週二避開其他麵包店公休的最佳首選。",
         mapUrl: gmapSearch("DACOMECCA 博多")
       },
       {
@@ -1069,10 +974,10 @@
         catLabel: "麵包・甜點・點心",
         area: "天神",
         tier: "budget",
-        price: "平價現烤甜點（約 ¥500 上下）",
-        hours: "09:00–21:00（週一至日）",
+        price: "現烤蘋果派 約 ¥500",
+        hours: "09:00–21:00",
         closed: "隨天神地下街營業",
-        note: "福岡僅此一間分店！天神地下街西 4 番街必買排隊甜點，酥脆千層派皮包裹濃郁蘋果卡士達。",
+        note: "天神地下街西 4 番街排隊甜點，千層酥皮搭配濃醇卡士達醬與香甜蘋果塊。",
         mapUrl: gmapSearch("RINGO 天神地下街店")
       },
       {
@@ -1081,10 +986,10 @@
         catLabel: "麵包・甜點・點心",
         area: "由布院",
         tier: "budget",
-        price: "平價散步甜點（銅板價）",
+        price: "起司蛋糕 銅板價（約 ¥150–200）",
         hours: "10:30–17:30",
         closed: "不定休",
-        note: "湯之坪街道必吃半熟乳香起司蛋糕，冷吃綿密、熱吃爆漿，由布院站前亦設有分店。",
+        note: "湯之坪必嚐名物，半熟乳酪起司蛋糕可選擇冰涼綿密或現烤熱呼呼爆漿口感。",
         mapUrl: gmapSearch("由布院 ミルヒ 本店")
       },
       {
@@ -1093,23 +998,11 @@
         catLabel: "麵包・甜點・點心",
         area: "太宰府",
         tier: "budget",
-        price: "平價街邊甜點（單顆銅板價）",
-        hours: "配合表參道日間營業時間",
-        closed: "幾乎全年無休",
-        note: "太宰府必吃傳統烤麻糬紅豆點心，外皮微脆內餡溫熱不死甜，極受媽媽與阿姨喜愛。",
+        price: "單顆約 ¥150",
+        hours: "09:00–18:00",
+        closed: "無休",
+        note: "現烤熱呼呼的太宰府代表點心，外皮酥脆帶有糯米香，內餡紅豆溫潤不死甜。",
         mapUrl: gmapSearch("かさの家 太宰府")
-      },
-      {
-        name: "元祖博多明太子重（西中洲）",
-        cat: "seafood",
-        catLabel: "海鮮・壽司・鰻魚",
-        area: "天神",
-        tier: "budget",
-        price: "元祖博多明太子重 ¥1,980（午晚餐預算 ¥2,000–2,999）",
-        hours: "07:00–22:30（外帶 07:00–17:00）",
-        closed: "無休（17:00 後可預約）",
-        note: "早上 7 點就開門！整條熟成昆布捲明太子鋪於熱飯上，非常適合安排作為早晨第一餐。",
-        mapUrl: gmapSearch("元祖博多めんたい重")
       },
       {
         name: "博多名代 吉塚鰻魚屋",
@@ -1117,23 +1010,23 @@
         catLabel: "海鮮・壽司・鰻魚",
         area: "博多",
         tier: "high",
-        price: "午晚餐參考預算 ¥3,000–¥3,999",
-        hours: "日間至晚間營業（依現場公告）",
+        price: "午晚餐約 ¥3,000–¥4,000",
+        hours: "日間至晚間營業",
         closed: "⚠️ 每週二、週三公休",
-        note: "近櫛田神社前站，Tabelog 高分百年鰻魚名店，外皮酥香肉質鬆軟，是介於拉麵與鍋物間的精緻饗宴。",
+        note: "Tabelog 超高分百年鰻魚名店，外皮烤至酥脆噴香、魚肉鬆軟多汁，週五安排前往最順暢。",
         mapUrl: gmapSearch("博多名代 吉塚うなぎ屋")
       },
       {
-        name: "喜水丸（KITTE 博多店 / 天神 Solaria）",
+        name: "喜水丸（KITTE 博多店 B1）",
         cat: "seafood",
         catLabel: "海鮮・壽司・鰻魚",
         area: "博多",
         tier: "budget",
         price: "海鮮丼定食 ¥1,800–¥2,970",
-        hours: "KITTE 博多店 07:30–23:00",
+        hours: "07:30–23:00",
         closed: "隨商場營業",
-        note: "漁港直送新鮮生魚片，點定食即可享「辛子高菜、明太子、白飯、味噌湯」無限續加！",
-        mapUrl: gmapSearch("どんぶり居酒屋 喜水丸 KITTE博多店")
+        note: "海鮮丼鮮度絕佳，定食可享明太子、辛子高菜、白飯與味噌湯無限續加！",
+        mapUrl: gmapSearch("喜水丸 KITTE博多店")
       },
       {
         name: "葫蘆壽司（ひょうたん寿司）天神店",
@@ -1141,34 +1034,22 @@
         catLabel: "海鮮・壽司・鰻魚",
         area: "天神",
         tier: "high",
-        price: "8 款綜合壽司盤 ¥4,290（午間亦有超值選項）",
+        price: "壽司拼盤套餐約 ¥2,500–¥4,500",
         hours: "11:30–14:30 / 17:00–20:00",
         closed: "不定休",
-        note: "天神超人氣平實壽司名店，出餐節奏明快且魚料厚切新鮮。",
+        note: "天神平價壽司界霸主，魚料厚切新鮮，是天神商圈深受好評的經典名店。",
         mapUrl: gmapSearch("ひょうたん寿司 天神")
       },
       {
-        name: "博多一雙 博多站東本店",
+        name: "博多拉麵 ShinShin（博多 DEITOS 店）",
         cat: "snack",
         catLabel: "小吃・拉麵・麵食",
         area: "博多",
         tier: "budget",
-        price: "拉麵 ¥960",
-        hours: "11:00–24:00",
-        closed: "不定休（不可預約）",
-        note: "人稱豚骨卡布奇諾，濃厚起泡豚骨湯頭極具特色，距離博多站步行可達。",
-        mapUrl: gmapSearch("博多一双 博多駅東本店")
-      },
-      {
-        name: "博多拉麵 ShinShin（DEITOS 店）",
-        cat: "snack",
-        catLabel: "小吃・拉麵・麵食",
-        area: "博多",
-        tier: "budget",
-        price: "博多 ShinShin 麵 ¥870",
+        price: "招牌拉麵 ¥870",
         hours: "11:00–23:00",
         closed: "隨商場無休",
-        note: "融合雞骨清香的順口無異味豚骨湯頭，最受女性與長輩歡迎的博多入門拉麵，直通車站超方便。",
+        note: "清爽滑順不油膩的豚骨雞湯底，細麵爽口入味，長輩接受度極高。",
         mapUrl: gmapSearch("博多らーめん ShinShin 博多デイトス店")
       },
       {
@@ -1177,34 +1058,34 @@
         catLabel: "小吃・拉麵・麵食",
         area: "博多",
         tier: "budget",
-        price: "¥999 以下",
-        hours: "午晚餐時段營業",
-        closed: "⚠️ 週日、國定假日公休（不可預約）",
-        note: "Tabelog 3.74 高分博多流烏龍麵，麵條柔滑暖胃，當晚上已安排大餐時中午吃一碗最舒服。",
+        price: "¥600–¥900",
+        hours: "11:00–15:00 / 17:00–21:00",
+        closed: "⚠️ 週日、國定假日公休",
+        note: "Tabelog 3.74 超高分在地烏龍麵，軟滑口感的高湯麵暖胃順口，價格平易近人。",
         mapUrl: gmapSearch("葉隠うどん")
       },
       {
-        name: "天麩羅処 ひらお（天神店）／ たかお（PARCO）",
+        name: "天麩羅處 ひらお（天神店）",
         cat: "snack",
         catLabel: "小吃・拉麵・麵食",
         area: "天神",
         tier: "budget",
-        price: "ひらお 定食 ¥1,140 ／ たかお 定食 ¥1,500–2,200",
-        hours: "ひらお 10:30–20:30",
+        price: "現炸定食約 ¥1,140",
+        hours: "10:30–20:30",
         closed: "隨商場營業",
-        note: "職人眼前分批現炸送上桌，保證每口金黃酥脆！たかお 另附昆布明太子與烏龍茶無限續。",
+        note: "師傅在面前熱騰騰現炸出鍋，酥脆麵衣包裹鮮甜海鮮蔬菜，附柚子漬烏賊開胃配菜。",
         mapUrl: gmapSearch("天麩羅処ひらお 天神アクロス福岡店")
       },
       {
-        name: "博多祇園 鉄なべ（鐵鍋餃子）",
+        name: "博多祇園 鉄なべ（鐵鍋一口餃子）",
         cat: "snack",
         catLabel: "小吃・拉麵・麵食",
         area: "博多",
         tier: "budget",
-        price: "晚餐參考預算 ¥1,000–1,999",
-        hours: "晚間營業（120 席）",
-        closed: "⚠️ 每週日公休（不可預約）",
-        note: "位於祇園、鄰近博多運河城，熱呼呼鐵鍋煎出外皮焦脆的博多一口餃子，平價又道地。",
+        price: "人均約 ¥1,200–¥1,800",
+        hours: "17:00–23:00",
+        closed: "⚠️ 每週日公休",
+        note: "鐵鍋煎至焦香酥脆的迷你餃子，皮脆餡香，是道地的福岡庶民夜間美食。",
         mapUrl: gmapSearch("博多祇園鉄なべ")
       },
       {
@@ -1213,10 +1094,10 @@
         catLabel: "小吃・拉麵・麵食",
         area: "門司港",
         tier: "budget",
-        price: "平價洋食正餐（約 ¥1,000–2,000 區間）",
-        hours: "平日 11:00–14:30 / 17:00–20:00；週六日國定假日 11:00–20:00",
+        price: "燒咖哩約 ¥1,200–¥1,800",
+        hours: "11:00–20:00",
         closed: "不定休",
-        note: "阿波屋大樓 2F 港景名店，門司港代表性燒咖哩，半熟蛋拌起司炙燒後濃郁下飯。",
+        note: "窗外盡覽門司港美景，半熟蛋混和融化起司焗烤，口感芳醇濃郁。",
         mapUrl: gmapSearch("伽哩本舗 門司港レトロ店")
       },
       {
@@ -1225,37 +1106,35 @@
         catLabel: "小吃・拉麵・麵食",
         area: "高千穗",
         tier: "budget",
-        price: "單點流水麵 ¥500（亦有烤魚、飯糰套餐）",
-        hours: "10:00–16:00（部分時段至 17:00，視天候調整）",
-        closed: "全年開放（視天候）",
-        note: "昭和 30 年創立於高千穗峽內，竹管水道流下冰涼素麵趣味十足，亦販售高千穗牛定食。",
+        price: "單點素麵 ¥500 起（另有套餐）",
+        hours: "10:00–16:00",
+        closed: "全年開放（視天氣）",
+        note: "坐在綠意峽谷旁夾取清涼流水素麵，搭配炭火鹽烤香魚，風味獨特且充滿趣味。",
         mapUrl: gmapSearch("千穂の家 元祖流しそうめん")
       }
     ];
 
     const checklistData = [
-      { id: "c1", label: "護照效期確認（須超過 6 個月）＆ 確認星宇航空最終 2027/04 航班時刻", done: false },
-      { id: "c2", label: "辦理日本入境手續資料（預先填妥並截圖保存 QR Code）", done: false },
-      { id: "c3", label: "訂妥博多車站旁連住 7 晚三人房（選擇可免費取消方案並印出確認信）", done: false },
-      { id: "c4", label: "購買北九州 JR Pass 3 日券憑證（¥15,000，抵日後於博多站兌換並劃位）", done: false },
-      { id: "c5", label: "乘船前 2 週 (3/31 台灣 08:00) 搶妥「高千穗峽划船」並截圖預約編號", done: false },
-      { id: "c6", label: "乘車前 1 個月搶妥「由布院之森 1 號/6 號」與「ごかせ號」高速巴士", done: false },
-      { id: "c7", label: "預訂熱門餐廳：水炊鍋（華味鳥/とり田）、牛腸鍋前田屋、吉塚鰻魚屋", done: false },
-      { id: "c8", label: "準備日本上網卡／eSIM（3 人各自開通，方便聯絡與開啟 Google Maps）", done: false },
-      { id: "c9", label: "準備交通系 IC 卡（Suica / ICOCA / SUGOCA 等）並預先儲值供市區地鐵巴士使用", done: false },
-      { id: "c10", label: "備妥日圓現金（高千穗計程車、小攤販、梅枝餅用）與海外高回饋信用卡（留意離境退稅制）", done: false },
-      { id: "c11", label: "長輩春裝（長袖＋針織衫＋防風薄風衣＋薄圍巾＋折疊傘）與止滑好走球鞋", done: false },
-      { id: "c12", label: "個人常備藥品（腸胃藥、暈車藥［搭長途巴士備用］、OK繃與腿部舒緩貼布）", done: false }
+      { id: "c1", label: "確認護照效期超過 6 個月，確認星宇航空 JX840/JX841 機票資訊", done: false },
+      { id: "c2", label: "出發前填妥 Visit Japan Web 並截圖保存入境 QR Code", done: false },
+      { id: "c3", label: "訂妥博多車站周邊連住 7 晚三人房（選擇可免費取消方案並留存確認函）", done: false },
+      { id: "c4", label: "購買北九州 JR Pass 3 日券憑證（抵達後於博多站兌換啟用）", done: false },
+      { id: "c5", label: "乘船前 2 週 (03/31 台灣 08:00) 搶訂高千穗峽划船並完成付款", done: false },
+      { id: "c6", label: "乘車前 1 個月搶劃「由布院之森 1 號/6 號」指定席與預訂「ごかせ號」高速巴士", done: false },
+      { id: "c7", label: "事先預約水炊鍋（博多とり田或華味鳥）、前田屋牛腸鍋與吉塚鰻魚屋", done: false },
+      { id: "c8", label: "準備 3 人日本上網卡／eSIM，確保 Google Maps 與通訊順暢", done: false },
+      { id: "c9", label: "準備交通 IC 卡（Suica/ICOCA 等）並預儲足額日圓供搭乘地鐵與市區巴士", done: false },
+      { id: "c10", label: "備妥日圓現金（計程車、小吃、神社祈福使用）與海外回饋信用卡", done: false },
+      { id: "c11", label: "為長輩準備洋蔥式穿搭（針織衫、防風輕便外套、薄圍巾、折疊傘）與防滑好走鞋", done: false },
+      { id: "c12", label: "常備藥品隨身攜帶（腸胃藥、止痛藥、長途巴士暈車藥與舒緩足貼）", done: false }
     ];
 
-    // ==================== 導覽與區塊切換邏輯 ====================
+    // 導覽切換
     const navBtns = document.querySelectorAll('.nav-btn');
     const sections = document.querySelectorAll('.page-section');
 
     function switchSection(targetId) {
-      sections.forEach(sec => {
-        sec.classList.toggle('hidden', sec.id !== `section-${targetId}`);
-      });
+      sections.forEach(sec => sec.classList.toggle('hidden', sec.id !== `section-${targetId}`));
       navBtns.forEach(btn => {
         const isActive = btn.dataset.section === targetId;
         btn.className = isActive
@@ -1265,11 +1144,9 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    navBtns.forEach(btn => {
-      btn.addEventListener('click', () => switchSection(btn.dataset.section));
-    });
+    navBtns.forEach(btn => btn.addEventListener('click', () => switchSection(btn.dataset.section)));
 
-    // ==================== 總覽表格渲染 ====================
+    // 總覽表格
     function renderOverviewTable() {
       const tbody = document.getElementById('overview-table-body');
       tbody.innerHTML = itineraryDays.map(d => `
@@ -1297,7 +1174,7 @@
       renderItinerary();
     };
 
-    // ==================== 每日行程時間軸渲染 ====================
+    // 時間軸
     let activeDay = 1;
     let showAllDays = false;
 
@@ -1316,8 +1193,7 @@
         `;
       }).join('');
 
-      const toggleBtn = document.getElementById('toggle-all-days-btn');
-      toggleBtn.textContent = showAllDays ? '📑 切回單日檢視' : '📂 展開全部 8 天';
+      document.getElementById('toggle-all-days-btn').textContent = showAllDays ? '📑 切回單日檢視' : '📂 展開全部 8 天';
     }
 
     window.selectDay = function(dayNum) {
@@ -1355,9 +1231,8 @@
           </div>
 
           <div class="p-5 sm:p-7 timeline-line space-y-6">
-            ${d.events.map((ev) => `
+            ${d.events.map(ev => `
               <div class="relative pl-9 md:pl-11">
-                <!-- 純 CSS 時間軸圓點（無 SVG） -->
                 <span class="absolute left-1.5 md:left-2.5 top-1.5 w-4 h-4 rounded-full bg-white border-4 border-sky-800 shadow-sm"></span>
 
                 <div class="bg-stone-50/70 hover:bg-white border border-stone-200 rounded-xl p-4 sm:p-5 transition-all">
@@ -1372,7 +1247,7 @@
                   <div class="text-xs font-medium text-indigo-800 mt-1">📍 地點／區間：${ev.place}</div>
 
                   <div class="mt-2.5 p-2.5 rounded-lg bg-white border border-stone-200/80 text-xs text-stone-700">
-                    <span class="font-semibold text-stone-900">🚆 交通路線與預估時間：</span>${ev.transport}
+                    <span class="font-semibold text-stone-900">🚆 交通建議：</span>${ev.transport}
                   </div>
 
                   <p class="mt-2.5 text-xs sm:text-sm text-stone-600 leading-relaxed">${ev.desc}</p>
@@ -1380,12 +1255,12 @@
                   <div class="mt-3.5 pt-3 border-t border-stone-200/70 flex flex-wrap gap-2">
                     <a href="${ev.mapUrl}" target="_blank" rel="noopener"
                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-stone-300 text-stone-800 hover:bg-sky-50 hover:border-sky-400 hover:text-sky-900 transition-colors">
-                      📍 查看景點地圖
+                      📍 查看地圖
                     </a>
                     ${ev.routeUrl ? `
                       <a href="${ev.routeUrl}" target="_blank" rel="noopener"
                          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-sky-900 text-white hover:bg-sky-800 transition-colors">
-                        🗺️ 點對點 Google Maps 路線
+                        🗺️ 路線導航
                       </a>
                     ` : ''}
                   </div>
@@ -1397,7 +1272,7 @@
       `).join('');
     }
 
-    // ==================== 美食地圖篩選與渲染 ====================
+    // 美食篩選
     let foodCatFilter = 'all';
     let foodAreaFilter = 'all';
 
@@ -1412,7 +1287,7 @@
       if (filtered.length === 0) {
         grid.innerHTML = `
           <div class="col-span-full bg-white border border-stone-200 rounded-2xl p-8 text-center text-stone-500 text-sm">
-            此分類與地區組合暫無推薦店家，請試著切換「全部地區」或「全部美食」！
+            查無相符推薦，請嘗試切換「全部地區」或「全部美食」！
           </div>
         `;
         return;
@@ -1433,7 +1308,7 @@
             </div>
 
             <h3 class="text-base font-bold text-stone-900 mt-2.5">${r.name}</h3>
-            <div class="text-xs font-semibold text-sky-900 mt-1">💴 預算參考：${r.price}</div>
+            <div class="text-xs font-semibold text-sky-900 mt-1">💴 預算：${r.price}</div>
 
             <div class="mt-2.5 space-y-1 text-[11px] text-stone-600">
               <div>🕒 營業：${r.hours}</div>
@@ -1446,7 +1321,7 @@
           <div class="mt-4 pt-3 border-t border-stone-100">
             <a href="${r.mapUrl}" target="_blank" rel="noopener"
                class="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-stone-50 border border-stone-200 text-stone-800 hover:bg-sky-900 hover:text-white hover:border-sky-900 transition-colors">
-              📍 開啟 Google Maps 導航
+              📍 開啟 Google Maps
             </a>
           </div>
         </div>
@@ -1479,7 +1354,7 @@
       });
     });
 
-    // ==================== 行前準備：匯率計算 & 檢核表 ====================
+    // 匯率試算與行前檢核
     const jpyInput = document.getElementById('jpy-input');
     const rateInput = document.getElementById('rate-input');
     const twdOutput = document.getElementById('twd-output');
@@ -1525,31 +1400,30 @@
       renderChecklist();
     });
 
-    // ==================== Chart.js 數據視覺化 ====================
+    // Chart.js 圖表
     function initCharts() {
-      // 圖表 1: 跨區交通時間與單程費用比較
       const ctx1 = document.getElementById('transportChart').getContext('2d');
       new Chart(ctx1, {
         type: 'bar',
         data: {
           labels: [
-            '福岡機場→博多(巴士)',
+            '機場→博多(巴士)',
             '博多→門司港(音速號)',
-            '博多→門司港(快速線)',
+            '小倉→博多(音速號)',
             '博多→由布院(由布之森)',
             '博多→高千穗(ごかせ號)'
           ],
           datasets: [
             {
               label: '預估時間 (分鐘)',
-              data: [20, 60, 90, 134, 196],
+              data: [20, 60, 45, 134, 196],
               backgroundColor: 'rgba(12, 74, 110, 0.85)',
               borderRadius: 6,
               yAxisID: 'y'
             },
             {
-              label: '成人單程原價 (日圓)',
-              data: [400, 2330, 1730, 6130, 5800],
+              label: '單程原價參考 (日圓)',
+              data: [400, 2330, 1950, 6130, 5800],
               backgroundColor: 'rgba(217, 119, 6, 0.80)',
               borderRadius: 6,
               yAxisID: 'y1'
@@ -1559,66 +1433,41 @@
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          interaction: {
-            mode: 'index',
-            intersect: false
-          },
+          interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: {
-              position: 'top',
-              labels: { font: { family: 'Noto Sans TC', size: 11 } }
-            },
+            legend: { position: 'top', labels: { font: { family: 'Noto Sans TC', size: 11 } } },
             tooltip: {
               callbacks: {
                 afterBody: function(items) {
                   const idx = items[0].dataIndex;
-                  if (idx === 1) return '💡 含於北九州 JR Pass 3日券內（來回原價 ¥4,660）';
-                  if (idx === 3) return '💡 含於北九州 JR Pass 3日券內（來回原價 ¥12,260 起）';
-                  if (idx === 4) return '💡 高千穗無 JR，依日曆通常期 ¥5,800（區間 ¥4,700–¥6,500）';
+                  if (idx === 1 || idx === 2 || idx === 3) return '💡 適用北九州 JR Pass 3 日券（完全回本）';
+                  if (idx === 4) return '💡 高千穗無鐵路，依日曆搭乘高速巴士（約 ¥4,700–¥6,500）';
                   return '';
                 }
               }
             }
           },
           scales: {
-            x: {
-              ticks: { font: { family: 'Noto Sans TC', size: 10 } }
-            },
-            y: {
-              type: 'linear',
-              position: 'left',
-              title: { display: true, text: '分鐘', font: { size: 11 } },
-              grid: { color: 'rgba(0,0,0,0.05)' }
-            },
-            y1: {
-              type: 'linear',
-              position: 'right',
-              title: { display: true, text: '日圓 (JPY)', font: { size: 11 } },
-              grid: { drawOnChartArea: false }
-            }
+            x: { ticks: { font: { family: 'Noto Sans TC', size: 10 } } },
+            y: { type: 'linear', position: 'left', title: { display: true, text: '分鐘', font: { size: 11 } }, grid: { color: 'rgba(0,0,0,0.05)' } },
+            y1: { type: 'linear', position: 'right', title: { display: true, text: '日圓 (JPY)', font: { size: 11 } }, grid: { drawOnChartArea: false } }
           }
         }
       });
 
-      // 圖表 2: 每人預估支出結構圖 (試算示意)
       const ctx2 = document.getElementById('budgetChart').getContext('2d');
       new Chart(ctx2, {
         type: 'doughnut',
         data: {
           labels: [
-            '7晚住宿目標 (NT$10,500)',
+            '7晚博多住宿目標 (NT$10,500)',
             'JR Pass＋高速巴士＋市區交通 (約 NT$6,200)',
             '8天餐飲試算 (約 NT$11,500)',
-            '划船分攤＋門票雜支 (約 NT$1,200)'
+            '高千穗划船分攤＋門票雜支 (約 NT$1,200)'
           ],
           datasets: [{
             data: [10500, 6200, 11500, 1200],
-            backgroundColor: [
-              '#0C4A6E',
-              '#0F766E',
-              '#BE123C',
-              '#D97706'
-            ],
+            backgroundColor: ['#0C4A6E', '#0F766E', '#BE123C', '#D97706'],
             borderWidth: 2,
             borderColor: '#FFFFFF'
           }]
@@ -1628,13 +1477,7 @@
           maintainAspectRatio: false,
           cutout: '62%',
           plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                padding: 14,
-                font: { family: 'Noto Sans TC', size: 11 }
-              }
-            },
+            legend: { position: 'bottom', labels: { padding: 14, font: { family: 'Noto Sans TC', size: 11 } } },
             tooltip: {
               callbacks: {
                 label: function(ctx) {
@@ -1650,7 +1493,7 @@
       });
     }
 
-    // ==================== 初始化執行 ====================
+    // 初始化載入
     document.addEventListener('DOMContentLoaded', () => {
       renderOverviewTable();
       updateDayControls();
