@@ -30,12 +30,6 @@
     @media (min-width: 768px) {
       .timeline-line::before { left: 1.15rem; }
     }
-    .barcode-line {
-      display: inline-block;
-      height: 48px;
-      background-color: #000;
-      margin: 0 1px;
-    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-amber-100 selection:text-amber-900">
@@ -158,7 +152,7 @@
       </div>
     </section>
 
-<!-- ================= 區塊 2: 最新官方折價券專區 (真實圖片版) ================= -->
+    <!-- ================= 區塊 2: 最新官方折價券專區 (本地相對路徑版) ================= -->
     <section id="section-coupons" class="page-section hidden space-y-6">
       <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-6">
         <div>
@@ -180,8 +174,8 @@
               
               <!-- 官方優惠券高畫質圖片 -->
               <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-stone-300 bg-white"
-                   onclick="openModal('https://d394e773keepwf.cloudfront.net/wp-content/uploads/2024/04/bic-camera-coupon-2024-2025.jpg', 'Bic Camera 最新官方優惠券')">
-                <img src="https://d394e773keepwf.cloudfront.net/wp-content/uploads/2024/04/bic-camera-coupon-2024-2025.jpg" 
+                   onclick="openModal('bic_coupon.jpg', 'Bic Camera 最新官方優惠券')">
+                <img src="bic_coupon.jpg" 
                      alt="Bic Camera 官方優惠券" 
                      class="w-full h-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" />
                 <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
@@ -192,7 +186,7 @@
 
             <div class="mt-4 pt-3 border-t border-stone-200 flex items-center justify-between text-xs">
               <span class="text-stone-600">Day 2 名古屋站西店適用</span>
-              <button onclick="openModal('https://d394e773keepwf.cloudfront.net/wp-content/uploads/2024/04/bic-camera-coupon-2024-2025.jpg', 'Bic Camera 最新官方優惠券')"
+              <button onclick="openModal('bic_coupon.jpg', 'Bic Camera 最新官方優惠券')"
                       class="px-3 py-1.5 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition-colors">
                 📱 放大出示條碼
               </button>
@@ -209,8 +203,8 @@
               
               <!-- 官方優惠券高畫質圖片 -->
               <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-stone-300 bg-white"
-                   onclick="openModal('https://matcha-jp.com/file/videomatcha/production/original/20240301140000000000_sugidrug_coupon_tw.jpg', 'SUGI 杉藥局 最新官方優惠券')">
-                <img src="https://matcha-jp.com/file/videomatcha/production/original/20240301140000000000_sugidrug_coupon_tw.jpg" 
+                   onclick="openModal('sugi_coupon.jpg', 'SUGI 杉藥局 最新官方優惠券')">
+                <img src="sugi_coupon.jpg" 
                      alt="SUGI 杉藥局 官方優惠券" 
                      class="w-full h-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" />
                 <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
@@ -221,7 +215,7 @@
 
             <div class="mt-4 pt-3 border-t border-stone-200 flex items-center justify-between text-xs">
               <span class="text-stone-600">Day 7 名鐵名古屋店適用</span>
-              <button onclick="openModal('https://matcha-jp.com/file/videomatcha/production/original/20240301140000000000_sugidrug_coupon_tw.jpg', 'SUGI 杉藥局 最新官方優惠券')"
+              <button onclick="openModal('sugi_coupon.jpg', 'SUGI 杉藥局 最新官方優惠券')"
                       class="px-3 py-1.5 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 transition-colors">
                 📱 放大出示條碼
               </button>
@@ -328,50 +322,50 @@
       {
         day: 1,
         date: "2026.11.29 (週日)",
-        title: "台北啟程・抵達名古屋・Comfort 金山入住・三福鰻魚飯[cite: 3, 4, 5]",
+        title: "台北啟程・抵達名古屋・Comfort 金山入住・三福鰻魚飯",
         hotel: "Comfort Hotel Nagoya Kanayama",
         events: [
           {
             id: "d1-e1",
             time: "11:55 - 18:45",
-            stay: "飛行與出關約 4 小時[cite: 5]",
-            title: "星宇航空飛抵中部國際機場 (新特麗亞)[cite: 3, 5]",
-            place: "桃園機場 T1 → 名古屋中部國際機場 (NGO)[cite: 3, 5]",
-            transport: "星宇航空班機（11:55 起飛，18:45 順利入境）[cite: 3, 5]",
-            desc: "抵達常滑市中部國際機場，領取行李並兌換名鐵車票[cite: 5]。",
+            stay: "飛行與出關約 4 小時",
+            title: "星宇航空飛抵中部國際機場 (新特麗亞)",
+            place: "桃園機場 T1 → 名古屋中部國際機場 (NGO)",
+            transport: "星宇航空班機（11:55 起飛，18:45 順利入境）",
+            desc: "抵達常滑市中部國際機場，領取行李並兌換名鐵車票。",
             mapUrl: gmapSearch("Chubu Centrair International Airport"),
             routeUrl: null
           },
           {
             id: "d1-e2",
             time: "19:15 - 20:08",
-            stay: "車程約 53 分鐘[cite: 5]",
-            title: "名鐵特急直達「金山綜合站」[cite: 5]",
-            place: "中部國際機場站 → 金山站[cite: 5]",
-            transport: "搭乘名鐵特急 μ-SKY 或特急列車直達金山站[cite: 5]",
-            desc: "金山為三鐵共構樞紐，轉乘機能強大，免拖行李擠進名古屋站[cite: 5]。",
+            stay: "車程約 53 分鐘",
+            title: "名鐵特急直達「金山綜合站」",
+            place: "中部國際機場站 → 金山站",
+            transport: "搭乘名鐵特急 μ-SKY 或特急列車直達金山站",
+            desc: "金山為三鐵共構樞紐，轉乘機能強大，免拖行李擠進名古屋站。",
             mapUrl: gmapSearch("Kanayama Station Nagoya"),
             routeUrl: gmapDir("Chubu Centrair International Airport", "Kanayama Station Nagoya", "transit")
           },
           {
             id: "d1-e3",
             time: "20:08 - 20:28",
-            stay: "停留 20 分鐘[cite: 5]",
-            title: "飯店 Check-in 卸下行李[cite: 5]",
-            place: "Comfort Hotel Nagoya Kanayama[cite: 5]",
-            transport: "金山站出站徒步 2–3 分鐘即達[cite: 5]",
-            desc: "辦理連續 4 晚的入住手續，放好行李後出門覓食[cite: 5]。",
+            stay: "停留 20 分鐘",
+            title: "飯店 Check-in 卸下行李",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "金山站出站徒步 2–3 分鐘即達",
+            desc: "辦理連續 4 晚的入住手續，放好行李後出門覓食。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
             routeUrl: gmapDir("Kanayama Station Nagoya", "Comfort Hotel Nagoya Kanayama", "walking")
           },
           {
             id: "d1-e4",
             time: "20:32 - 21:32",
-            stay: "停留 1 小時[cite: 5]",
-            title: "晚餐：鰻魚三吃名店「三福」[cite: 5]",
-            place: "うなぎ 三福 (金山)[cite: 5]",
-            transport: "飯店徒步約 4 分鐘[cite: 5]",
-            desc: "第一晚品嚐道地酥脆焦香的名古屋鰻魚飯三吃[cite: 5]。",
+            stay: "停留 1 小時",
+            title: "晚餐：鰻魚三吃名店「三福」",
+            place: "うなぎ 三福 (金山)",
+            transport: "飯店徒步約 4 分鐘",
+            desc: "第一晚品嚐道地酥脆焦香的名古屋鰻魚飯三吃。",
             mapUrl: gmapSearch("うなぎ 三福 金山"),
             routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "うなぎ 三福 金山", "walking")
           }
@@ -380,72 +374,72 @@
       {
         day: 2,
         date: "2026.11.30 (週一)",
-        title: "永保寺・小原四季櫻・香嵐溪紅葉・Bic Camera 採買[cite: 3, 6]",
+        title: "永保寺・小原四季櫻・香嵐溪紅葉・Bic Camera 採買",
         hotel: "Comfort Hotel Nagoya Kanayama",
         events: [
           {
             id: "d2-e1",
             time: "08:30 - 08:44",
-            stay: "停留 10 分鐘[cite: 6]",
-            title: "金山出發・名古屋站銀時鐘自販機[cite: 6, 7]",
-            place: "Comfort Hotel 金山 → 名古屋站銀時鐘[cite: 6, 7]",
-            transport: "JR 中央線至名古屋站[cite: 6]",
-            desc: "集合於名古屋站銀時鐘旁自動販賣機購買熱咖啡[cite: 6, 7]。",
+            stay: "停留 10 分鐘",
+            title: "金山出發・名古屋站銀時鐘自販機",
+            place: "Comfort Hotel 金山 → 名古屋站銀時鐘",
+            transport: "JR 中央線至名古屋站",
+            desc: "集合於名古屋站銀時鐘旁自動販賣機購買熱咖啡。",
             mapUrl: gmapSearch("銀時計 名古屋駅"),
             routeUrl: null
           },
           {
             id: "d2-e2",
             time: "10:00 - 11:00",
-            stay: "停留 1 小時[cite: 6]",
-            title: "多治見：虎溪山 永保寺 (國寶庭園)[cite: 6]",
-            place: "虎溪山 永保寺[cite: 6]",
-            transport: "車程約 1 小時[cite: 6]",
-            desc: "鎌倉時代國寶觀音堂與無際橋，深秋銀杏與滿山楓紅交織[cite: 6]。",
+            stay: "停留 1 小時",
+            title: "多治見：虎溪山 永保寺 (國寶庭園)",
+            place: "虎溪山 永保寺",
+            transport: "車程約 1 小時",
+            desc: "鎌倉時代國寶觀音堂與無際橋，深秋銀杏與滿山楓紅交織。",
             mapUrl: gmapSearch("虎渓山 永保寺"),
             routeUrl: gmapDir("Nagoya Station", "虎渓山 永保寺", "driving")
           },
           {
             id: "d2-e3",
             time: "14:00 - 14:30",
-            stay: "停留 30 分鐘[cite: 6]",
-            title: "豐田市：小原四季櫻之里 (川見四季桜の里)[cite: 6]",
-            place: "川見四季桜の里[cite: 6]",
-            transport: "車程約 44 分鐘[cite: 6]",
-            desc: "罕見奇觀！每年 11 月下旬白粉色四季櫻與火紅楓葉同框盛開[cite: 6]。",
+            stay: "停留 30 分鐘",
+            title: "豐田市：小原四季櫻之里 (川見四季桜の里)",
+            place: "川見四季桜の里",
+            transport: "車程約 44 分鐘",
+            desc: "罕見奇觀！每年 11 月下旬白粉色四季櫻與火紅楓葉同框盛開。",
             mapUrl: gmapSearch("川見四季桜の里"),
             routeUrl: gmapDir("虎渓山 永保寺", "川見四季桜の里", "driving")
           },
           {
             id: "d2-e4",
             time: "16:00 - 18:00",
-            stay: "停留 2 小時[cite: 6]",
-            title: "東海第一紅葉名所：香嵐溪 (待月橋)[cite: 6]",
-            place: "香嵐溪 巴川・待月橋[cite: 6]",
-            transport: "車程約 36 分鐘[cite: 6]",
-            desc: "約 4,000 株楓樹染紅巴川兩岸，傍晚點燈如金色隧道，品嚐五平餅[cite: 6]。",
+            stay: "停留 2 小時",
+            title: "東海第一紅葉名所：香嵐溪 (待月橋)",
+            place: "香嵐溪 巴川・待月橋",
+            transport: "車程約 36 分鐘",
+            desc: "約 4,000 株楓樹染紅巴川兩岸，傍晚點燈如金色隧道，品嚐五平餅。",
             mapUrl: gmapSearch("香嵐渓 待月橋"),
             routeUrl: gmapDir("川見四季桜の里", "香嵐渓", "driving")
           },
           {
             id: "d2-e5",
             time: "18:56 - 20:00",
-            stay: "停留 1 小時[cite: 6]",
-            title: "Bic Camera 名古屋站西店：電器大採購[cite: 6, 7]",
-            place: "Bic Camera 名古屋站西店[cite: 6, 7]",
-            transport: "車程約 56 分鐘返抵名古屋站西口[cite: 6]",
-            desc: "集中採購：Panasonic 咖啡機、Iris 塵蟎機、Mirable 蓮蓬頭與保健品[cite: 7]。",
+            stay: "停留 1 小時",
+            title: "Bic Camera 名古屋站西店：電器大採購",
+            place: "Bic Camera 名古屋站西店",
+            transport: "車程約 56 分鐘返抵名古屋站西口",
+            desc: "集中採購：Panasonic 咖啡機、Iris 塵蟎機、Mirable 蓮蓬頭與保健品。",
             mapUrl: gmapSearch("ビックカメラ 名古屋駅西店"),
             routeUrl: gmapDir("香嵐渓", "ビックカメラ 名古屋駅西店", "driving")
           },
           {
             id: "d2-e6",
             time: "21:03",
-            stay: "返抵休息[cite: 6]",
-            title: "返回 Comfort Hotel 金山[cite: 6]",
-            place: "Comfort Hotel Nagoya Kanayama[cite: 6]",
-            transport: "JR 中央線返回金山站[cite: 6]",
-            desc: "將電器戰利品放回房間休息[cite: 6]。",
+            stay: "返抵休息",
+            title: "返回 Comfort Hotel 金山",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "JR 中央線返回金山站",
+            desc: "將電器戰利品放回房間休息。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
             routeUrl: null
           }
@@ -454,61 +448,61 @@
       {
         day: 3,
         date: "2026.12.01 (週二)",
-        title: "榮商圈流行服飾・Alpen・LACHIC・綠洲21夜景[cite: 3, 8]",
+        title: "榮商圈流行服飾・Alpen・LACHIC・綠洲21夜景",
         hotel: "Comfort Hotel Nagoya Kanayama",
         events: [
           {
             id: "d3-e1",
             time: "10:00 - 14:00",
-            stay: "停留約 4 小時[cite: 8]",
-            title: "名古屋 PARCO 潮流巡禮[cite: 8]",
-            place: "名古屋 PARCO (STUDIOUS, UNITED TOKYO, TOWER RECORDS, Lui's)[cite: 8]",
-            transport: "地鐵名城線至「矢場町站」直結[cite: 8]",
-            desc: "集結日系高質感服裝 STUDIOUS、UNITED TOKYO，逛唱片行買 CD[cite: 8]。",
+            stay: "停留約 4 小時",
+            title: "名古屋 PARCO 潮流巡禮",
+            place: "名古屋 PARCO (STUDIOUS, UNITED TOKYO, TOWER RECORDS, Lui's)",
+            transport: "地鐵名城線至「矢場町站」直結",
+            desc: "集結日系高質感服裝 STUDIOUS、UNITED TOKYO，逛唱片行買 CD。",
             mapUrl: gmapSearch("名古屋PARCO"),
             routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "名古屋PARCO", "transit")
           },
           {
             id: "d3-e2",
             time: "14:30 - 15:30",
-            stay: "停留 1 小時[cite: 8]",
-            title: "Alpen Nagoya & 好日山莊 運動戶外採買[cite: 8]",
-            place: "Alpen Nagoya 旗艦館 → 好日山莊 名古屋榮店[cite: 8]",
-            transport: "商圈徒步約 4–9 分鐘[cite: 8]",
-            desc: "日本頂級規模戶外旗艦店，各類登山機能服飾與戶外裝備一應俱全[cite: 8]。",
+            stay: "停留 1 小時",
+            title: "Alpen Nagoya & 好日山莊 運動戶外採買",
+            place: "Alpen Nagoya 旗艦館 → 好日山莊 名古屋榮店",
+            transport: "商圈徒步約 4–9 分鐘",
+            desc: "日本頂級規模戶外旗艦店，各類登山機能服飾與戶外裝備一應俱全。",
             mapUrl: gmapSearch("Alpen Nagoya"),
             routeUrl: gmapDir("名古屋PARCO", "Alpen Nagoya", "walking")
           },
           {
             id: "d3-e3",
             time: "16:00 - 17:00",
-            stay: "停留 1 小時[cite: 8]",
-            title: "LACHIC：and wander 專賣店朝聖[cite: 8]",
-            place: "LACHIC (and wander Nagoya LACHIC)[cite: 8]",
-            transport: "榮商圈徒步 1 分鐘[cite: 8]",
-            desc: "選購極具山系美學的 and wander 戶外潮流服飾與配件[cite: 8]。",
+            stay: "停留 1 小時",
+            title: "LACHIC：and wander 專賣店朝聖",
+            place: "LACHIC (and wander Nagoya LACHIC)",
+            transport: "榮商圈徒步 1 分鐘",
+            desc: "選購極具山系美學的 and wander 戶外潮流服飾與配件。",
             mapUrl: gmapSearch("and wander Nagoya LACHIC"),
             routeUrl: gmapDir("Alpen Nagoya", "and wander Nagoya LACHIC", "walking")
           },
           {
             id: "d3-e4",
             time: "17:00 - 18:30",
-            stay: "停留 1.5 小時[cite: 8]",
-            title: "綠洲 21 (Oasis 21 水之宇宙船) 夕陽夜景[cite: 8]",
-            place: "綠洲 21 (Oasis 21) & 久屋大通公園[cite: 8]",
-            transport: "徒步 9 分鐘[cite: 8]",
-            desc: "登上玻璃屋頂水之宇宙船空中走道，欣賞電視塔與點燈夜景[cite: 8]。",
+            stay: "停留 1.5 小時",
+            title: "綠洲 21 (Oasis 21 水之宇宙船) 夕陽夜景",
+            place: "綠洲 21 (Oasis 21) & 久屋大通公園",
+            transport: "徒步 9 分鐘",
+            desc: "登上玻璃屋頂水之宇宙船空中走道，欣賞電視塔與點燈夜景。",
             mapUrl: gmapSearch("オアシス２１"),
             routeUrl: gmapDir("and wander Nagoya LACHIC", "オアシス２１", "walking")
           },
           {
             id: "d3-e5",
             time: "19:00",
-            stay: "返抵飯店[cite: 8]",
-            title: "返回 Comfort Hotel 金山[cite: 8]",
-            place: "Comfort Hotel Nagoya Kanayama[cite: 8]",
-            transport: "地鐵名城線直達「金山站」[cite: 8]",
-            desc: "卸下整天採買的衣物戰利品，準備隔天演唱會[cite: 8]。",
+            stay: "返抵飯店",
+            title: "返回 Comfort Hotel 金山",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "地鐵名城線直達「金山站」",
+            desc: "卸下整天採買的衣物戰利品，準備隔天演唱會。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
             routeUrl: null
           }
@@ -517,72 +511,72 @@
       {
         day: 4,
         date: "2026.12.02 (週三)",
-        title: "炸蝦三明治・買物周邊・永旺夢樂城熱田・tuki. 演唱會[cite: 3, 9]",
+        title: "炸蝦三明治・買物周邊・永旺夢樂城熱田・tuki. 演唱會",
         hotel: "Comfort Hotel Nagoya Kanayama",
         events: [
           {
             id: "d4-e1",
             time: "09:00 - 11:30",
-            stay: "停留 2.5 小時[cite: 9]",
-            title: "早餐：昭和名店「コンパル 大須本店」[cite: 9]",
-            place: "コンパル 大須本店 (Konparu)[cite: 9]",
-            transport: "地鐵至上前津站徒步 5 分鐘[cite: 9]",
-            desc: "品嚐外酥內彈牙的極品炸蝦三明治與冰滴咖啡[cite: 9]。",
+            stay: "停留 2.5 小時",
+            title: "早餐：昭和名店「コンパル 大須本店」",
+            place: "コンパル 大須本店 (Konparu)",
+            transport: "地鐵至上前津站徒步 5 分鐘",
+            desc: "品嚐外酥內彈牙的極品炸蝦三明治與冰滴咖啡。",
             mapUrl: gmapSearch("コンパル 大須本店"),
             routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "コンパル 大須本店", "transit")
           },
           {
             id: "d4-e2",
             time: "12:00 - 13:00",
-            stay: "停留 1 小時[cite: 9]",
-            title: "搶排演唱會官方周邊[cite: 9]",
-            place: "日本特殊陶業市民會館 (中京大學文化市民會館)[cite: 9]",
-            transport: "金山站出站徒步 5 分鐘直結[cite: 9]",
-            desc: "搶先排隊購買 tuki. 演唱會專屬官方周邊（手燈、T恤、紀念物）[cite: 9]。",
+            stay: "停留 1 小時",
+            title: "搶排演唱會官方周邊",
+            place: "日本特殊陶業市民會館 (中京大學文化市民會館)",
+            transport: "金山站出站徒步 5 分鐘直結",
+            desc: "搶先排隊購買 tuki. 演唱會專屬官方周邊（手燈、T恤、紀念物）。",
             mapUrl: gmapSearch("日本特殊陶業市民会館"),
             routeUrl: gmapDir("コンパル 大須本店", "日本特殊陶業市民会館", "transit")
           },
           {
             id: "d4-e3",
             time: "13:10 - 13:40",
-            stay: "停留 30 分鐘[cite: 9]",
-            title: "回飯店放周邊輕裝充電[cite: 9]",
-            place: "Comfort Hotel Nagoya Kanayama[cite: 9]",
-            transport: "會館徒步 8 分鐘即抵飯店[cite: 9]",
-            desc: "將買到的周邊戰利品放回客房，隨身只帶手燈與貴重物品[cite: 9]。",
+            stay: "停留 30 分鐘",
+            title: "回飯店放周邊輕裝充電",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "會館徒步 8 分鐘即抵飯店",
+            desc: "將買到的周邊戰利品放回客房，隨身只帶手燈與貴重物品。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
             routeUrl: null
           },
           {
             id: "d4-e4",
             time: "14:00 - 16:30",
-            stay: "停留 2.5 小時[cite: 9]",
-            title: "永旺夢樂城 熱田 (Aeon Mall Atsuta)[cite: 9]",
-            place: "Aeon Mall 熱田 (含 DOD 專區)[cite: 9]",
-            transport: "金山站搭乘免費接駁巴士約 10 分鐘[cite: 9]",
-            desc: "開場前悠閒採買生活雜貨與露營小物，補充熱量[cite: 9]。",
+            stay: "停留 2.5 小時",
+            title: "永旺夢樂城 熱田 (Aeon Mall Atsuta)",
+            place: "Aeon Mall 熱田 (含 DOD 專區)",
+            transport: "金山站搭乘免費接駁巴士約 10 分鐘",
+            desc: "開場前悠閒採買生活雜貨與露營小物，補充熱量。",
             mapUrl: gmapSearch("イオンモール熱田"),
             routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "イオンモール熱田", "transit")
           },
           {
             id: "d4-e5",
             time: "17:00 - 20:00",
-            stay: "活動 3 小時[cite: 9]",
-            title: "🎵 重頭戲：tuki. 現場演唱會！[cite: 9]",
-            place: "日本特殊陶業市民會館 (Forest Hall)[cite: 9]",
-            transport: "接駁車回金山站步行即達會場[cite: 9]",
-            desc: "沉浸在 tuki. 震撼又純粹的現場歌聲中，享受音樂之夜！[cite: 9]",
+            stay: "活動 3 小時",
+            title: "🎵 重頭戲：tuki. 現場演唱會！",
+            place: "日本特殊陶業市民會館 (Forest Hall)",
+            transport: "接駁車回金山站步行即達會場",
+            desc: "沉浸在 tuki. 震撼又純粹的現場歌聲中，享受音樂之夜！",
             mapUrl: gmapSearch("日本特殊陶業市民会館"),
             routeUrl: gmapDir("イオンモール熱田", "日本特殊陶業市民会館", "transit")
           },
           {
             id: "d4-e6",
             time: "20:30",
-            stay: "返抵休息[cite: 9]",
-            title: "散步回飯店 Comfort 金山[cite: 9]",
-            place: "Comfort Hotel Nagoya Kanayama[cite: 9]",
-            transport: "會場散場徒步 5–8 分鐘直接回房[cite: 9]",
-            desc: "免去擠電車的疲倦，散步數分鐘即可回飯店休息整理大行李[cite: 9]。",
+            stay: "返抵休息",
+            title: "散步回飯店 Comfort 金山",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "會場散場徒步 5–8 分鐘直接回房",
+            desc: "免去擠電車的疲倦，散步數分鐘即可回飯店休息整理大行李。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
             routeUrl: null
           }
@@ -591,72 +585,72 @@
       {
         day: 5,
         date: "2026.12.03 (週四)",
-        title: "特急飛驒號抵高山・味藏天國飛驒牛・飛驒古川巡禮[cite: 4, 10]",
+        title: "特急飛驒號抵高山・味藏天國飛驒牛・飛驒古川巡禮",
         hotel: "hotel around TAKAYAMA (Ascend Hotel Collection)",
         events: [
           {
             id: "d5-e1",
             time: "08:00 - 10:30",
-            stay: "車程約 2.5 小時[cite: 4, 10]",
-            title: "搭特急 Hida 抵達高山站[cite: 4, 10]",
-            place: "名古屋站 → JR 高山站[cite: 4, 10]",
-            transport: "搭乘特急 Hida（木曾川飛驒川溪谷美景）[cite: 4, 10]",
-            desc: "一路北上進入阿爾卑斯山腳下古樸雪白的高山市[cite: 4, 10]。",
+            stay: "車程約 2.5 小時",
+            title: "搭特急 Hida 抵達高山站",
+            place: "名古屋站 → JR 高山站",
+            transport: "搭乘特急 Hida（木曾川飛驒川溪谷美景）",
+            desc: "一路北上進入阿爾卑斯山腳下古樸雪白的高山市。",
             mapUrl: gmapSearch("Takayama Station"),
             routeUrl: gmapDir("Nagoya Station", "Takayama Station", "transit")
           },
           {
             id: "d5-e2",
             time: "10:30 - 10:45",
-            stay: "停留 15 分鐘[cite: 10]",
-            title: "hotel around TAKAYAMA 寄放行李[cite: 10]",
-            place: "hotel around TAKAYAMA (Ascend Hotel Collection)[cite: 10]",
-            transport: "高山站西口徒步 4 分鐘[cite: 10]",
-            desc: "卸下行李給櫃台，準備展開高山美食巡禮[cite: 10]。",
+            stay: "停留 15 分鐘",
+            title: "hotel around TAKAYAMA 寄放行李",
+            place: "hotel around TAKAYAMA (Ascend Hotel Collection)",
+            transport: "高山站西口徒步 4 分鐘",
+            desc: "卸下行李給櫃台，準備展開高山美食巡禮。",
             mapUrl: gmapSearch("hotel around TAKAYAMA"),
             routeUrl: gmapDir("Takayama Station", "hotel around TAKAYAMA", "walking")
           },
           {
             id: "d5-e3",
             time: "11:00 - 12:30",
-            stay: "停留 1.5 小時[cite: 10]",
-            title: "午餐：頂級飛驒牛燒肉「味藏天國」[cite: 10]",
-            place: "味蔵天国 (JA 岐阜直營)[cite: 10]",
-            transport: "高山站旁徒步 2 分鐘[cite: 10]",
-            desc: "品嚐入口即化的 A5 頂級飛驒牛燒肉盛合，肉汁甜美[cite: 10]。",
+            stay: "停留 1.5 小時",
+            title: "午餐：頂級飛驒牛燒肉「味藏天國」",
+            place: "味蔵天国 (JA 岐阜直營)",
+            transport: "高山站旁徒步 2 分鐘",
+            desc: "品嚐入口即化的 A5 頂級飛驒牛燒肉盛合，肉汁甜美。",
             mapUrl: gmapSearch("味蔵天国"),
             routeUrl: gmapDir("hotel around TAKAYAMA", "味蔵天国", "walking")
           },
           {
             id: "d5-e4",
             time: "13:00 - 16:30",
-            stay: "漫步約 3.5 小時[cite: 10]",
-            title: "飛驒古川巡禮：蒲酒造・渡邊酒造・井之廣煎餅[cite: 10]",
-            place: "飛驒古川白壁土閣街（氣多若宮神社、櫻花物產館）[cite: 10]",
-            transport: "JR 高山本線搭車 15 分鐘至「飛驒古川站」[cite: 10]",
-            desc: "《你的名字》聖地巡禮！參觀百年老酒造並試飲銘酒「蓬萊」[cite: 10]。",
+            stay: "漫步約 3.5 小時",
+            title: "飛驒古川巡禮：蒲酒造・渡邊酒造・井之廣煎餅",
+            place: "飛驒古川白壁土閣街（氣多若宮神社、櫻花物產館）",
+            transport: "JR 高山本線搭車 15 分鐘至「飛驒古川站」",
+            desc: "《你的名字》聖地巡禮！參觀百年老酒造並試飲銘酒「蓬萊」。",
             mapUrl: gmapSearch("飛騨古川まつり会館"),
             routeUrl: gmapDir("味蔵天国", "飛騨古川駅", "transit")
           },
           {
             id: "d5-e5",
             time: "17:40 - 18:40",
-            stay: "停留 1 小時[cite: 10]",
-            title: "駿河屋 Asumo 店超市補貨[cite: 10]",
-            place: "駿河屋 Asumo 店[cite: 10]",
-            transport: "高山市區巴士或徒步[cite: 10]",
-            desc: "採買飛驒在地飛驒牛奶、在地優格、當季水果與點心[cite: 10]。",
+            stay: "停留 1 小時",
+            title: "駿河屋 Asumo 店超市補貨",
+            place: "駿河屋 Asumo 店",
+            transport: "高山市區巴士或徒步",
+            desc: "採買飛驒在地飛驒牛奶、在地優格、當季水果與點心。",
             mapUrl: gmapSearch("駿河屋 アスモ店"),
             routeUrl: gmapDir("Takayama Station", "駿河屋 アスモ店", "transit")
           },
           {
             id: "d5-e6",
             time: "19:00",
-            stay: "入住放鬆[cite: 10]",
-            title: "入住 hotel around TAKAYAMA 泡湯[cite: 10]",
-            place: "hotel around TAKAYAMA[cite: 10]",
-            transport: "徒步返抵飯店[cite: 10]",
-            desc: "享受 Choice 旗艦 Ascend 飯店專屬風呂大浴場，洗淨疲勞[cite: 10]。",
+            stay: "入住放鬆",
+            title: "入住 hotel around TAKAYAMA 泡湯",
+            place: "hotel around TAKAYAMA",
+            transport: "徒步返抵飯店",
+            desc: "享受 Choice 旗艦 Ascend 飯店專屬風呂大浴場，洗淨疲勞。",
             mapUrl: gmapSearch("hotel around TAKAYAMA"),
             routeUrl: null
           }
@@ -665,72 +659,72 @@
       {
         day: 6,
         date: "2026.12.04 (週五)",
-        title: "新穗高雙層纜車・雪山絕景・高山陣屋・高山布丁亭[cite: 4, 11, 12]",
+        title: "新穗高雙層纜車・雪山絕景・高山陣屋・高山布丁亭",
         hotel: "hotel around TAKAYAMA (Ascend Hotel Collection)",
         events: [
           {
             id: "d6-e1",
             time: "08:00 - 10:20",
-            stay: "搭車約 1 小時 36 分[cite: 11]",
-            title: "濃飛巴士出發 → 新穗高纜車站[cite: 4, 11]",
-            place: "高山濃飛巴士中心 5 號月台 → 新穗高纜車[cite: 4, 11]",
-            transport: "搭乘濃飛巴士新穗高線[cite: 4, 11]",
-            desc: "穿過奧飛驒溫泉鄉與壯麗山谷，直達纜車登山口[cite: 11]。",
+            stay: "搭車約 1 小時 36 分",
+            title: "濃飛巴士出發 → 新穗高纜車站",
+            place: "高山濃飛巴士中心 5 號月台 → 新穗高纜車",
+            transport: "搭乘濃飛巴士新穗高線",
+            desc: "穿過奧飛驒溫泉鄉與壯麗山谷，直達纜車登山口。",
             mapUrl: gmapSearch("Shinhotaka Ropeway Bus Stop"),
             routeUrl: gmapDir("Takayama Nohi Bus Center", "Shinhotaka Ropeway", "transit")
           },
           {
             id: "d6-e2",
             time: "10:20 - 12:50",
-            stay: "停留 2.5 小時[cite: 11]",
-            title: "新穗高雙層纜車登上 2,156m 展望台[cite: 11]",
-            place: "西穗高口站屋頂展望台 ＆ 阿爾卑斯的麵包房[cite: 11, 12]",
-            transport: "搭乘第 1、第 2 段雙層纜車直達山頂[cite: 11]",
-            desc: "360 度眺望北阿爾卑斯壯麗雪景！吃阿爾卑斯麵包房可頌與咖哩麵包[cite: 11, 12]。",
+            stay: "停留 2.5 小時",
+            title: "新穗高雙層纜車登上 2,156m 展望台",
+            place: "西穗高口站屋頂展望台 ＆ 阿爾卑斯的麵包房",
+            transport: "搭乘第 1、第 2 段雙層纜車直達山頂",
+            desc: "360 度眺望北阿爾卑斯壯麗雪景！吃阿爾卑斯麵包房可頌與咖哩麵包。",
             mapUrl: gmapSearch("西穂高口駅 展望台"),
             routeUrl: null
           },
           {
             id: "d6-e3",
             time: "13:00 - 14:30",
-            stay: "車程約 1.5 小時[cite: 11]",
-            title: "搭濃飛巴士返抵高山市區[cite: 11]",
-            place: "新穗高纜車站 → 高山濃飛巴士中心[cite: 11]",
-            transport: "濃飛巴士回程[cite: 11]",
-            desc: "在車上小憩補眠，回到高山市區展開古街散步[cite: 11]。",
+            stay: "車程約 1.5 小時",
+            title: "搭濃飛巴士返抵高山市區",
+            place: "新穗高纜車站 → 高山濃飛巴士中心",
+            transport: "濃飛巴士回程",
+            desc: "在車上小憩補眠，回到高山市區展開古街散步。",
             mapUrl: gmapSearch("Takayama Nohi Bus Center"),
             routeUrl: gmapDir("Shinhotaka Ropeway", "Takayama Nohi Bus Center", "transit")
           },
           {
             id: "d6-e4",
             time: "14:30 - 15:40",
-            stay: "停留約 1 小時[cite: 11]",
-            title: "高山老街漫步・品嚐高山布丁亭[cite: 11]",
-            place: "上三之町老街、高山布丁亭[cite: 11]",
-            transport: "老街平地漫步[cite: 11]",
-            desc: "江戶木造黑瓦老屋，沿途吃排隊「高山布丁亭」滑嫩布丁與飛驒牛壽司[cite: 11]。",
+            stay: "停留約 1 小時",
+            title: "高山老街漫步・品嚐高山布丁亭",
+            place: "上三之町老街、高山布丁亭",
+            transport: "老街平地漫步",
+            desc: "江戶木造黑瓦老屋，沿途吃排隊「高山布丁亭」滑嫩布丁與飛驒牛壽司。",
             mapUrl: gmapSearch("高山プリン亭"),
             routeUrl: gmapDir("Takayama Nohi Bus Center", "高山プリン亭", "walking")
           },
           {
             id: "d6-e5",
             time: "15:40 - 16:40",
-            stay: "停留 1 小時[cite: 11]",
-            title: "參觀唯一現存江戶幕府官府：高山陣屋[cite: 11]",
-            place: "高山陣屋 (國指定史跡)[cite: 11]",
-            transport: "中橋過河徒步 3 分鐘[cite: 11]",
-            desc: "參觀日本唯一完整保存的德川幕府代官所[cite: 11]。",
+            stay: "停留 1 小時",
+            title: "參觀唯一現存江戶幕府官府：高山陣屋",
+            place: "高山陣屋 (國指定史跡)",
+            transport: "中橋過河徒步 3 分鐘",
+            desc: "參觀日本唯一完整保存的德川幕府代官所。",
             mapUrl: gmapSearch("高山陣屋"),
             routeUrl: gmapDir("高山プリン亭", "高山陣屋", "walking")
           },
           {
             id: "d6-e6",
             time: "17:00",
-            stay: "返抵休息[cite: 11]",
-            title: "返回 hotel around TAKAYAMA 晚餐泡湯[cite: 11]",
-            place: "hotel around TAKAYAMA[cite: 11]",
-            transport: "徒步 14 分鐘返抵飯店[cite: 11]",
-            desc: "在高山最後一夜，享受悠閒在地步調與舒緩溫泉[cite: 11]。",
+            stay: "返抵休息",
+            title: "返回 hotel around TAKAYAMA 晚餐泡湯",
+            place: "hotel around TAKAYAMA",
+            transport: "徒步 14 分鐘返抵飯店",
+            desc: "在高山最後一夜，享受悠閒在地步調與舒緩溫泉。",
             mapUrl: gmapSearch("hotel around TAKAYAMA"),
             routeUrl: null
           }
@@ -739,83 +733,83 @@
       {
         day: 7,
         date: "2026.12.05 (週六)",
-        title: "宮川朝市・飛驒之里・返名古屋・高島屋買 Ado 娃衣・杉藥局[cite: 4, 13, 14]",
+        title: "宮川朝市・飛驒之里・返名古屋・高島屋買 Ado 娃衣・杉藥局",
         hotel: "Comfort Hotel Nagoya Shinkansenguchi",
         events: [
           {
             id: "d7-e1",
             time: "08:00 - 09:30",
-            stay: "停留 1.5 小時[cite: 13]",
-            title: "晨間漫步：宮川朝市 (河畔早市)[cite: 13]",
-            place: "高山宮川朝市[cite: 13]",
-            transport: "飯店徒步約 10 分鐘[cite: 13]",
-            desc: "日本三大早市之一！品嚐烤丸子、蘋果乾、飛驒牛包子與手作工藝[cite: 13]。",
+            stay: "停留 1.5 小時",
+            title: "晨間漫步：宮川朝市 (河畔早市)",
+            place: "高山宮川朝市",
+            transport: "飯店徒步約 10 分鐘",
+            desc: "日本三大早市之一！品嚐烤丸子、蘋果乾、飛驒牛包子與手作工藝。",
             mapUrl: gmapSearch("宮川朝市"),
             routeUrl: gmapDir("hotel around TAKAYAMA", "宮川朝市", "walking")
           },
           {
             id: "d7-e2",
             time: "10:00 - 11:30",
-            stay: "停留 1.5 小時[cite: 13]",
-            title: "合掌造野外博物館：飛驒之里[cite: 13]",
-            place: "飛驒之里 (飛騨の里)[cite: 13]",
-            transport: "高山巴士中心搭猿寶寶巴士（約 10 分）[cite: 13]",
-            desc: "重現白川鄉茅草合掌造古民家，冬初白雪覆蓋屋頂宛如童話[cite: 13]。",
+            stay: "停留 1.5 小時",
+            title: "合掌造野外博物館：飛驒之里",
+            place: "飛驒之里 (飛騨の里)",
+            transport: "高山巴士中心搭猿寶寶巴士（約 10 分）",
+            desc: "重現白川鄉茅草合掌造古民家，冬初白雪覆蓋屋頂宛如童話。",
             mapUrl: gmapSearch("飛騨の里"),
             routeUrl: gmapDir("宮川朝市", "飛騨の里", "transit")
           },
           {
             id: "d7-e3",
             time: "12:00 - 15:00",
-            stay: "搭特急約 2 小時 44 分[cite: 13]",
-            title: "飯店取行李搭特急返名古屋站[cite: 13]",
-            place: "高山站 → JR 名古屋站[cite: 13]",
-            transport: "JR 特急 Wide View Hida 返回名古屋站[cite: 13]",
-            desc: "搭乘寬景特急平穩駛回名古屋核心大樞紐[cite: 13]。",
+            stay: "搭特急約 2 小時 44 分",
+            title: "飯店取行李搭特急返名古屋站",
+            place: "高山站 → JR 名古屋站",
+            transport: "JR 特急 Wide View Hida 返回名古屋站",
+            desc: "搭乘寬景特急平穩駛回名古屋核心大樞紐。",
             mapUrl: gmapSearch("Nagoya Station"),
             routeUrl: gmapDir("Takayama Station", "Nagoya Station", "transit")
           },
           {
             id: "d7-e4",
             time: "15:00 - 15:45",
-            stay: "停留 45 分鐘[cite: 13]",
-            title: "入住 Comfort Hotel 名古屋新幹線口[cite: 13]",
-            place: "Comfort Hotel Nagoya Shinkansenguchi[cite: 13]",
-            transport: "名古屋站太閤通口步行 5 分鐘[cite: 13]",
-            desc: "辦理入住卸下大包小包，為傍晚的高島屋衝刺做好萬全準備[cite: 13]。",
+            stay: "停留 45 分鐘",
+            title: "入住 Comfort Hotel 名古屋新幹線口",
+            place: "Comfort Hotel Nagoya Shinkansenguchi",
+            transport: "名古屋站太閤通口步行 5 分鐘",
+            desc: "辦理入住卸下大包小包，為傍晚的高島屋衝刺做好萬全準備。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Shinkansenguchi"),
             routeUrl: gmapDir("Nagoya Station", "Comfort Hotel Nagoya Shinkansenguchi", "walking")
           },
           {
             id: "d7-e5",
             time: "15:59 - 17:00",
-            stay: "停留 1 小時[cite: 13]",
-            title: "スギ (SUGI) 藥局 名鐵名古屋店免稅補貨[cite: 13, 14]",
-            place: "スギ薬局 名鉄名古屋店[cite: 13, 14]",
-            transport: "站前地下街步行 3 分鐘[cite: 13]",
-            desc: "使用折價券（免稅 10% ＋ 最高 8% 折扣，單品 15% 券），集中掃貨長輩保健品[cite: 14]。",
+            stay: "停留 1 小時",
+            title: "スギ (SUGI) 藥局 名鐵名古屋店免稅補貨",
+            place: "スギ薬局 名鉄名古屋店",
+            transport: "站前地下街步行 3 分鐘",
+            desc: "使用折價券（免稅 10% ＋ 最高 8% 折扣，單品 15% 券），集中掃貨長輩保健品。",
             mapUrl: gmapSearch("スギ薬局 名鉄名古屋店"),
             routeUrl: gmapDir("Comfort Hotel Nagoya Shinkansenguchi", "スギ薬局 名鉄名古屋店", "walking")
           },
           {
             id: "d7-e6",
             time: "16:01 - 18:00",
-            stay: "停留約 2 小時[cite: 13]",
-            title: "JR 高島屋 Gate Tower：買 Ado 娃娃衣服[cite: 13]",
-            place: "JR 名古屋高島屋 ＆ Gate Tower (Sanrio Gift Gate)[cite: 13]",
-            transport: "站體連通道步行 1 分鐘直達[cite: 13]",
-            desc: "直奔三麗鷗專賣店選購適合 Ado 娃娃穿著的可愛斗篷與造型替換小衣服！[cite: 13]",
+            stay: "停留約 2 小時",
+            title: "JR 高島屋 Gate Tower：買 Ado 娃娃衣服",
+            place: "JR 名古屋高島屋 ＆ Gate Tower (Sanrio Gift Gate)",
+            transport: "站體連通道步行 1 分鐘直達",
+            desc: "直奔三麗鷗專賣店選購適合 Ado 娃娃穿著的可愛斗篷與造型替換小衣服！",
             mapUrl: gmapSearch("Sanrio Gift Gate JR名古屋タカシマヤ ゲートタワーモール店"),
             routeUrl: gmapDir("スギ薬局 名鉄名古屋店", "ジェイアール名古屋タカシマヤ", "walking")
           },
           {
             id: "d7-e7",
             time: "21:00",
-            stay: "返抵休息[cite: 13]",
-            title: "返回 Comfort 新幹線口打包整理行李[cite: 13]",
-            place: "Comfort Hotel Nagoya Shinkansenguchi[cite: 13]",
-            transport: "徒步 5 分鐘回房[cite: 13]",
-            desc: "最後一晚收納並稱重行李，將所有戰利品穩妥包裝[cite: 13]。",
+            stay: "返抵休息",
+            title: "返回 Comfort 新幹線口打包整理行李",
+            place: "Comfort Hotel Nagoya Shinkansenguchi",
+            transport: "徒步 5 分鐘回房",
+            desc: "最後一晚收納並稱重行李，將所有戰利品穩妥包裝。",
             mapUrl: gmapSearch("Comfort Hotel Nagoya Shinkansenguchi"),
             routeUrl: null
           }
@@ -824,72 +818,72 @@
       {
         day: 8,
         date: "2026.12.06 (週日)",
-        title: "常滑永旺夢樂城・巨大招財貓 Tokonyan・陶瓷散步道・返台[cite: 4, 15]",
+        title: "常滑永旺夢樂城・巨大招財貓 Tokonyan・陶瓷散步道・返台",
         hotel: "溫暖的家",
         events: [
           {
             id: "d8-e1",
             time: "09:15 - 10:15",
-            stay: "車程約 40 分鐘[cite: 15]",
-            title: "名古屋站搭名鐵前往「常滑」[cite: 15]",
-            place: "名鐵名古屋站 → 名鐵常滑站 / 臨空常滑站[cite: 15]",
-            transport: "搭乘名鐵特急／急行至常滑站[cite: 15]",
-            desc: "直奔招財貓故鄉常滑市，下車先至永旺夢樂城放行李[cite: 15]。",
+            stay: "車程約 40 分鐘",
+            title: "名古屋站搭名鐵前往「常滑」",
+            place: "名鐵名古屋站 → 名鐵常滑站 / 臨空常滑站",
+            transport: "搭乘名鐵特急／急行至常滑站",
+            desc: "直奔招財貓故鄉常滑市，下車先至永旺夢樂城放行李。",
             mapUrl: gmapSearch("AEON MALL Tokoname"),
             routeUrl: gmapDir("Nagoya Station", "AEON MALL Tokoname", "transit")
           },
           {
             id: "d8-e2",
             time: "10:15 - 10:30",
-            stay: "停留 15 分鐘[cite: 15]",
-            title: "永旺夢樂城 常滑 寄放行李[cite: 15]",
-            place: "AEON MALL 常滑[cite: 15]",
-            transport: "臨空常滑站出站即達[cite: 15]",
-            desc: "卸下行李箱，輕裝散步至常滑陶器散步道[cite: 15]。",
+            stay: "停留 15 分鐘",
+            title: "永旺夢樂城 常滑 寄放行李",
+            place: "AEON MALL 常滑",
+            transport: "臨空常滑站出站即達",
+            desc: "卸下行李箱，輕裝散步至常滑陶器散步道。",
             mapUrl: gmapSearch("AEON MALL Tokoname"),
             routeUrl: null
           },
           {
             id: "d8-e3",
             time: "11:00 - 13:00",
-            stay: "散步約 2 小時[cite: 15]",
-            title: "常滑陶器散步道・巨大招財貓 Tokonyan[cite: 15]",
-            place: "Tokonyan 巨大招財貓、陶瓷會館、土管坂、常滑牛乳[cite: 15]",
-            transport: "全區古街起伏石板路徒步散策[cite: 15]",
-            desc: "從高台俯瞰的巨大招財貓 Tokonyan 極具魄力！穿過土管坂買瓶在地濃醇常滑牛乳暢飲[cite: 15]。",
+            stay: "散步約 2 小時",
+            title: "常滑陶器散步道・巨大招財貓 Tokonyan",
+            place: "Tokonyan 巨大招財貓、陶瓷會館、土管坂、常滑牛乳",
+            transport: "全區古街起伏石板路徒步散策",
+            desc: "從高台俯瞰的巨大招財貓 Tokonyan 極具魄力！穿過土管坂買瓶在地濃醇常滑牛乳暢飲。",
             mapUrl: gmapSearch("とこにゃん"),
             routeUrl: gmapDir("AEON MALL Tokoname", "とこにゃん", "walking")
           },
           {
             id: "d8-e4",
             time: "13:45 - 15:45",
-            stay: "停留 2 小時[cite: 15]",
-            title: "永旺夢樂城 常滑 最後逛街與午餐[cite: 15]",
-            place: "AEON MALL 常滑[cite: 15]",
-            transport: "徒步返抵商場[cite: 15]",
-            desc: "採購日本零食、伴手禮，領回大件行李搭車去機場[cite: 15]。",
+            stay: "停留 2 小時",
+            title: "永旺夢樂城 常滑 最後逛街與午餐",
+            place: "AEON MALL 常滑",
+            transport: "徒步返抵商場",
+            desc: "採購日本零食、伴手禮，領回大件行李搭車去機場。",
             mapUrl: gmapSearch("AEON MALL Tokoname"),
             routeUrl: gmapDir("とこにゃん", "AEON MALL Tokoname", "walking")
           },
           {
             id: "d8-e5",
             time: "16:30 - 18:49",
-            stay: "停留約 2 小時 20 分[cite: 15]",
-            title: "中部國際機場・環亞貴賓室 (Plaza Premium)[cite: 15]",
-            place: "中部國際機場第 1 航廈 ＆ 環亞貴賓室[cite: 15]",
-            transport: "名鐵 1 站直達中部國際機場[cite: 15]",
-            desc: "辦理星宇航空劃位託運，至貴賓室休息小酌、品嚐熱湯等待登機[cite: 15]。",
+            stay: "停留約 2 小時 20 分",
+            title: "中部國際機場・環亞貴賓室 (Plaza Premium)",
+            place: "中部國際機場第 1 航廈 ＆ 環亞貴賓室",
+            transport: "名鐵 1 站直達中部國際機場",
+            desc: "辦理星宇航空劃位託運，至貴賓室休息小酌、品嚐熱湯等待登機。",
             mapUrl: gmapSearch("Chubu Centrair International Airport Plaza Premium Lounge"),
             routeUrl: gmapDir("AEON MALL Tokoname", "Chubu Centrair International Airport", "transit")
           },
           {
             id: "d8-e6",
             time: "18:49 - 21:54",
-            stay: "航程約 3 小時 5 分鐘[cite: 15]",
-            title: "搭乘星宇航空返回桃園機場[cite: 15]",
-            place: "中部國際機場 (NGO) → 桃園機場 T1[cite: 15]",
-            transport: "星宇航空班機（預計 21:54 返抵台灣）[cite: 15]",
-            desc: "帶回滿滿戰利品與難忘回憶，圓滿結束 8 天精彩旅程！[cite: 15]",
+            stay: "航程約 3 小時 5 分鐘",
+            title: "搭乘星宇航空返回桃園機場",
+            place: "中部國際機場 (NGO) → 桃園機場 T1",
+            transport: "星宇航空班機（預計 21:54 返抵台灣）",
+            desc: "帶回滿滿戰利品與難忘回憶，圓滿結束 8 天精彩旅程！",
             mapUrl: gmapSearch("Taoyuan International Airport"),
             routeUrl: null
           }
