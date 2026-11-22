@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日本旅遊行程目錄</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+      background-color: #f6f7f9;
+      color: #1f2937;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #111827;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    .trip-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .trip-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 16px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .trip-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      border-color: #d1d5db;
+    }
+
+    .trip-card:active {
+      transform: translateY(0);
+    }
+
+    .trip-info h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .trip-info span {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .arrow {
+      font-size: 1.2rem;
+      color: #9ca3af;
+      transition: transform 0.18s ease, color 0.18s ease;
+    }
+
+    .trip-card:hover .arrow {
+      transform: translateX(4px);
+      color: #111827;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>日本旅遊行程</h1>
+      <p>選擇要查看的行程表</p>
+    </header>
+
+    <div class="trip-list">
+      <a href="nagoya.html" class="trip-card">
+        <div class="trip-info">
+          <h2>🍁 名古屋・中部之旅</h2>
+          <span>2026.11.29 – 12.06（8天7夜）</span>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="fukuoka.html" class="trip-card">
+        <div class="trip-info">
+          <h2>🌸 福岡・北九州之旅</h2>
+          <span>2027.04.10 – 04.17（8天7夜）</span>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
