@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 名古屋・飛驒高山八天七夜自由行 | 互動旅遊手冊</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #FAF9F6;
+      color: #1F2937;
+    }
+    .nav-scroll::-webkit-scrollbar { display: none; }
+    .nav-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    .timeline-line { position: relative; }
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      top: 1.25rem;
+      bottom: 1.25rem;
+      left: 0.9rem;
+      width: 2px;
+      background-color: #E5E7EB;
+    }
+    @media (min-width: 768px) {
+      .timeline-line::before { left: 1.15rem; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- 頂部導覽列 -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3 gap-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-amber-900 text-white text-base">🍁</span>
+              <h1 class="text-lg sm:text-xl font-bold text-stone-900 tracking-tight">2026 名古屋・中部昇龍道 8 天 7 夜</h1>
+            </div>
+            <p class="text-xs text-stone-500 mt-0.5 pl-10">2026.11.29 (日) – 12.06 (日) ｜ 星宇航空 ｜ 名古屋・高山・新穗高</p>
+          </div>
+        </div>
+
+        <nav class="flex items-center gap-1.5 overflow-x-auto nav-scroll pb-1 md:pb-0" aria-label="主導覽列">
+          <button data-section="overview" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-colors bg-amber-900 text-white">
+            📋 行程總覽
+          </button>
+          <button data-section="transport" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors text-stone-600 hover:bg-stone-100">
+            🚄 交通與住宿
+          </button>
+          <button data-section="itinerary" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors text-stone-600 hover:bg-stone-100">
+            🗓️ 每日行程
+          </button>
+          <button data-section="shopping" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors text-stone-600 hover:bg-stone-100">
+            🛍️ 購物採買清單
+          </button>
+          <button data-section="food" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors text-stone-600 hover:bg-stone-100">
+            🍲 名古屋美食
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主內容區 -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8">
+
+    <!-- ================= 區塊 1: 行程總覽 ================= -->
+    <section id="section-overview" class="page-section space-y-8">
+      <div class="bg-gradient-to-br from-amber-950 via-stone-800 to-slate-900 rounded-2xl p-6 sm:p-8 text-white shadow-md">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div class="space-y-3 max-w-2xl">
+            <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-amber-200 text-xs font-medium tracking-wide">
+              🍁 秋末紅葉 × 演唱會 × 飛驒牛溫泉 × 雪山纜車
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold leading-snug">名古屋・香嵐溪・高山・新穗高 8 日深度遊</h2>
+            <p class="text-sm sm:text-base text-stone-200 leading-relaxed">
+              涵蓋愛知、岐阜兩大縣市：前四天立足名古屋（宿金山 Comfort），衝香嵐溪紅葉、榮町服飾品牌、tuki. 演唱會；中段直奔飛驒高山（宿 hotel around TAKAYAMA），享味藏天國飛驒牛、新穗高雙層纜車與飛驒古川巡禮；最後返回常滑陶瓷散步道滿載而歸。
+            </p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 shrink-0">
+            <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
+              <div class="text-xs text-amber-200">去程航班</div>
+              <div class="text-lg font-bold mt-0.5">11:55 TPE → NGO</div>
+              <div class="text-[11px] text-stone-300">18:45 抵達常滑</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
+              <div class="text-xs text-amber-200">演唱會亮點</div>
+              <div class="text-lg font-bold mt-0.5">12/02 tuki.</div>
+              <div class="text-[11px] text-stone-300">中京大學文化市民會館</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
+              <div class="text-xs text-amber-200">高山阿爾卑斯</div>
+              <div class="text-lg font-bold mt-0.5">新穗高雙層纜車</div>
+              <div class="text-[11px] text-stone-300">海拔 2,156m 展望台</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur rounded-xl p-3.5 border border-white/10">
+              <div class="text-xs text-amber-200">主力住宿</div>
+              <div class="text-lg font-bold mt-0.5">Choice 系列飯店</div>
+              <div class="text-[11px] text-stone-300">金山・高山・新幹線口</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 八天行程矩陣 -->
+      <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden">
+        <div class="p-5 sm:p-6 border-b border-stone-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <h3 class="text-lg font-bold text-stone-900">八天行程完整概覽</h3>
+            <p class="text-xs text-stone-500 mt-1">點擊任意日期列可直接跳轉至當日詳細時間軸與點對點導航</p>
+          </div>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 font-medium self-start sm:self-auto">
+            💡 包含 62 個精確行程景點與折價券清單
+          </span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="bg-stone-50 text-stone-600 border-b border-stone-200 text-xs">
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">日期</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">核心景點與主軸</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">住宿基地</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">主要交通</th>
+                <th class="py-3 px-4 font-semibold whitespace-nowrap">代表性亮點／美食</th>
+              </tr>
+            </thead>
+            <tbody id="overview-table-body" class="divide-y divide-stone-100"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 數據圖表區 (Chart.js) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6">
+          <div class="mb-4">
+            <h3 class="text-base font-bold text-stone-900">📊 主要跨區交通工具時間比較 (分鐘)</h3>
+            <p class="text-xs text-stone-500 mt-1">點擊或懸停查看車程長度與搭乘車種</p>
+          </div>
+          <div class="relative h-72 sm:h-80 w-full">
+            <canvas id="transportChart"></canvas>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6">
+          <div class="mb-4">
+            <h3 class="text-base font-bold text-stone-900">💰 八天行程預算結構估算</h3>
+            <p class="text-xs text-stone-500 mt-1">含住宿、特急交通、新穗高纜車、電器採購與餐飲試算</p>
+          </div>
+          <div class="relative h-72 sm:h-80 w-full">
+            <canvas id="budgetChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 區塊 2: 交通與住宿 ================= -->
+    <section id="section-transport" class="page-section hidden space-y-8">
+      <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 border-b border-stone-100 pb-4">
+          <div>
+            <h2 class="text-xl font-bold text-stone-900">🏨 本次行程 3 大住宿基地（Choice 體系極致發揮）</h2>
+            <p class="text-xs text-stone-500 mt-1">兼具交通樞紐位置與點數兌換優勢，房內舒適且出入便利：</p>
+          </div>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 self-start">
+            金山 4 晚 ＋ 高山 2 晚 ＋ 名古屋站 1 晚
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="border border-stone-200 rounded-xl p-4 hover:border-amber-400 transition-colors bg-stone-50/40">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-900 text-white">Day 1 - Day 4 (連住4晚)</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">Comfort Hotel 名古屋金山</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              金山綜合站步行僅 2–3 分鐘。JR、名鐵與名城線三鐵共構，直達中部國際機場免換車；往榮商圈、熱田與演唱會會館極度方便，附免費元氣早餐。
+            </p>
+            <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
+              <span class="text-stone-500">名古屋市熱田區波寄町</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Comfort+Hotel+Nagoya+Kanayama" target="_blank" rel="noopener" class="text-amber-800 font-semibold hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 hover:border-amber-400 transition-colors bg-stone-50/40">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-indigo-900 text-white">Day 5 - Day 6 (連住2晚)</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">hotel around TAKAYAMA (Ascend)</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              高山站步行僅 4 分鐘！Choice 旗艦 Ascend 精品系列，結合飛驒在地木作設計美學，設有專屬大浴場，步行至味藏天國與濃飛巴士中心極近。
+            </p>
+            <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
+              <span class="text-stone-500">岐阜縣高山市花里町</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=hotel+around+TAKAYAMA" target="_blank" rel="noopener" class="text-amber-800 font-semibold hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 hover:border-amber-400 transition-colors bg-stone-50/40">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-800 text-white">Day 7 (末晚)</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">Comfort Hotel 名古屋新幹線口</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              JR 名古屋站太閤通口（新幹線口）步行約 5 分鐘。自高山搭車返抵後直接 Check-in 卸行李，前往 Bic Camera、高島屋買 Ado 娃娃衣服與藥妝零距離。
+            </p>
+            <div class="mt-3 pt-3 border-t border-stone-200/70 flex items-center justify-between text-xs">
+              <span class="text-stone-500">名古屋市中村區椿町</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Comfort+Hotel+Nagoya+Shinkansenguchi" target="_blank" rel="noopener" class="text-amber-800 font-semibold hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 交通核心票券與搭乘指引 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
+          <h3 class="text-lg font-bold text-stone-900">🚄 名古屋 ⇄ 飛驒高山 特急飛驒號 (Hida)</h3>
+          <div class="space-y-2 text-xs text-stone-700">
+            <p>• <strong>車種</strong>：JR 東海新型混合動力 HC85 系特急 Wide View Hida。</p>
+            <p>• <strong>行駛時間</strong>：約 2 小時 25 分鐘，沿途飽覽飛驒川與中山道溪谷美景。</p>
+            <p>• <strong>班次安排</strong>：Day 5 早上自名古屋出發，約 10:30 抵達高山；Day 7 午後 12:00 自高山出發，約 15:00 返抵名古屋站。</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
+          <h3 class="text-lg font-bold text-stone-900">🚌 濃飛巴士 ⇄ 新穗高高空雙層纜車</h3>
+          <div class="space-y-2 text-xs text-stone-700">
+            <p>• <strong>巴士動線</strong>：高山濃飛巴士中心 5 號月台搭乘「平湯・新穗高線」（車程約 1 小時 36 分）。</p>
+            <p>• <strong>新穗高纜車</strong>：日本唯一雙層纜車！直達標高 2,156 公尺西穗高口展望台，眺望北阿爾卑斯連峰積雪山景。</p>
+            <p>• <strong>必訪美食</strong>：山頂阿爾卑斯麵包房（アルプスのパン屋さん）的可頌與飛驒牛咖哩麵包。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 區塊 3: 每日行程 ================= -->
+    <section id="section-itinerary" class="page-section hidden space-y-6">
+      <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-4 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <h2 class="text-lg font-bold text-stone-900">🗓️ 每日詳細時間軸與點對點路線</h2>
+            <p class="text-xs text-stone-500">已完整整合 PDF 內 62 個行程點、交通預估時長與 Google Maps 路線</p>
+          </div>
+          <button id="toggle-all-days-btn" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-amber-800 text-amber-900 hover:bg-amber-50 transition-colors self-start sm:self-auto">
+            📂 展開全部 8 天
+          </button>
+        </div>
+
+        <div id="day-tabs" class="flex items-center gap-1.5 overflow-x-auto nav-scroll pt-1"></div>
+      </div>
+
+      <div id="itinerary-container" class="space-y-6"></div>
+    </section>
+
+    <!-- ================= 區塊 4: 購物採買清單 ================= -->
+    <section id="section-shopping" class="page-section hidden space-y-6">
+      <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-6">
+        <div>
+          <h2 class="text-xl font-bold text-stone-900">🛍️ 行程專屬購物採買與折價券專區</h2>
+          <p class="text-xs text-stone-500 mt-1">完整收錄 PDF 筆記中之 Bic Camera 電器規格試算與杉藥局免稅條碼</p>
+        </div>
+
+        <!-- Bic Camera 電器清單 -->
+        <div class="border border-stone-200 rounded-xl p-4 bg-stone-50">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-stone-200 pb-3">
+            <div>
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-red-600 text-white">Day 2 (11/30) 18:56</span>
+              <h3 class="text-base font-bold text-stone-900 mt-1">Bic Camera 名古屋站西店 採買備忘</h3>
+            </div>
+            <div class="text-xs text-stone-600">
+              優惠：免稅 10% ＋ 家電 7% / 藥品 5% ｜ Visa 滿額最高回饋 10,000 日圓
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="space-y-2 text-xs">
+              <div class="font-bold text-stone-900 text-sm">✅ 適用 7% / 5% 折價券商品：</div>
+              <ul class="space-y-1.5 text-stone-700">
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>Iris Ohyama 塵蟎機 (FCA-B2H-W)</span>
+                  <span class="font-bold text-stone-900">含稅 ¥17,630</span>
+                </li>
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>Mirable Zero 奈米氣泡蓮蓬頭</span>
+                  <span class="font-bold text-stone-900">含稅 ¥25,050</span>
+                </li>
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>Mirable 專用替換濾芯 (4支)</span>
+                  <span class="font-bold text-stone-900">¥2,710 × 4 = ¥10,840</span>
+                </li>
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>DHC 20日 EPA PREMIUM (9包)</span>
+                  <span class="font-bold text-stone-900">¥1,300 × 9 = ¥11,700</span>
+                </li>
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>樂敦製藥 V5a 30日 葉黃素 (6盒)</span>
+                  <span class="font-bold text-stone-900">¥1,944 × 6 = ¥11,664</span>
+                </li>
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>Asahi 筋骨葡萄糖胺軟骨素 (4罐)</span>
+                  <span class="font-bold text-stone-900">¥2,640 × 4 = ¥10,560</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="font-bold text-stone-900 text-sm">⚠️ 專案/不適用一般折價券品項：</div>
+              <ul class="space-y-1.5 text-stone-700">
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>Panasonic 咖啡機 (NC-A58-K)</span>
+                  <span class="font-bold text-stone-900">含稅 ¥21,780</span>
+                </li>
+                <li class="flex justify-between border-b border-stone-200 pb-1">
+                  <span>Panasonic 頂級美顏器 (EH-SR86-T)</span>
+                  <span class="font-bold text-stone-900">含稅 ¥79,200</span>
+                </li>
+              </ul>
+              <div class="mt-3 p-2.5 rounded bg-amber-50 border border-amber-200 text-amber-900">
+                💡 試算備忘：家電 7% 折扣門檻，未稅滿 ¥97,752、含稅滿 ¥107,527。善用 Visa 信用卡回饋方案滿額抵扣！
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 杉藥局與服飾採買 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border border-stone-200 rounded-xl p-4 bg-stone-50 text-xs space-y-2">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-700 text-white">Day 7 (12/05) 15:59</span>
+            <h4 class="text-sm font-bold text-stone-900">スギ藥局 (SUGI) 名鐵名古屋店</h4>
+            <p class="text-stone-600 leading-relaxed">
+              可享免稅 10% ＋ 梯次折扣：滿 10,000 日圓折 4%、滿 30,000 折 6%、滿 50,000 折 8%（單件商品特別券 15% OFF）。適合各類醫藥品與保健美妝集中補齊。
+            </p>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 bg-stone-50 text-xs space-y-2">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-sky-800 text-white">Day 3 & Day 7 潮流重點</span>
+            <h4 class="text-sm font-bold text-stone-900">服飾採買 & Ado 娃娃衣服</h4>
+            <p class="text-stone-600 leading-relaxed">
+              • <strong>Day 3 榮商圈</strong>：名古屋 PARCO (STUDIOUS MENS, UNITED TOKYO)、LACHIC (and wander)、Alpen Nagoya。<br>
+              • <strong>Day 7 名古屋站</strong>：JR 高島屋 Gate Tower 內的 Sanrio Gift Gate 採買 Ado 娃娃服裝配件！
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 區塊 5: 名古屋美食 ================= -->
+    <section id="section-food" class="page-section hidden space-y-6">
+      <div class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5 sm:p-6 space-y-4">
+        <div>
+          <h2 class="text-xl font-bold text-stone-900">🍲 名古屋・飛驒特色美食導覽</h2>
+          <p class="text-xs text-stone-500 mt-1">
+            包含 PDF 內重點安排之鰻魚三吃、飛驒牛燒肉、炸蝦三明治與高山在地小吃
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+          <div class="border border-stone-200 rounded-xl p-4 bg-white shadow-sm hover:border-amber-400 transition-colors">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200">Day 1 金山晚餐</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">鰻魚三吃 三福 (金山)</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              位於金山站周邊的名店。品嚐正宗名古屋流鰻魚飯三吃（原味、拌佐料蔥芥末、注入高湯泡飯），第一晚抵達暖胃首選。
+            </p>
+            <div class="mt-3 pt-2 border-t border-stone-100">
+              <a href="https://www.google.com/maps/search/?api=1&query=鰻+三福+金山" target="_blank" rel="noopener" class="text-xs font-semibold text-amber-800 hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 bg-white shadow-sm hover:border-amber-400 transition-colors">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-rose-50 text-rose-800 border border-rose-200">Day 5 高山頂級燒肉</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">味藏天國 (飛驒牛食處)</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              高山站旁由 JA 岐阜直營之飛驒牛燒肉名店！A5 等級油花細緻均勻、入口即化，建議提早前往或於開店前候位。
+            </p>
+            <div class="mt-3 pt-2 border-t border-stone-100">
+              <a href="https://www.google.com/maps/search/?api=1&query=味蔵天国" target="_blank" rel="noopener" class="text-xs font-semibold text-amber-800 hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 bg-white shadow-sm hover:border-amber-400 transition-colors">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200">Day 4 大須早餐</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">コンパル 大須本店 (Konparu)</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              昭和 22 年創業的昭和復古喫茶店，必吃招牌「炸蝦三明治（エビフライサンド）」搭配濃郁黑咖啡。
+            </p>
+            <div class="mt-3 pt-2 border-t border-stone-100">
+              <a href="https://www.google.com/maps/search/?api=1&query=コンパル+大須本店" target="_blank" rel="noopener" class="text-xs font-semibold text-amber-800 hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 bg-white shadow-sm hover:border-amber-400 transition-colors">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-stone-100 text-stone-800">Day 6 高山甜點</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">高山布丁亭 (高山プリン亭)</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              高山老街排隊名店！採用大自然放牧雞蛋與飛驒牛奶製成，口感絲滑濃醇，招牌雪國布丁藍白漸層極美。
+            </p>
+            <div class="mt-3 pt-2 border-t border-stone-100">
+              <a href="https://www.google.com/maps/search/?api=1&query=高山プリン亭" target="_blank" rel="noopener" class="text-xs font-semibold text-amber-800 hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 bg-white shadow-sm hover:border-amber-400 transition-colors">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">Day 5 飛驒古川銘酒</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">蓬萊釀酒廠 (渡邊酒造店) & 蒲酒造</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              飛驒古川白壁土閣旁百年酒造，可品嚐世界金獎日本酒「蓬萊」，搭配旁邊井之廣味噌煎餅，風味一絕。
+            </p>
+            <div class="mt-3 pt-2 border-t border-stone-100">
+              <a href="https://www.google.com/maps/search/?api=1&query=渡辺酒造店" target="_blank" rel="noopener" class="text-xs font-semibold text-amber-800 hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+
+          <div class="border border-stone-200 rounded-xl p-4 bg-white shadow-sm hover:border-amber-400 transition-colors">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-800 border border-blue-200">Day 8 常滑名物</span>
+            <h3 class="text-base font-bold text-stone-900 mt-2">常滑牛乳 & 風舍 常滑店</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+              漫步陶器散步道時必嚐濃醇冰涼的「常滑牛乳」，並於古樸喫茶風舍享用午餐甜點，為返台前畫下完美句點。
+            </p>
+            <div class="mt-3 pt-2 border-t border-stone-100">
+              <a href="https://www.google.com/maps/search/?api=1&query=常滑牛乳" target="_blank" rel="noopener" class="text-xs font-semibold text-amber-800 hover:underline">📍 Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t border-stone-200 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-500">
+      <div>2026 名古屋・飛驒高山 8 日自由行專屬手冊 ｜ 依據 Funliday PDF 完整轉譯</div>
+      <div>請於出發前確認特急飛驒號與濃飛巴士最新運行狀況</div>
+    </div>
+  </footer>
+
+  <script>
+    const gmapSearch = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+    const gmapDir = (origin, dest, mode = 'transit') =>
+      `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(dest)}&travelmode=${mode}`;
+
+    const itineraryDays = [
+      {
+        day: 1,
+        date: "2026.11.29 (週日)",
+        title: "台北啟程・抵達名古屋・Comfort 金山入住・三福鰻魚飯",
+        landscape: "中部國際空港海景與名古屋金山商圈",
+        hotel: "Comfort Hotel Nagoya Kanayama",
+        transportSummary: "星宇航空 ＋ 名鐵特急 μ-SKY 直達金山",
+        highlightMeal: "三福 (金山) 鰻魚飯三吃",
+        badge: "啟程日・直達金山",
+        events: [
+          {
+            time: "11:55 - 18:45",
+            stay: "飛行與出關約 4 小時",
+            title: "搭乘星宇航空飛抵中部國際機場 (新特麗亞)",
+            place: "桃園機場 T1 → 名古屋中部國際機場 (NGO)",
+            transport: "星宇航空班機（11:55 起飛，18:45 順利入境）",
+            desc: "抵達常滑市中部國際機場，通關領取行李並兌換交通卡或名鐵車票。",
+            mapUrl: gmapSearch("Chubu Centrair International Airport"),
+            routeUrl: null
+          },
+          {
+            time: "19:15 - 20:08",
+            stay: "車程約 53 分鐘",
+            title: "名鐵特急直達「金山綜合站」",
+            place: "中部國際機場站 → 金山站",
+            transport: "搭乘名鐵特急 μ-SKY 或特急列車直達金山站（約 32–45 分）",
+            desc: "金山為三鐵共構樞紐，轉乘機能強大，省去拖行李進名古屋站的人潮擁擠。",
+            mapUrl: gmapSearch("Kanayama Station Nagoya"),
+            routeUrl: gmapDir("Chubu Centrair International Airport", "Kanayama Station Nagoya", "transit")
+          },
+          {
+            time: "20:08 - 20:28",
+            stay: "停留 20 分鐘",
+            title: "飯店 Check-in 卸下大件行李",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "金山站出站徒步 2–3 分鐘即達",
+            desc: "辦理連續 4 晚的入住手續，放好行李後出門覓食。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
+            routeUrl: gmapDir("Kanayama Station Nagoya", "Comfort Hotel Nagoya Kanayama", "walking")
+          },
+          {
+            time: "20:32 - 21:32",
+            stay: "停留 1 小時",
+            title: "晚餐：鰻魚三吃名店「三福」",
+            place: "うなぎ 三福 (金山)",
+            transport: "飯店徒步約 4 分鐘",
+            desc: "第一晚品嚐道地酥脆焦香的名古屋鰻魚飯三吃（原味、拌佐料、清香高湯茶泡飯）。",
+            mapUrl: gmapSearch("うなぎ 三福 金山"),
+            routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "うなぎ 三福 金山", "walking")
+          }
+        ]
+      },
+      {
+        day: 2,
+        date: "2026.11.30 (週一)",
+        title: "虎溪山永保寺・小原四季櫻・香嵐溪紅葉・Bic Camera 採買",
+        landscape: "國寶名剎、秋櫻同框與日本第一紅葉溪谷",
+        hotel: "Comfort Hotel Nagoya Kanayama",
+        transportSummary: "自駕 / JR ＋ 豐田專線巴士 ＋ 地鐵",
+        highlightMeal: "香嵐溪五平餅與在地名物 / 名古屋站周邊美食",
+        badge: "秋季紅葉極限日",
+        events: [
+          {
+            time: "08:30 - 08:44",
+            stay: "停留 10 分鐘",
+            title: "金山飯店出發・自販機投飲",
+            place: "Comfort Hotel 金山 → 名古屋站銀時鐘自販機",
+            transport: "JR 中央線至名古屋站",
+            desc: "早晨集合，於名古屋站著名地標「銀時鐘」旁自動販賣機購買熱咖啡。",
+            mapUrl: gmapSearch("銀時計 名古屋駅"),
+            routeUrl: null
+          },
+          {
+            time: "10:00 - 11:00",
+            stay: "停留 1 小時",
+            title: "岐阜多治見：虎溪山 永保寺 (國寶庭園)",
+            place: "虎溪山 永保寺 (岐阜縣多治見市)",
+            transport: "車程約 1 小時",
+            desc: "參觀建於鎌倉時代的國寶觀音堂與無際橋，深秋時分巨大銀杏與滿山楓紅交織。",
+            mapUrl: gmapSearch("虎渓山 永保寺"),
+            routeUrl: gmapDir("Nagoya Station", "虎渓山 永保寺", "driving")
+          },
+          {
+            time: "14:00 - 14:30",
+            stay: "停留 30 分鐘",
+            title: "豐田市：小原四季櫻之里 (櫻花與紅葉同框)",
+            place: "川見四季桜の里 (愛知縣豐田市)",
+            transport: "車程約 44 分鐘",
+            desc: "極度罕見的自然奇觀！每年秋末 11 月下旬，白粉色的四季櫻與火紅楓葉同框盛開。",
+            mapUrl: gmapSearch("川見四季桜の里"),
+            routeUrl: gmapDir("虎渓山 永保寺", "川見四季桜の里", "driving")
+          },
+          {
+            time: "16:00 - 18:00",
+            stay: "停留 2 小時",
+            title: "東海第一紅葉名所：香嵐溪 (待月橋)",
+            place: "香嵐溪 巴川・待月橋",
+            transport: "車程約 36 分鐘",
+            desc: "約 4,000 株楓樹染紅巴川兩岸，傍晚點燈時宛如金色隧道，品嚐熱騰騰現烤五平餅。",
+            mapUrl: gmapSearch("香嵐渓 待月橋"),
+            routeUrl: gmapDir("川見四季桜の里", "香嵐渓", "driving")
+          },
+          {
+            time: "18:56 - 20:00",
+            stay: "停留 1 小時",
+            title: "Bic Camera 名古屋站西店：電器大採購",
+            place: "Bic Camera 名古屋站西店",
+            transport: "車程約 56 分鐘返抵名古屋站西口",
+            desc: "集中採購：Panasonic NC-A58-K 咖啡機、Iris 塵蟎機、Mirable 蓮蓬頭與各類保健食品。",
+            mapUrl: gmapSearch("ビックカメラ 名古屋駅西店"),
+            routeUrl: gmapDir("香嵐渓", "ビックカメラ 名古屋駅西店", "driving")
+          },
+          {
+            time: "21:03",
+            stay: "返抵休息",
+            title: "返回 Comfort Hotel 金山",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "JR 中央線返回金山站（約 5 分鐘）",
+            desc: "將戰利品放回房間，好好洗熱水澡放鬆休息。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
+            routeUrl: null
+          }
+        ]
+      },
+      {
+        day: 3,
+        date: "2026.12.01 (週二)",
+        title: "榮商圈流行服飾爆買・Alpen・LACHIC・綠洲21夜景",
+        landscape: "名古屋時尚潮流樞紐與太空船夜景地標",
+        hotel: "Comfort Hotel Nagoya Kanayama",
+        transportSummary: "名城線地鐵（金山 ⇄ 矢場町 / 榮）",
+        highlightMeal: "榮商圈名店美食 / 矢場町鰻魚或味噌豬排",
+        badge: "潮流血拼主戰場",
+        events: [
+          {
+            time: "10:00 - 14:00",
+            stay: "停留約 4 小時",
+            title: "名古屋 PARCO 潮流巡禮",
+            place: "名古屋 PARCO (STUDIOUS MENS, UNITED TOKYO, TOWER RECORDS, Lui's)",
+            transport: "地鐵名城線自金山至「矢場町站」直結",
+            desc: "集結日系高質感服裝 STUDIOUS、UNITED TOKYO，逛唱片行 TOWER RECORDS 收集最新 CD 音樂。",
+            mapUrl: gmapSearch("名古屋PARCO"),
+            routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "名古屋PARCO", "transit")
+          },
+          {
+            time: "14:30 - 15:30",
+            stay: "停留 1 小時",
+            title: "Alpen Nagoya & 好日山莊 運動戶外採買",
+            place: "Alpen Nagoya 旗艦館 → 好日山莊 名古屋榮店",
+            transport: "商圈徒步約 4–9 分鐘",
+            desc: "日本頂級規模的戶外旗艦店，各類滑雪、登山機能服飾與戶外裝備一應俱全。",
+            mapUrl: gmapSearch("Alpen Nagoya"),
+            routeUrl: gmapDir("名古屋PARCO", "Alpen Nagoya", "walking")
+          },
+          {
+            time: "16:00 - 17:00",
+            stay: "停留 1 小時",
+            title: "LACHIC：and wander 專賣店朝聖",
+            place: "LACHIC (and wander Nagoya LACHIC)",
+            transport: "榮商圈徒步 1 分鐘",
+            desc: "選購極具山系美學的 and wander 戶外潮流服飾與配件。",
+            mapUrl: gmapSearch("and wander Nagoya LACHIC"),
+            routeUrl: gmapDir("Alpen Nagoya", "and wander Nagoya LACHIC", "walking")
+          },
+          {
+            time: "17:00 - 18:30",
+            stay: "停留 1.5 小時",
+            title: "看夕陽與絕美夜景：綠洲 21 (Oasis 21 水之宇宙船)",
+            place: "綠洲 21 (Oasis 21) & 久屋大通公園",
+            transport: "徒步 9 分鐘",
+            desc: "登上玻璃屋頂的水之宇宙船空中走道，欣賞電視塔與名古屋市區點燈夜景。",
+            mapUrl: gmapSearch("オアシス２１"),
+            routeUrl: gmapDir("and wander Nagoya LACHIC", "オアシス２１", "walking")
+          },
+          {
+            time: "19:00",
+            stay: "返抵飯店",
+            title: "返回 Comfort Hotel 金山整理戰利品",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "地鐵名城線自「榮站」直達「金山站」",
+            desc: "卸下整天採買的衣物與配件，備戰隔天的演唱會。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
+            routeUrl: null
+          }
+        ]
+      },
+      {
+        day: 4,
+        date: "2026.12.02 (週三)",
+        title: "コンパル炸蝦三明治・買物周邊・永旺夢樂城熱田・tuki. 演唱會",
+        landscape: "昭和喫茶、文藝商場與音樂盛會",
+        hotel: "Comfort Hotel Nagoya Kanayama",
+        transportSummary: "名城線地鐵 ＋ 步行",
+        highlightMeal: "コンパル 大須本店 炸蝦三明治",
+        badge: "重頭戲：tuki. 演唱會",
+        events: [
+          {
+            time: "09:00 - 11:30",
+            stay: "停留 2.5 小時",
+            title: "早餐：昭和復古喫茶名店「コンパル 大須本店」",
+            place: "コンパル 大須本店 (Konparu)",
+            transport: "地鐵至上前津站徒步 5 分鐘",
+            desc: "品嚐外酥內彈牙的極品炸蝦三明治與冰滴黑咖啡，感受大須商店街老昭和氛圍。",
+            mapUrl: gmapSearch("コンパル 大須本店"),
+            routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "コンパル 大須本店", "transit")
+          },
+          {
+            time: "12:00 - 13:00",
+            stay: "停留 1 小時",
+            title: "搶排演唱會周邊：中京大學文化市民會館",
+            place: "日本特殊陶業市民會館 (中京大學文化市民會館)",
+            transport: "金山站出站徒步 5 分鐘直結地下通道",
+            desc: "先抵達會場搶先購買 tuki. 演唱會專屬官方周邊（手燈、T恤、娃娃或紀念物）。",
+            mapUrl: gmapSearch("日本特殊陶業市民会館"),
+            routeUrl: gmapDir("コンパル 大須本店", "日本特殊陶業市民会館", "transit")
+          },
+          {
+            time: "13:10 - 13:40",
+            stay: "停留 30 分鐘",
+            title: "回飯店放周邊輕裝充電",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "會館徒步 8 分鐘即抵飯店",
+            desc: "就近將排隊買到的周邊戰利品放回客房，隨身只帶手燈與重要物品。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
+            routeUrl: null
+          },
+          {
+            time: "14:00 - 16:30",
+            stay: "停留 2.5 小時",
+            title: "永旺夢樂城 熱田 (Aeon Mall Atsuta)",
+            place: "Aeon Mall 熱田",
+            transport: "金山站搭乘免費接駁巴士約 10 分鐘",
+            desc: "開場前悠閒採買生活雜貨與露營小物（DOD 專區），補充熱量與飲品。",
+            mapUrl: gmapSearch("イオンモール熱田"),
+            routeUrl: gmapDir("Comfort Hotel Nagoya Kanayama", "イオンモール熱田", "transit")
+          },
+          {
+            time: "17:00 - 20:00",
+            stay: "活動 3 小時",
+            title: "🎵 重頭戲：tuki. 現場演唱會！",
+            place: "日本特殊陶業市民會館 (Forest Hall)",
+            transport: "接駁車回金山站步行即達會場",
+            desc: "沉浸在 tuki. 震撼又純粹的現場歌聲中，享受熱血難忘的音樂之夜！",
+            mapUrl: gmapSearch("日本特殊陶業市民会館"),
+            routeUrl: gmapDir("イオンモール熱田", "日本特殊陶業市民会館", "transit")
+          },
+          {
+            time: "20:30",
+            stay: "返抵休息",
+            title: "散步回飯店 Comfort 金山",
+            place: "Comfort Hotel Nagoya Kanayama",
+            transport: "會場散場徒步 5–8 分鐘直接回房",
+            desc: "免去擠電車的疲倦，散步數分鐘即可回飯店休息整理行李，準備隔天前往飛驒高山。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Kanayama"),
+            routeUrl: null
+          }
+        ]
+      },
+      {
+        day: 5,
+        date: "2026.12.03 (週四)",
+        title: "特急飛驒號抵高山・味藏天國飛驒牛・飛驒古川君之名聖地巡禮",
+        landscape: "白雪山城、土閣白壁水渠與百年酒造",
+        hotel: "hotel around TAKAYAMA (Ascend Hotel Collection)",
+        transportSummary: "JR 特急 Wide View Hida ＋ 高山本線區間車",
+        highlightMeal: "味藏天國 A5 飛驒牛燒肉",
+        badge: "移師高山・入住 Ascend",
+        events: [
+          {
+            time: "08:00 - 10:30",
+            stay: "車程約 2.5 小時",
+            title: "搭乘特急 Hida 抵達高山站",
+            place: "名古屋站 → JR 高山站",
+            transport: "搭乘新型特急 Hida（行經木曾川飛驒川溪谷美景）",
+            desc: "一路北上進入阿爾卑斯山腳下古樸雪白的高山市。",
+            mapUrl: gmapSearch("Takayama Station"),
+            routeUrl: gmapDir("Nagoya Station", "Takayama Station", "transit")
+          },
+          {
+            time: "10:30 - 10:45",
+            stay: "停留 15 分鐘",
+            title: "hotel around TAKAYAMA 寄放大行李",
+            place: "hotel around TAKAYAMA (Ascend Hotel Collection)",
+            transport: "高山站西口徒步 4 分鐘",
+            desc: "卸下行李給櫃台，準備展開高山美食巡禮。",
+            mapUrl: gmapSearch("hotel around TAKAYAMA"),
+            routeUrl: gmapDir("Takayama Station", "hotel around TAKAYAMA", "walking")
+          },
+          {
+            time: "11:00 - 12:30",
+            stay: "停留 1.5 小時",
+            title: "午餐：飛驒牛燒肉代表名店「味藏天國」",
+            place: "味蔵天国 (JA 岐阜直營)",
+            transport: "高山站旁徒步 2 分鐘",
+            desc: "品嚐入口即化的 A5 頂級飛驒牛燒肉盛合，肉汁甜美極致。",
+            mapUrl: gmapSearch("味蔵天国"),
+            routeUrl: gmapDir("hotel around TAKAYAMA", "味蔵天国", "walking")
+          },
+          {
+            time: "13:00 - 16:30",
+            stay: "漫步約 3.5 小時",
+            title: "飛驒古川巡禮：酒造、味噌煎餅與氣多若宮神社",
+            place: "飛驒古川白壁土閣街（蒲酒造、渡邊酒造蓬萊、井之廣煎餅、氣多若宮神社、櫻花物產館）",
+            transport: "JR 高山本線自高山搭車 15 分鐘至「飛驒古川站」",
+            desc: "《你的名字》聖地巡禮！沿著錦鯉游動的瀨戶川石板路漫步，參觀百年老酒造並試飲銘酒「蓬萊」。",
+            mapUrl: gmapSearch("飛騨古川まつり会館"),
+            routeUrl: gmapDir("味蔵天国", "飛騨古川駅", "transit")
+          },
+          {
+            time: "17:40 - 18:40",
+            stay: "停留 1 小時",
+            title: "駿河屋 Asumo 店超市補貨",
+            place: "駿河屋 Asumo 店 (高山在地生鮮超市)",
+            transport: "高山市區巴士或徒步",
+            desc: "採買飛驒在地飛驒牛奶、在地優格、當季水果與零食點心。",
+            mapUrl: gmapSearch("駿河屋 アスモ店"),
+            routeUrl: gmapDir("Takayama Station", "駿河屋 アスモ店", "transit")
+          },
+          {
+            time: "19:00",
+            stay: "入住放鬆",
+            title: "入住 hotel around TAKAYAMA 大浴場泡湯",
+            place: "hotel around TAKAYAMA",
+            transport: "徒步返抵飯店",
+            desc: "享受 Choice 旗艦 Ascend 飯店專屬風呂大浴場，徹底洗淨冬日疲勞。",
+            mapUrl: gmapSearch("hotel around TAKAYAMA"),
+            routeUrl: null
+          }
+        ]
+      },
+      {
+        day: 6,
+        date: "2026.12.04 (週五)",
+        title: "新穗高雙層高空纜車・雪山絕景・高山陣屋・高山老街布丁",
+        landscape: "日本唯一雙層高空纜車、北阿爾卑斯雪峰與江戶古蹟",
+        hotel: "hotel around TAKAYAMA (Ascend Hotel Collection)",
+        transportSummary: "濃飛巴士「新穗高線」來回",
+        highlightMeal: "阿爾卑斯麵包房可頌 / 高山布丁亭 / 老街飛驒牛握壽司",
+        badge: "絕景大山日",
+        events: [
+          {
+            time: "08:00 - 10:20",
+            stay: "搭車約 1 小時 36 分",
+            title: "高山濃飛巴士中心出發 → 新穗高纜車站",
+            place: "高山濃飛巴士中心 5 號月台 → 新穗高高空纜車",
+            transport: "搭乘濃飛巴士新穗高線",
+            desc: "穿過奧飛驒溫泉鄉與壯麗山谷，直達纜車登山口。",
+            mapUrl: gmapSearch("Shinhotaka Ropeway Bus Stop"),
+            routeUrl: gmapDir("Takayama Nohi Bus Center", "Shinhotaka Ropeway", "transit")
+          },
+          {
+            time: "10:20 - 12:50",
+            stay: "停留 2.5 小時",
+            title: "新穗高雙層纜車登上 2,156m 展望台",
+            place: "西穗高口站屋頂展望台 ＆ 阿爾卑斯的麵包房",
+            transport: "搭乘第 1、第 2 段雙層纜車穿雲直上",
+            desc: "360 度眺望槍岳、穗高連峰壯麗雪景！在「阿爾卑斯的麵包房」品嚐現烤招牌飛驒牛咖哩麵包與熱可頌。",
+            mapUrl: gmapSearch("西穂高口駅 展望台"),
+            routeUrl: null
+          },
+          {
+            time: "13:00 - 14:30",
+            stay: "車程約 1.5 小時",
+            title: "搭濃飛巴士返抵高山市區",
+            place: "新穗高纜車站 → 高山濃飛巴士中心",
+            transport: "濃飛巴士回程",
+            desc: "在車上小憩補眠，回到高山市區展開古街歷史散步。",
+            mapUrl: gmapSearch("Takayama Nohi Bus Center"),
+            routeUrl: gmapDir("Shinhotaka Ropeway", "Takayama Nohi Bus Center", "transit")
+          },
+          {
+            time: "14:30 - 15:40",
+            stay: "停留約 1 小時",
+            title: "高山三町老街漫步・品嚐高山布丁亭",
+            place: "上三之町老街、高山布丁亭、坂口屋握壽司",
+            transport: "老街平地漫步",
+            desc: "江戶木造黑瓦老屋，沿途吃排隊「高山布丁亭」滑嫩布丁與仙貝墊底的飛驒牛炙燒壽司。",
+            mapUrl: gmapSearch("高山プリン亭"),
+            routeUrl: gmapDir("Takayama Nohi Bus Center", "高山プリン亭", "walking")
+          },
+          {
+            time: "15:40 - 16:40",
+            stay: "停留 1 小時",
+            title: "參觀唯一現存江戶幕府官府：高山陣屋",
+            place: "高山陣屋 (國指定史跡)",
+            transport: "中橋過河徒步 3 分鐘",
+            desc: "參觀日本唯一完整保存的德川幕府代官所，漫步在鋪滿榻榻米的廣大官邸與古米倉。",
+            mapUrl: gmapSearch("高山陣屋"),
+            routeUrl: gmapDir("高山プリン亭", "高山陣屋", "walking")
+          },
+          {
+            time: "17:00",
+            stay: "返抵休息",
+            title: "返回 hotel around TAKAYAMA 晚餐泡湯",
+            place: "hotel around TAKAYAMA",
+            transport: "徒步 14 分鐘返抵飯店",
+            desc: "在高山最後一夜，享受悠閒在地步調與舒緩溫泉。",
+            mapUrl: gmapSearch("hotel around TAKAYAMA"),
+            routeUrl: null
+          }
+        ]
+      },
+      {
+        day: 7,
+        date: "2026.12.05 (週六)",
+        title: "宮川朝市・飛驒之里・特急返名古屋・高島屋買 Ado 娃衣・杉藥局",
+        landscape: "河畔早市、合掌造聚落與名古屋站現代巨型商場",
+        hotel: "Comfort Hotel Nagoya Shinkansenguchi",
+        transportSummary: "JR 特急 Wide View Hida ＋ 市區徒步",
+        highlightMeal: "宮川朝市在地手作食研 / 名古屋站地下街美食",
+        badge: "回師名古屋・Ado 周邊收集",
+        events: [
+          {
+            time: "08:00 - 09:30",
+            stay: "停留 1.5 小時",
+            title: "晨間漫步：宮川朝市 (河畔早市)",
+            place: "高山宮川朝市 (鍛冶橋至彌生橋)",
+            transport: "飯店徒步約 10 分鐘",
+            desc: "日本三大早市之一！沿著宮川河畔攤位品嚐現烤糯米丸子、蘋果乾、飛驒牛包子與手作工藝。",
+            mapUrl: gmapSearch("宮川朝市"),
+            routeUrl: gmapDir("hotel around TAKAYAMA", "宮川朝市", "walking")
+          },
+          {
+            time: "10:00 - 11:30",
+            stay: "停留 1.5 小時",
+            title: "合掌造野外博物館：飛驒之里",
+            place: "飛驒之里 (飛騨の里 Hida Folk Village)",
+            transport: "高山巴士中心搭猿寶寶巴士（約 10 分）",
+            desc: "重現白川鄉與飛驒各地的茅草合掌造古民家，冬初白雪覆蓋屋頂，古樸靜謐宛如童話。",
+            mapUrl: gmapSearch("飛騨の里"),
+            routeUrl: gmapDir("宮川朝市", "飛騨の里", "transit")
+          },
+          {
+            time: "12:00 - 15:00",
+            stay: "拿行李搭特急約 2 小時 44 分",
+            title: "飯店取行李搭特急返名古屋站",
+            place: "高山站 → JR 名古屋站",
+            transport: "JR 特急 Wide View Hida 返回名古屋站",
+            desc: "揮別飛驒高山，搭乘寬景特急平穩駛回名古屋核心大樞紐。",
+            mapUrl: gmapSearch("Nagoya Station"),
+            routeUrl: gmapDir("Takayama Station", "Nagoya Station", "transit")
+          },
+          {
+            time: "15:00 - 15:45",
+            stay: "停留 45 分鐘",
+            title: "入住 Comfort Hotel 名古屋新幹線口",
+            place: "Comfort Hotel Nagoya Shinkansenguchi",
+            transport: "名古屋站太閤通口步行 5 分鐘",
+            desc: "辦理入住卸下大包小包，為傍晚的高島屋衝刺做好萬全準備。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Shinkansenguchi"),
+            routeUrl: gmapDir("Nagoya Station", "Comfort Hotel Nagoya Shinkansenguchi", "walking")
+          },
+          {
+            time: "15:59 - 17:00",
+            stay: "停留 1 小時",
+            title: "スギ (SUGI) 藥局 名鐵名古屋店免稅補貨",
+            place: "スギ薬局 名鉄名古屋店",
+            transport: "站前地下街步行 3 分鐘",
+            desc: "使用折價券（免稅 10% ＋ 最高 8% 折扣，單品 15% 券），集中掃貨長輩保健品與日常藥妝。",
+            mapUrl: gmapSearch("スギ薬局 名鉄名古屋店"),
+            routeUrl: gmapDir("Comfort Hotel Nagoya Shinkansenguchi", "スギ薬局 名鉄名古屋店", "walking")
+          },
+          {
+            time: "16:01 - 18:00",
+            stay: "停留約 2 小時",
+            title: "JR 高島屋 Gate Tower：Sanrio 買 Ado 娃娃衣服",
+            place: "JR 名古屋高島屋 ＆ Gate Tower (Sanrio Gift Gate)",
+            transport: "站體連通道步行 1 分鐘直達",
+            desc: "直奔三麗鷗專賣店選購適合 Ado 娃娃穿著的可愛斗篷與造型替換小衣服！",
+            mapUrl: gmapSearch("Sanrio Gift Gate JR名古屋タカシマヤ ゲートタワーモール店"),
+            routeUrl: gmapDir("スギ薬局 名鉄名古屋店", "ジェイアール名古屋タカシマヤ", "walking")
+          },
+          {
+            time: "21:00",
+            stay: "返抵休息",
+            title: "返回 Comfort 新幹線口打包整理行李",
+            place: "Comfort Hotel Nagoya Shinkansenguchi",
+            transport: "徒步 5 分鐘回房",
+            desc: "最後一晚利用夾鏈袋收納並稱重行李，將所有戰利品穩妥包裝。",
+            mapUrl: gmapSearch("Comfort Hotel Nagoya Shinkansenguchi"),
+            routeUrl: null
+          }
+        ]
+      },
+      {
+        day: 8,
+        date: "2026.12.06 (週日)",
+        title: "常滑永旺夢樂城・巨大招財貓 Tokonyan・陶瓷散步道・滿載返台",
+        landscape: "古樸紅磚煙囪、招財貓故鄉與現代購物城",
+        hotel: "溫暖的家",
+        transportSummary: "名鐵常滑線 ＋ 接駁巴士 ＋ 星宇航空",
+        highlightMeal: "常滑牛乳 / 永旺夢樂城美食街",
+        badge: "圓滿返台日",
+        events: [
+          {
+            time: "09:15 - 10:15",
+            stay: "車程約 40 分鐘",
+            title: "名古屋站搭名鐵前往「常滑」",
+            place: "名鐵名古屋站 → 名鐵常滑站 / 臨空常滑站",
+            transport: "搭乘名鐵特急／急行至常滑站",
+            desc: "直奔招財貓的故鄉常滑市，下車先至永旺夢樂城放行李箱。",
+            mapUrl: gmapSearch("AEON MALL Tokoname"),
+            routeUrl: gmapDir("Nagoya Station", "AEON MALL Tokoname", "transit")
+          },
+          {
+            time: "10:15 - 10:30",
+            stay: "停留 15 分鐘",
+            title: "永旺夢樂城 常滑 寄放行李",
+            place: "AEON MALL 常滑 (寄物櫃 / 服務台)",
+            transport: "臨空常滑站出站即達",
+            desc: "卸下沈重行李箱，輕裝搭車或散步至常滑陶器散步道。",
+            mapUrl: gmapSearch("AEON MALL Tokoname"),
+            routeUrl: null
+          },
+          {
+            time: "11:00 - 13:00",
+            stay: "散步約 2 小時",
+            title: "常滑陶器散步道・巨大招財貓 Tokonyan",
+            place: "Tokonyan 巨大招財貓、陶瓷會館、土管坂、風舍常滑店、常滑牛乳",
+            transport: "全區古街起伏石板路徒步散策",
+            desc: "從高台上探頭俯瞰的巨大招財貓 Tokonyan 極度震撼！沿途穿過燒酒瓶土管坂，買瓶在地極濃的常滑牛乳暢飲。",
+            mapUrl: gmapSearch("とこにゃん"),
+            routeUrl: gmapDir("AEON MALL Tokoname", "とこにゃん", "walking")
+          },
+          {
+            time: "13:45 - 15:45",
+            stay: "停留 2 小時",
+            title: "永旺夢樂城 常滑 最後逛街與午餐",
+            place: "AEON MALL 常滑",
+            transport: "徒步返抵商場",
+            desc: "吃午餐，最後採購日本零食、伴手禮，領回大件行李準備搭接駁車去機場。",
+            mapUrl: gmapSearch("AEON MALL Tokoname"),
+            routeUrl: gmapDir("とこにゃん", "AEON MALL Tokoname", "walking")
+          },
+          {
+            time: "16:30 - 18:49",
+            stay: "停留約 2 小時 20 分",
+            title: "中部國際機場・環亞貴賓室 (Plaza Premium)",
+            place: "中部國際機場第 1 航廈 ＆ 名古屋環亞貴賓室",
+            transport: "名鐵 1 站直達中部國際機場",
+            desc: "辦理星宇航空登機劃位與託運，至機場環亞貴賓室休息小酌、品嚐熱食熱湯等待登機。",
+            mapUrl: gmapSearch("Chubu Centrair International Airport Plaza Premium Lounge"),
+            routeUrl: gmapDir("AEON MALL Tokoname", "Chubu Centrair International Airport", "transit")
+          },
+          {
+            time: "18:49 - 21:54",
+            stay: "航程約 3 小時 5 分鐘",
+            title: "搭乘星宇航空返回桃園機場",
+            place: "中部國際機場 (NGO) → 桃園機場 T1",
+            transport: "星宇航空班機（預計 21:54 返抵台灣）",
+            desc: "帶回滿滿的 Ado 周邊、tuki. 演唱會回憶與豐富戰利品，圓滿結束 8 天精彩旅程！",
+            mapUrl: gmapSearch("Taoyuan International Airport"),
+            routeUrl: null
+          }
+        ]
+      }
+    ];
+
+    // 導覽切換
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.page-section');
+
+    function switchSection(targetId) {
+      sections.forEach(sec => sec.classList.toggle('hidden', sec.id !== `section-${targetId}`));
+      navBtns.forEach(btn => {
+        const isActive = btn.dataset.section === targetId;
+        btn.className = isActive
+          ? 'nav-btn px-3.5 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-colors bg-amber-900 text-white'
+          : 'nav-btn px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors text-stone-600 hover:bg-stone-100';
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    navBtns.forEach(btn => btn.addEventListener('click', () => switchSection(btn.dataset.section)));
+
+    // 渲染總覽表格
+    function renderOverviewTable() {
+      const tbody = document.getElementById('overview-table-body');
+      tbody.innerHTML = itineraryDays.map(d => `
+        <tr class="hover:bg-amber-50/60 cursor-pointer transition-colors" onclick="jumpToDay(${d.day})">
+          <td class="py-3.5 px-4 whitespace-nowrap">
+            <span class="inline-block font-bold text-amber-900">Day ${d.day}</span>
+            <div class="text-[11px] text-stone-500">${d.date.slice(5, 10)}</div>
+          </td>
+          <td class="py-3.5 px-4 font-medium text-stone-800">
+            <div>${d.title}</div>
+            <span class="inline-block mt-1 text-[10px] px-2 py-0.5 rounded bg-stone-100 text-stone-600">${d.badge}</span>
+          </td>
+          <td class="py-3.5 px-4 text-xs text-stone-600 whitespace-nowrap">${d.hotel}</td>
+          <td class="py-3.5 px-4 text-xs text-stone-600">${d.transportSummary}</td>
+          <td class="py-3.5 px-4 text-xs font-medium text-rose-800">${d.highlightMeal}</td>
+        </tr>
+      `).join('');
+    }
+
+    window.jumpToDay = function(dayNum) {
+      switchSection('itinerary');
+      activeDay = dayNum;
+      showAllDays = false;
+      updateDayControls();
+      renderItinerary();
+    };
+
+    // 每日時間軸
+    let activeDay = 1;
+    let showAllDays = false;
+
+    function updateDayControls() {
+      const container = document.getElementById('day-tabs');
+      container.innerHTML = itineraryDays.map(d => {
+        const isSelected = !showAllDays && activeDay === d.day;
+        return `
+          <button onclick="selectDay(${d.day})" class="px-3.5 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border ${
+            isSelected
+              ? 'bg-amber-900 text-white border-amber-900 shadow-sm'
+              : 'bg-stone-50 text-stone-700 border-stone-200 hover:bg-stone-100'
+          }">
+            Day ${d.day} (${d.date.slice(5, 10)})
+          </button>
+        `;
+      }).join('');
+
+      document.getElementById('toggle-all-days-btn').textContent = showAllDays ? '📑 切回單日檢視' : '📂 展開全部 8 天';
+    }
+
+    window.selectDay = function(dayNum) {
+      showAllDays = false;
+      activeDay = dayNum;
+      updateDayControls();
+      renderItinerary();
+    };
+
+    document.getElementById('toggle-all-days-btn').addEventListener('click', () => {
+      showAllDays = !showAllDays;
+      updateDayControls();
+      renderItinerary();
+    });
+
+    function renderItinerary() {
+      const container = document.getElementById('itinerary-container');
+      const daysToRender = showAllDays ? itineraryDays : itineraryDays.filter(d => d.day === activeDay);
+
+      container.innerHTML = daysToRender.map(d => `
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden">
+          <div class="bg-stone-50 border-b border-stone-200 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-md bg-amber-900 text-white text-xs font-bold">DAY ${d.day}</span>
+                <span class="text-xs font-semibold text-stone-500">${d.date}</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-medium">${d.badge}</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-stone-900 mt-1.5">${d.title}</h3>
+            </div>
+            <div class="text-xs text-stone-600 sm:text-right">
+              <div>🏨 ${d.hotel}</div>
+              <div class="text-stone-500 mt-0.5">🚆 ${d.transportSummary}</div>
+            </div>
+          </div>
+
+          <div class="p-5 sm:p-7 timeline-line space-y-6">
+            ${d.events.map(ev => `
+              <div class="relative pl-9 md:pl-11">
+                <span class="absolute left-1.5 md:left-2.5 top-1.5 w-4 h-4 rounded-full bg-white border-4 border-amber-900 shadow-sm"></span>
+
+                <div class="bg-stone-50/70 hover:bg-white border border-stone-200 rounded-xl p-4 sm:p-5 transition-all">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-bold px-2.5 py-1 rounded bg-amber-100 text-amber-900">⏰ ${ev.time}</span>
+                      <span class="text-xs text-stone-500 font-medium">⏳ ${ev.stay}</span>
+                    </div>
+                  </div>
+
+                  <h4 class="text-base font-bold text-stone-900">${ev.title}</h4>
+                  <div class="text-xs font-medium text-amber-900 mt-1">📍 地點：${ev.place}</div>
+
+                  <div class="mt-2.5 p-2.5 rounded-lg bg-white border border-stone-200/80 text-xs text-stone-700">
+                    <span class="font-semibold text-stone-900">🚆 交通建議：</span>${ev.transport}
+                  </div>
+
+                  <p class="mt-2.5 text-xs sm:text-sm text-stone-600 leading-relaxed">${ev.desc}</p>
+
+                  <div class="mt-3.5 pt-3 border-t border-stone-200/70 flex flex-wrap gap-2">
+                    <a href="${ev.mapUrl}" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-stone-300 text-stone-800 hover:bg-amber-50 hover:border-amber-400 hover:text-amber-900 transition-colors">
+                      📍 開啟地圖
+                    </a>
+                    ${ev.routeUrl ? `
+                      <a href="${ev.routeUrl}" target="_blank" rel="noopener"
+                         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-amber-900 text-white hover:bg-amber-800 transition-colors">
+                        🗺️ 路線規劃
+                      </a>
+                    ` : ''}
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Chart.js 圖表
+    function initCharts() {
+      const ctx1 = document.getElementById('transportChart').getContext('2d');
+      new Chart(ctx1, {
+        type: 'bar',
+        data: {
+          labels: [
+            '機場→金山 (名鐵特急)',
+            '名古屋→高山 (特急飛驒)',
+            '高山→新穗高 (濃飛巴士)',
+            '新穗高雙層纜車 (上下山)',
+            '常滑→機場 (名鐵電車)'
+          ],
+          datasets: [
+            {
+              label: '單程交通時間 (分鐘)',
+              data: [35, 145, 96, 25, 10],
+              backgroundColor: 'rgba(120, 53, 15, 0.85)',
+              borderRadius: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { title: { display: true, text: '車程分鐘數' }, grid: { color: 'rgba(0,0,0,0.05)' } }
+          }
+        }
+      });
+
+      const ctx2 = document.getElementById('budgetChart').getContext('2d');
+      new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+          labels: [
+            '7晚住宿 (Comfort / Ascend 點數或訂房)',
+            '鐵路特急與巴士交通票券',
+            '新穗高高空纜車往返門票',
+            'Bic Camera / SUGI 採買購物預算',
+            '味藏天國與 8 天餐飲試算'
+          ],
+          datasets: [{
+            data: [35000, 22000, 3800, 95000, 45000],
+            backgroundColor: ['#78350F', '#0C4A6E', '#059669', '#DC2626', '#D97706'],
+            borderWidth: 2,
+            borderColor: '#FFFFFF'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { font: { family: 'Noto Sans TC', size: 11 } } },
+            tooltip: {
+              callbacks: {
+                label: function(ctx) {
+                  return ` ${ctx.label}: 約 ¥${ctx.parsed.toLocaleString()}`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderOverviewTable();
+      updateDayControls();
+      renderItinerary();
+      initCharts();
+    });
+  </script>
+</body>
+</html>
